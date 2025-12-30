@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="66" height="66"
+     viewBox="0 0 66 66">
+
+  <!-- Border as filled frame (3px) -->
+  <rect x="0" y="0" width="66" height="66" fill="#081a17"/>
+
+  <!-- Inner content inset by 3px -->
+  <g transform="translate(3,3)">
+    <!-- inner size: 60 x 60 -->
+    <rect x="0" y="0" width="44" height="60" fill="#081a17"/>
+    <rect x="44" y="0" width="16" height="60" fill="#f12d5c"/>
+
+    <!-- "P" centered in the dark area (optisch) -->
+    <text x="22" y="30"
+          font-family="Polentical Neon"
+          font-size="36"
+          font-weight="bold"
+          text-anchor="middle"
+          dominant-baseline="middle"
+          fill="#de083d">P</text>
+  </g>
+</svg>
+

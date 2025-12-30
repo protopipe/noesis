@@ -1,0 +1,101 @@
+site_name: Protopipe Noesis
+site_description: Protopipe – WHY, Culture, Decisions, Architecture, Technology, Narratives, Glossary, Design, Tooling
+site_url: https://noesis.protopipe.io/
+repo_name: protopipe/noesis
+repo_url: https://github.com/protopipe/noesis
+edit_uri: ""
+
+docs_dir: doc
+site_dir: site
+
+theme:
+  name: material
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.indexes
+    - content.code.copy
+    - toc.follow
+  palette:
+    - scheme: default
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
+plugins:
+  - search
+
+nav:
+  - Home: README.md
+
+  - WHY:
+      - Golden Circle: 01_why/golden-circle.md
+      - Vision: 01_why/vision.md
+
+  - Culture:
+      - Culture Code: 02_culture/culture-code.md
+      - Principles: 02_culture/principles.md
+
+  - Decisions:
+      - ADRs: 03_decisions/adr/README.md
+
+  - Architecture:
+      - Whitepaper: 04_architecture/architecture-whitepaper.md
+      - Diagrams: 04_architecture/diagrams/
+
+  - Technology:
+      - Tech Radar: 05_technology/tech-radar.md
+
+  - Narratives:
+      - Overview: 06_narratives/README.md
+      - Contrasts:
+          - Protopipe vs Jira: 06_narratives/contrasts/protopipe-vs-jira.md
+          - Protopipe vs SAFe: 06_narratives/contrasts/protopipe-vs-safe.md
+      - Experiences:
+          - First Experiment (Enterprise): 06_narratives/experiences/first-experiment-enterprise.md
+      - Language:
+          - Sales Principles: 06_narratives/language/sales-principles.md
+      - Problems:
+          - Analysis as a Side Effect: 06_narratives/problems/analysis-as-a-side-effect.md
+          - Decisions Without Feedback: 06_narratives/problems/decisions-without-feedback.md
+      - Use Cases:
+          - CEO – Strategy Communication: 06_narratives/use-cases/ceo-strategy-communication.md
+          - CFO – KPIs Built In: 06_narratives/use-cases/cfo-kpis-built-in.md
+          - CPO – Feature Catalog: 06_narratives/use-cases/cpo-feature-catalog.md
+          - CPO – Time to Market: 06_narratives/use-cases/cpo-time-to-market.md
+          - CPO – Validates Hypothesis: 06_narratives/use-cases/cpo-validates-hypothesis.md
+          - CTO – Context Map: 06_narratives/use-cases/cto-context-map.md
+          - CTO – Reduces Risk: 06_narratives/use-cases/cto-reduces-risk.md
+
+  - Glossary:
+      - Glossary: 07_glossary/glossary.md
+
+  - Design:
+      - Overview: 08_design/README.md
+      - Brand:
+          - Brand Foundation: 08_design/brand/brand-foundation.md
+          - Logo: 08_design/brand/logo.md
+      - Guidelines:
+          - Swimlane Visual Grammar: 08_design/guidelines/swimlane-visual-grammar.md
+      - UI:
+          - UI Principles: 08_design/ui/ui-principles.md
+      - Assets:
+          - Fonts: 08_design/assets/fonts/README.md
+          - Logo Assets:
+              - Source: 08_design/assets/logo/src/README.md
+
+  - Tooling:
+      - PlantUML: tooling/plantuml/README.md
+

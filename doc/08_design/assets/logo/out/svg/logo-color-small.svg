@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="66"
+   height="66"
+   viewBox="0 0 66 66"
+   version="1.1"
+   id="svg3"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs3" />
+  <!-- Border as filled frame (3px) -->
+  <path
+     id="rect1"
+     style="fill:#081a17"
+     d="M 0,0 H 66 V 66 H 0 Z" />
+  <!-- Inner content inset by 3px -->
+  <g
+     transform="translate(3,3)"
+     id="g3">
+    <!-- inner size: 60 x 60 -->
+    <path
+       id="rect2"
+       style="fill:#081a17"
+       d="M 0,0 H 44 V 60 H 0 Z" />
+    <path
+       id="rect3"
+       style="fill:#f12d5c"
+       d="M 44,0 H 60 V 60 H 44 Z" />
+    <!-- "P" centered in the dark area (optisch) -->
+    <path
+       d="m 30.789062,15.058594 4.394532,4.394531 v 7.910156 l -4.394532,4.394531 H 17.605469 v -5.273437 h 8.789062 l 1.757813,-1.757813 V 22.089844 L 26.394531,20.332031 H 15.847656 V 39.667969 H 8.8164063 V 15.058594 Z"
+       id="text3"
+       style="font-weight:bold;font-size:36px;font-family:'Polentical Neon';dominant-baseline:middle;text-anchor:middle;fill:#de083d"
+       aria-label="P" />
+  </g>
+</svg>
