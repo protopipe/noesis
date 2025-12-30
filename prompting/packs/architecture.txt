@@ -1,0 +1,6 @@
+04_architecture/architecture-whitepaper.md | Architecture Whitepaper
+03_decisions/adr/README.md | ADR Index
+05_technology/tech-radar.md | Tech Radar
+02_culture/principles.md | Principles
+07_glossary/glossary.md | Glossary
+

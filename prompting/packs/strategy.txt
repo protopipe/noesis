@@ -1,0 +1,7 @@
+01_why/golden-circle.md | Golden Circle
+01_why/vision.md | Vision
+02_culture/culture-code.md | Culture Code
+02_culture/principles.md | Principles
+07_glossary/glossary.md | Glossary
+06_narratives/language/sales-principles.md | Language Guardrails
+
