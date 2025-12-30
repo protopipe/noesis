@@ -38,10 +38,11 @@ Rule of thumb:
 1. `01_why/` — Golden Circle, vision, non-negotiables
 2. `02_culture/` — culture code, principles, anti-principles
 3. `03_decisions/adr/` — Architecture Decision Records (why we chose X)
-4. `04_architecture/` — architecture whitepaper + diagrams as text
-5. `05_technology/` — technology radar + rationale
-6. `06_narratives/` — customer-view narratives (use cases, contrasts, experiences)
-7. `07_glossary/` — shared language and definitions
+4. `04_narratives/` — customer-view narratives (use cases, contrasts, experiences)
+5. `05_architecture/` — architecture whitepaper + diagrams as text
+6. `06_technology/` — technology radar + rationale
+7. `07_design/` - Corporate Identity and Design
+8. `08_glossary/` — shared language and definitions
 
 ## Contribution rules (non-negotiable)
 - Changes happen via PR/MR with review
