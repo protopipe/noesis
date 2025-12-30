@@ -1,31 +1,30 @@
 # Vision
 
-Wir wollen Organisationen befähigen, **bessere Entscheidungen schneller zu treffen** – nicht durch mehr Prozesse, sondern durch **sichtbares Feedback**.
+We want to empower organizations to **make better decisions, faster** – not through more processes, but through **visible feedback**.
 
-In der Welt von Protopipe …
+In the world of Protopipe …
 
-- werden **Entscheidungen nicht diskutiert, sondern validiert**
-- ist **Architektur kein Risiko**, sondern ein sichtbarer Teil der Wertschöpfung
-- entstehen **Produktfortschritt und Qualitätsverbesserung aus demselben Loop**
-- enden Meetings mit **klaren nächsten Schritten**, nicht mit offenen Meinungen
-- sind **Hypothesen, Experimente und Ergebnisse** für alle relevanten Rollen nachvollziehbar
+- **decisions are validated, not debated**
+- **architecture is not a risk**, but a visible part of value creation
+- **product progress and quality improvement emerge from the same loop**
+- **meetings end with next steps**, not opinions
+- **hypotheses, experiments, and outcomes are transparent** to all relevant roles
 
-Protopipe etabliert eine gemeinsame Sprache zwischen:
-- Business und Technik
-- Produkt und Architektur
-- Exploration und Verantwortung
+Protopipe establishes a common language between:
+- Business and technology
+- Product and architecture
+- Exploration and responsibility
 
-Langfristig bedeutet das:
+In the long run, this means:
 
-- C-Level steuert über **Wirkung**, nicht über Aktivität
-- Teams arbeiten **autonom**, ohne Vergleichbarkeit zu verlieren
-- Risiken werden **früh erkannt**, nicht spät erklärt
-- Lernen wird **Teil des Systems**, nicht Nebenprodukt
+- C-level leaders steer by **impact**, not activity
+- Teams operate **autonomously**, without losing comparability
+- Risks are **discovered early**, not explained late
+- Learning becomes **part of the system**, not a byproduct
 
-Unsere Vision ist eine Organisation,
-in der **Feedback schneller ist als Meinung**  
-und **Erkenntnis schneller als Schuldzuweisung**.
+Our vision is an organization where  
+**feedback is faster than opinion**  
+and **insight is faster than blame**.
 
-Protopipe ist kein Tool, das Entscheidungen ersetzt.  
-Protopipe ist ein System, das **Entscheidungsfähigkeit institutionalisiert**.
-
+Protopipe is not a tool that replaces decisions.  
+It is a system that **institutionalizes decision capability**.

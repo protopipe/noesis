@@ -9,16 +9,17 @@ OUT_DIR="$ROOT/dist/context"
 usage() {
   cat <<'EOF'
 Usage:
-  prompting/prompt.sh <pack-name> [--no-header] [--stdout]
+  prompting/prompt.sh [<pack-name>] [--no-header] [--stdout]
 
 Examples:
   prompting/prompt.sh strategy
   prompting/prompt.sh architecture --stdout
   prompting/prompt.sh design --no-header
+  prompting/prompt.sh            # all chapters
 EOF
 }
 
-PACK="${1:-}"
+PACK="${1:-all}"
 shift || true
 
 NO_HEADER=false
@@ -33,20 +34,9 @@ while [[ $# -gt 0 ]]; do
   esac
 done
 
-if [[ -z "$PACK" ]]; then
-  usage; exit 2
-fi
-
 PACK_FILE="$PACKS_DIR/$PACK.txt"
 HEADER_FILE="$HEADERS_DIR/$PACK.md"
 OUT_FILE="$OUT_DIR/$PACK.md"
-
-if [[ ! -f "$PACK_FILE" ]]; then
-  echo "Pack not found: $PACK_FILE" >&2
-  echo "Available packs:" >&2
-  ls -1 "$PACKS_DIR" | sed 's/\.txt$//' >&2
-  exit 2
-fi
 
 mkdir -p "$OUT_DIR"
 
@@ -59,7 +49,6 @@ emit_header() {
     cat "$HEADER_FILE" >> "$tmp"
     printf "\n\n---\n\n" >> "$tmp"
   else
-    # Optional default header fallback
     cat >> "$tmp" <<EOF
 # AI Context Pack: ${PACK}
 
@@ -90,31 +79,56 @@ emit_section() {
 
 emit_header
 
-# Read pack file lines (paths relative to repo root)
-# Format:
-#   path/to/file.md
-#   path/to/file.md | Optional Section Title
-while IFS= read -r line || [[ -n "$line" ]]; do
-  # strip comments + trim
-  line="${line%%#*}"
-  line="$(echo "$line" | awk '{$1=$1;print}')"  # trim
-  [[ -z "$line" ]] && continue
-
-  file="${line%%|*}"
-  title=""
-  if [[ "$line" == *"|"* ]]; then
-    title="$(echo "${line#*|}" | awk '{$1=$1;print}')"
+emit_from_pack() {
+  if [[ ! -f "$PACK_FILE" ]]; then
+    echo "Pack not found: $PACK_FILE" >&2
+    echo "Available packs:" >&2
+    ls -1 "$PACKS_DIR" | sed 's/\.txt$//' >&2
+    exit 2
   fi
 
-  file="$(echo "$file" | awk '{$1=$1;print}')"
-  abs="$ROOT/doc/$file"
+  while IFS= read -r line || [[ -n "$line" ]]; do
+    line="${line%%#*}"
+    line="$(echo "$line" | awk '{$1=$1;print}')"  # trim
+    [[ -z "$line" ]] && continue
 
-  if [[ -z "$title" ]]; then
-    title="$(basename "$file")"
-  fi
+    file="${line%%|*}"
+    title=""
+    if [[ "$line" == *"|"* ]]; then
+      title="$(echo "${line#*|}" | awk '{$1=$1;print}')"
+    fi
 
-  emit_section "$title" "$abs"
-done < "$PACK_FILE"
+    file="$(echo "$file" | awk '{$1=$1;print}')"
+    abs="$ROOT/doc/$file"
+
+    if [[ -z "$title" ]]; then
+      title="$(basename "$file")"
+    fi
+
+    emit_section "$title" "$abs"
+  done < "$PACK_FILE"
+}
+
+emit_all_chapters() {
+  # Alle Markdown-Dateien unter doc/ einsammeln, lexikographisch sortiert.
+  # Das passt zu deiner 01_ / 02_ / ...-Struktur.
+  while IFS= read -r abs; do
+    rel="${abs#$ROOT/doc/}"
+
+    # Section-Titel: "01_why/golden-circle.md" -> "01_why / golden-circle"
+    # (du kannst hier natürlich beliebig feiner formatieren)
+    base="${rel%.md}"
+    title="${base//\// \/ }"
+
+    emit_section "$title" "$abs"
+  done < <(find "$ROOT/doc" -type f -name '*.md' | LC_ALL=C sort)
+}
+
+if [[ "$PACK" == "all" ]]; then
+  emit_all_chapters
+else
+  emit_from_pack
+fi
 
 if $TO_STDOUT; then
   cat "$tmp"

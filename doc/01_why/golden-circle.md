@@ -2,49 +2,49 @@
 
 ## WHY
 
-Wir hassen verschwendete Zeit durch fehlendes Feedback.
+We hate wasted time caused by missing feedback.
 
-Jede Entscheidung ohne echte Daten kostet Teams Tage – und Unternehmen Millionen.
+Every decision made without real data costs teams days — and companies millions.
 
-Organisationen scheitern nicht an fehlender Kompetenz, sondern an:
-- Entscheidungen ohne messbare Rückkopplung
-- unsichtbaren Abhängigkeiten
-- Diskussionen, die Meinungen statt Verantwortung produzieren
+Organizations do not fail because of a lack of competence, but because of:
+- decisions without measurable feedback
+- invisible dependencies
+- discussions that produce opinions instead of responsibility
 
-**Protopipe existiert, um Feedback radikal zu verkürzen, sichtbar zu machen und erzwingbar zu machen** – über Rollen, Teams und Ebenen hinweg.
+**Protopipe exists to radically shorten feedback loops, make them visible, and make them enforceable** — across roles, teams, and organizational levels.
 
 ---
 
 ## HOW
 
-Wir schaffen ein integriertes Denk-, Entscheidungs- und Feedbacksystem, das:
+We create an integrated thinking, decision, and feedback system that:
 
-- Probleme explizit macht, bevor Lösungen gebaut werden
-- Hypothesen an echte Messwerte koppelt
-- Verantwortung über Sichtbarkeit verteilt, nicht über Prozesse
-- Architektur, Qualität und Produktdenken verbindet
+- makes problems explicit before solutions are built
+- connects hypotheses to real measurements
+- distributes responsibility through visibility, not through process
+- connects architecture, quality, and product thinking
 
-Kernprinzipien:
-- Ein gemeinsamer Loop: *Problem → Hypothese → Umsetzung → Messung → Erkenntnis*
-- Produktion als Validierungsraum, nicht als Zielraum
-- Qualität als Emergenz guter Architektur, nicht als Gate
-- Spannungen (z. B. Geschwindigkeit ↔ Verantwortung) werden sichtbar gemacht, nicht aufgelöst
+Core principles:
+- A single shared loop: *Problem → Hypothesis → Implementation → Measurement → Insight*
+- Production as a validation space, not a target state
+- Quality as an emergent property of good architecture, not a gate
+- Tensions (e.g. speed ↔ responsibility) are made visible, not resolved away
 
 ---
 
 ## WHAT
 
-Protopipe ist eine Plattform, die diesen Loop operativ erlebbar macht durch:
+Protopipe is a platform that makes this loop operationally tangible through:
 
-- ein **ProtoPortfolio**, das Hypothesen, Experimente und Entscheidungen verbindet
-- einen **KPI-Tree**, der Wirkung statt Aktivität sichtbar macht
-- **Review- und Experiment-Mechaniken**, die Feedback früh erzwingen
-- ein **Dashboard / Cockpit**, das Verantwortung, Abhängigkeiten und Fortschritt zeigt
+- a **ProtoPortfolio** that connects hypotheses, experiments, and decisions
+- a **KPI Tree** that makes impact visible instead of activity
+- **review and experimentation mechanisms** that enforce early feedback
+- a **dashboard / cockpit** that shows responsibility, dependencies, and progress
 
-Das konkrete *What* ist **bewusst nicht vollständig festgelegt**:
-- Mehrere konkurrierende Hypothesen sind erlaubt
-- Umsetzung ist veränderbar
-- Produktionswürdigkeit entsteht durch bewusste Rollout-Entscheidungen
+The concrete *What* is **intentionally not fully specified**:
+- multiple competing hypotheses are allowed
+- implementations are changeable
+- production readiness emerges through explicit rollout decisions
 
-> Unschärfe ist im *What* erlaubt – nicht im *Why*.
+> Ambiguity is allowed in the *What* — never in the *Why*.
 

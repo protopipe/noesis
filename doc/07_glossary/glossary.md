@@ -10,6 +10,27 @@ Ambiguous language creates hidden coupling.
 
 ---
 
+## Augmented Product Development Platform (APDP)
+
+An Augmented Product Development Platform (APDP) is a system that augments
+an organization’s ability to make product, architectural, and strategic
+decisions under uncertainty by embedding feedback, measurement, and
+responsibility directly into the development process.
+
+An APDP does not replace product development.
+It augments decision-making by making assumptions explicit, measurable,
+and revisable.
+
+APDP is the **capability layer** in the Protopipe narrative model.
+
+It sits between:
+- **Use-Cases** (observable outcomes), and
+- **Mechanisms** (structural reinforcements such as Review Environments or CDCT).
+
+APDP is not a feature list.
+
+---
+
 ## Protopipe Portfolio (ProtoPortfolio)
 
 The ProtoPortfolio is Protopipe’s portfolio model.

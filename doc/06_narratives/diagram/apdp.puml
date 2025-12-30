@@ -1,0 +1,39 @@
+@startuml
+title Protopipe Narrative Layer Model
+
+skinparam backgroundColor transparent
+skinparam shadowing false
+skinparam roundcorner 10
+skinparam packageStyle rectangle
+skinparam defaultFontName Helvetica
+
+' Layers: from problem space to concrete implementations
+rectangle "Problems\n(systemic blockers)" as L1
+rectangle "Use-Cases\n(observable outcomes)" as L2
+rectangle "Capabilities (APDP)\n(required organizational abilities)" as L3
+rectangle "Mechanisms\n(structural reinforcements)\nReview Environments, CDCT, KPI Tree, ... " as L4
+rectangle "Implementations\n(replaceable technical solutions)\noperators, pipelines, tools" as L5
+
+L1 -down-> L2 : "clarify impact\n& context"
+L2 -down-> L3 : "derive required\ncapabilities"
+L3 -down-> L4 : "select enabling\nmechanisms"
+L4 -down-> L5 : "realize via\nimplementation"
+
+note right of L3
+APDP is not a feature set.
+It is a capability layer:
+what an organization must be able to do
+to steer decisions via feedback.
+end note
+
+note left of L1
+No solutions here.
+Problems remain stable and reusable
+across industries and toolchains.
+end note
+
+note right of L5
+Implementations change.
+Capabilities should remain stable.
+end note
+@enduml

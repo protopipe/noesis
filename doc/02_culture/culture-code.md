@@ -22,6 +22,35 @@ Our culture becomes visible when:
 
 ---
 
+## Love the Problem, Not the Solution
+
+At Protopipe, we deliberately focus on problems before solutions.
+
+Solutions are cheap.
+Problems are rare.
+
+A solution without a clearly understood problem
+is not progress — it is risk.
+
+This principle means:
+
+- We invest more effort in understanding the problem
+  than in defending a solution.
+- We prefer explicit problem statements over premature answers.
+- We allow multiple competing solutions,
+  but never multiple interpretations of the problem.
+- We abandon solutions willingly
+  when evidence shows they do not address the problem.
+
+Loving the problem does not mean avoiding solutions.
+It means postponing commitment
+until learning has occurred.
+
+A solution can be replaced.
+A misunderstood problem compounds.
+
+---
+
 ## Cultural Guardrails
 
 These guardrails are **non-negotiable**.  
