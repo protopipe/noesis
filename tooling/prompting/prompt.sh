@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
-PACKS_DIR="$ROOT/prompting/packs"
-ROLES_DIR="$ROOT/prompting/roles"
+ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
+PACKS_DIR="$ROOT/tooling/prompting/packs"
+ROLES_DIR="$ROOT/tooling/prompting/roles"
 OUT_DIR="$ROOT/dist/context"
 DOC_DIR="$ROOT/doc"
 

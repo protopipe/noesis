@@ -121,6 +121,10 @@ output:
 
       ---
 
+      !!ALWAYS ASK FOR CURRENT TECHRADAR as additional Context!
+
+      ---
+
       # RELEVANT NOESIS CONTEXT
 
 context:
@@ -129,28 +133,17 @@ context:
   include:
     # Strategic & cultural constraints
     - "01_why/*.md"
-    - "02_culture/*.md"
+    - "02_language/*.md"
 
     # Problem & decision context
-    - "04_narratives/02_problems/**/*.md"
-    - "04_narratives/03_use-cases/**/*.md"
+    - "04_problems/**/*.md"
+    - "05_use-cases/**/*.md"
 
     # Architecture & mechanics
-    - "05_architecture/**/*.md"
-
-    # Canonical terminology
-    - "08_glossary/glossary.md"
+    - "06_mechanics/*.md"
 
   exclude:
     # Avoid biasing toward concrete stacks
-    - "07_design/**"
-    - "tooling/plantuml/**"
+    - "07_identity/**"
 
-  order:
-    - "08_glossary/glossary.md"
-    - "01_why/**/*.md"
-    - "02_culture/**/*.md"
-    - "04_narratives/02_problems/**/*.md"
-    - "04_narratives/03_use-cases/**/*.md"
-    - "05_architecture/**/*.md"
 

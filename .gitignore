@@ -1,1 +1,2 @@
-dist/*
+# Ignored because it should be generated form fresh sources all the time
+dist/context

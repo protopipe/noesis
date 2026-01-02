@@ -176,32 +176,23 @@ context:
     - "01_why/*.md"
 
     # Culture & principles
-    - "02_culture/*.md"
+    - "03_culture/*.md"
 
     # Problem space
-    - "04_narratives/02_problems/**/*.md"
+    - "04_problems/**/*.md"
 
     # Use-Cases (upper boundary for enterprise architecture)
-    - "04_narratives/03_use-cases/**/*.md"
+    - "05_use-cases/**/*.md"
 
     # Architecture documentation & mechanics
-    - "05_architecture/**/*.md"
+    - "06_mechanics/*.md"
 
     # Canonical terminology
-    - "08_glossary/glossary.md"
+    - "02_language/glossary.md"
+
+    # APDP
+    - "02_language/apdp.md"
 
   exclude:
     # Not relevant for architectural reasoning
-    - "06_technology/**"
-    - "07_design/**"
-    - "tooling/**"
-    - "**/assets/**"
-
-  order:
-    - "08_glossary/glossary.md"
-    - "01_why/**/*.md"
-    - "02_culture/**/*.md"
-    - "04_narratives/02_problems/**/*.md"
-    - "04_narratives/03_use-cases/**/*.md"
-    - "05_architecture/**/*.md"
-
+    - "07_identity/**"

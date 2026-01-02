@@ -160,26 +160,20 @@ context:
   root: doc
   include:
     # Glossary (canonical terminology)
-    - "08_glossary/glossary.md"
-
-    # Capabilities (APDP)
-    - "04_narratives/01_language/*.md"
+    - "02_language/*.md"
 
     # Problems (Narratives)
-    - "04_narratives/02_problems/**/*.md"
+    - "04_problems/**/*.md"
 
     # Use-Cases
-    - "04_narratives/03_use-cases/**/*.md"
+    - "05_use-cases/**/*.md"
 
     # Mechanics
-    - "05_architecture/01_mechanics/README.md"
+    - "06_mechanics/*.md"
 
   exclude:
     # keep it methodical, not tool/design/tech heavy
-    - "07_design/**"
-    - "06_technology/**"
-    - "03_decisions/**"
-    - "tooling/**"
+    - "07_identity/**"
     - "**/README.md"   # optional: remove if you want narrative readmes
     - "**/*template.md"
 

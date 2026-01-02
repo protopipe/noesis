@@ -10,6 +10,98 @@ Ambiguous language creates hidden coupling.
 
 ---
 
+## Canonical
+
+**Canonical** describes information that is considered authoritative,
+intentional, and shared.
+
+In Protopipe, canonical knowledge is:
+- explicitly written
+- versioned
+- reviewable
+- stable enough to reason about
+
+Canonical does not mean permanent.
+It means “currently accepted as the shared frame of reference”.
+
+Everything outside Noesis may change freely.
+Everything inside Noesis must justify its existence.
+
+
+---
+
+## Noesis
+
+**Noesis** refers to understanding and reasoning — the act of grasping
+relationships, constraints, and consequences.
+
+In Protopipe, Noesis is the **canonical mental model** of the organization.
+
+It defines:
+- shared language
+- acknowledged problems
+- intended outcomes (use-cases)
+- enabling capabilities
+- structural mechanics
+
+Noesis is not implementation.
+It is the thinking layer from which implementation derives.
+
+### Problem it addresses
+
+Noesis is Protopipe’s structural response to the problem of
+**implicit knowledge and fragmented AI contexts**.
+
+Without a canonical thinking layer:
+- knowledge remains scattered across documents, tools, and people
+- AI systems are fed inconsistent, partial, or contradictory context
+- decisions depend on tacit assumptions instead of shared understanding
+
+### Mechanic it enables
+
+Noesis enables the mechanic
+**“Organization Maintains Canonical AI Contexts”**.
+
+By defining:
+- a shared language
+- an explicit problem space
+- a structured reasoning order
+- and clear inclusion boundaries
+
+Noesis makes it possible to provide
+**high-signal, bounded, reproducible AI context**
+to both humans and machines.
+
+If something is not represented in Noesis,
+it is not considered canonical.
+
+### Eat your own dogfood
+
+Protopipe explicitly follows the principle
+**“eat your own dogfood”**.
+
+Noesis is the primary expression of this principle.
+
+The same mechanism Protopipe proposes for organizations —
+maintaining canonical, bounded, high-signal context —
+is applied internally through Noesis itself.
+
+Noesis is intentionally:
+- simple
+- text-based
+- versioned
+- review-driven
+
+This is not an abstraction layer or a product feature.
+It is a minimal, real-world implementation of the mechanic
+**“Organization Maintains Canonical AI Contexts”**.
+
+If this approach does not work for Protopipe itself,
+it is considered invalid for customers.
+
+
+---
+
 ## Augmented Product Development Platform (APDP)
 
 An Augmented Product Development Platform (APDP) is a system that augments
@@ -25,9 +117,57 @@ APDP is the **capability layer** in the Protopipe narrative model.
 
 It sits between:
 - **Use-Cases** (observable outcomes), and
-- **Mechanisms** (structural reinforcements such as Review Environments or CDCT).
+- **Mechanics** (structural reinforcements such as Review Environments or CDCT).
 
 APDP is not a feature list.
+
+---
+
+## Mechanic
+
+A **Mechanic** is a structural reinforcement that makes certain behaviors
+inevitable or unavoidable.
+
+Mechanics are not tools, patterns, or best practices.
+
+They define:
+- constraints
+- invariants
+- enforced boundaries
+- responsibility distribution
+
+Mechanics sit between:
+- **Use-Cases** (what must become possible), and
+- **Capabilities (APDP)** (what the organization must be able to do)
+
+Examples of mechanics include:
+- Review Environments
+- Artifact-based Experiments
+- Consumer Driven Contract Tests
+
+A mechanic is successful when it removes the need
+for repeated discussion or coordination.
+
+---
+
+## Decision
+
+A decision is a commitment to act under uncertainty.
+
+In Protopipe, decisions are:
+- contextual
+- measurable
+- revisable
+
+Decisions do not require dedicated documents.
+They typically emerge through pull requests, reviews, and iteration.
+
+A decision becomes relevant to Noesis only if it affects:
+- shared language
+- acknowledged problems
+- use-cases
+- or mechanics
+
 
 ---
 
