@@ -1,0 +1,180 @@
+' ==========================
+' Protopipe PlantUML Skin
+' (variables via !$ for reliable color substitution)
+' ==========================
+
+' --- CI Colors ---
+!$BG     = "#081a17"
+!$FG     = "#F2F4F3"
+!$MUTED  = "#A9B4B0"
+!$ACCENT = "#de083d"
+!$ACCENT2= "#f7436e"
+!$LINE   = "#2b3a37"
+!$PANEL  = "#0d2622"
+!$WARN   = "#FFB020"
+!$OK     = "#4CD964"
+!$BAD    = "#FF3B30"
+
+' --- Global look ---
+skinparam backgroundColor $BG
+skinparam defaultTextAlignment left
+skinparam shadowing false
+skinparam dpi 150
+skinparam roundcorner 18
+skinparam padding 10
+skinparam margin 10
+skinparam linetype ortho
+
+' Critical globals (ensure readability / visible lines)
+skinparam defaultFontColor $FG
+skinparam lineColor $LINE
+
+' --- Typography ---
+' Note: Custom fonts require the font to be available on the rendering host.
+' Provide robust fallbacks.
+skinparam defaultFontName "Helvetica Neue"
+skinparam defaultFontSize 14
+skinparam titleFontName "Polentical Neon Bold"
+skinparam titleFontSize 22
+skinparam legendFontName "Helvetica Neue"
+skinparam legendFontSize 12
+
+' --- Titles / captions ---
+skinparam titleFontColor $FG
+skinparam captionFontColor $MUTED
+skinparam legendFontColor $MUTED
+
+' --- Generic element defaults ---
+skinparam ArrowColor $ACCENT
+skinparam ArrowThickness 1.5
+skinparam HyperlinkColor $ACCENT2
+
+' Lighter arrow labels
+skinparam ArrowFontColor $MUTED
+skinparam ArrowFontSize 12
+skinparam ArrowThickness 1.2
+
+skinparam NoteBackgroundColor $PANEL
+skinparam NoteBorderColor $LINE
+skinparam NoteFontColor $FG
+
+skinparam PackageBackgroundColor $PANEL
+skinparam PackageBorderColor $LINE
+skinparam PackageFontColor $FG
+
+skinparam RectangleBackgroundColor $PANEL
+skinparam RectangleBorderColor $LINE
+skinparam RectangleFontColor $FG
+
+skinparam CardBackgroundColor $PANEL
+skinparam CardBorderColor $LINE
+skinparam CardFontColor $FG
+
+skinparam DatabaseBackgroundColor $PANEL
+skinparam DatabaseBorderColor $LINE
+skinparam DatabaseFontColor $FG
+
+skinparam FolderBackgroundColor $PANEL
+skinparam FolderBorderColor $LINE
+skinparam FolderFontColor $FG
+
+skinparam ArtifactBackgroundColor $PANEL
+skinparam ArtifactBorderColor $LINE
+skinparam ArtifactFontColor $FG
+
+' --- UML / class ---
+skinparam ClassBackgroundColor $PANEL
+skinparam ClassBorderColor $LINE
+skinparam ClassFontColor $FG
+skinparam ClassAttributeFontColor $MUTED
+skinparam ClassStereotypeFontColor $ACCENT2
+
+skinparam InterfaceBackgroundColor $PANEL
+skinparam InterfaceBorderColor $LINE
+skinparam InterfaceFontColor $FG
+
+
+skinparam Actor {
+  BackgroundColor $PANEL
+  BorderColor $ACCENT
+  BorderThickness 1.5
+  FontColor $FG
+}
+
+' --- Sequence diagrams ---
+skinparam Sequence {
+  LifeLineBorderColor $LINE
+  LifeLineBackgroundColor $PANEL
+  ParticipantBorderColor $LINE
+  ParticipantBackgroundColor $PANEL
+  ParticipantFontColor $FG
+  ActorBorderColor $LINE
+  ActorBackgroundColor $PANEL
+  ActorFontColor $FG
+  ArrowColor $ACCENT
+  ArrowThickness 1.5
+  GroupBackgroundColor $BG
+  GroupBorderColor $LINE
+  GroupFontColor $FG
+  BoxBackgroundColor $BG
+  BoxBorderColor $LINE
+  BoxFontColor $FG
+}
+
+skinparam SequenceLifeLineBorderColor $LINE
+skinparam SequenceLifeLineBorderThickness 0.5
+skinparam SequenceGroupBorderColor $LINE
+skinparam SequenceGroupFontColor $MUTED
+
+' --- Activity diagrams ---
+skinparam ActivityBackgroundColor $PANEL
+skinparam ActivityBorderColor $LINE
+skinparam ActivityFontColor $FG
+skinparam ActivityDiamondBackgroundColor $PANEL
+skinparam ActivityDiamondBorderColor $ACCENT
+skinparam ActivityBarColor $ACCENT
+
+' --- State diagrams ---
+skinparam StateBackgroundColor $PANEL
+skinparam StateBorderColor $LINE
+skinparam StateFontColor $FG
+skinparam StateAttributeFontColor $MUTED
+
+' --- Component / deployment ---
+skinparam ComponentBackgroundColor $PANEL
+skinparam ComponentBorderColor $LINE
+skinparam ComponentFontColor $FG
+
+skinparam NodeBackgroundColor $PANEL
+skinparam NodeBorderColor $LINE
+skinparam NodeFontColor $FG
+
+' --- Swimlane-ish / partitions (Activity) ---
+skinparam swimlaneBorderColor $LINE
+skinparam swimlaneTitleBackgroundColor $BG
+skinparam swimlaneTitleFontColor $FG
+
+' --- Styling blocks (optional, for emphasis) ---
+' Use stereotypes to encode meaning consistently.
+skinparam stereotype {
+  CBackgroundColor $PANEL
+  CBorderColor $LINE
+  CFontColor $FG
+}
+
+skinparam class<<critical>> {
+  BackgroundColor $PANEL
+  BorderColor $ACCENT
+  FontColor $FG
+}
+skinparam class<<warning>> {
+  BackgroundColor $PANEL
+  BorderColor $WARN
+  FontColor $FG
+}
+skinparam class<<ok>> {
+  BackgroundColor $PANEL
+  BorderColor $OK
+  FontColor $FG
+}
+
