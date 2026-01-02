@@ -138,6 +138,32 @@ To:
 
 ---
 
+## Decision Boundaries and Responsibility
+
+APDP explicitly requires that **decision rights and system boundaries align**.
+
+Responsibility must be coupled with:
+- decision authority
+- architectural influence
+- measurable impact
+
+Decision boundaries must be:
+- explicit
+- visible
+- revisable based on evidence
+
+Without this, responsibility diffuses
+and learning degrades into escalation.
+
+APDP therefore requires the organizational ability to:
+- define decision rights at system boundaries
+- revise decisions based on feedback
+- prevent responsibility without control
+
+This is a **capability**, not a governance model.
+
+---
+
 ## APDP Is a Capability, Not a Tool
 
 APDP is **not**:
@@ -187,54 +213,5 @@ With APDP:
 - Decisions are validated, not debated.
 - Architecture becomes observable instead of risky.
 - Product progress and quality emerge from the same loop.
-- Responsibility follows causality, not hierarchy.
-- Learning is part of the system, not a side effect.
-
-Without APDP:
-
-- Decisions rely on confidence and consensus.
-- Feedback arrives late and is expensive.
-- Responsibility diffuses across layers.
-- Learning is accidental and fragile.
-
----
-
-## When to Use the Term “APDP”
-
-Use APDP when:
-
-- the conversation is about **decision capability**, not tooling
-- product, architecture, and management need a shared frame
-- the limitation is systemic, not local
-- the problem is not speed, but **learning latency**
-
-Do **not** use APDP as a marketing label.
-
-If it does not describe a real capability,
-it is not APDP.
-
----
-
-## Relationship to the Golden Circle
-
-APDP is the operational expression of Protopipe’s Golden Circle:
-
-- **WHY** — eliminate wasted time caused by missing feedback  
-- **HOW** — visibility, testability, responsibility through causality  
-- **WHAT** — institutionalized decision capability
-
-APDP is how the *Why* becomes executable.
-
----
-
-## Summary
-
-**APDP makes decisions testable.**
-
-Not by adding control,
-but by embedding feedback into the system itself.
-
-That is the difference between
-managing work
-and managing learning.
+- Responsibility follows causality,
 

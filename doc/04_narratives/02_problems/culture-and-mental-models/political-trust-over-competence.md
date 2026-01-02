@@ -42,5 +42,4 @@ Conformity becomes safe.
 
 When political trust outweighs competence:
 
-- hard problems remain unso
-
+- hard problems remain unsolved or are escalated instead of addressed.
