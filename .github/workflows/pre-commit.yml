@@ -1,0 +1,25 @@
+name: Mechanics naming guard
+
+on:
+  pull_request:
+    paths:
+      - "doc/06_mechanics/**/*.md"
+  push:
+    branches: [main]
+
+jobs:
+  mechanics-naming:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Run mechanics naming check
+        run: |
+          chmod +x tooling/git-hooks/pre-commit
+          FILES_CMD="git diff origin/main...HEAD --name-only" \
+            tooling/git-hooks/pre-commit
+

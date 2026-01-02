@@ -1,0 +1,44 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+echo "Linting Protopipe mechanics naming…"
+
+APPROVED_REGEX='^doc/06_mechanics/approved/M-[0-9]{3}_[a-z0-9-]+_(over|by-default|without)_[a-z0-9-]+\.md$'
+CANDIDATE_REGEX='^doc/06_mechanics/candidates/[a-z0-9-]+_(over|by-default|without)_[a-z0-9-]+\.md$'
+
+FILES_CMD=${FILES_CMD:-"git diff --cached --name-only"}
+
+FAILED=0
+
+for file in $(eval "$FILES_CMD"); do
+
+  if [[ "$(basename "$file")" == "README.md" ]]; then
+    continue
+  fi
+
+  if [[ "$(basename "$file")" =~ [a-z]+-template\.md ]]; then
+    continue
+  fi
+
+  if [[ "$file" == doc/06_mechanics/approved/*.md ]]; then
+    if ! [[ "$file" =~ $APPROVED_REGEX ]]; then
+      echo "Invalid approved mechanic filename: $file"
+      FAILED=1
+    fi
+  fi
+
+  if [[ "$file" == doc/06_mechanics/candidates/*.md ]]; then
+    if ! [[ "$file" =~ $CANDIDATE_REGEX ]]; then
+      echo "Invalid candidate mechanic filename: $file"
+      FAILED=1
+    fi
+  fi
+done
+
+if [[ "$FAILED" -eq 1 ]]; then
+  echo "Commit rejected: mechanic filename violations"
+  exit 1
+fi
+
+echo "Mechanics naming OK"
+
