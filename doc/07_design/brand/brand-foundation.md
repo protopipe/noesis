@@ -22,11 +22,11 @@ Protopipe ist das Rückgrat moderner Unternehmensführung. Es verbindet strategi
 ## Farbwelt
 | Zweck         | Farbe        | Vorschau                               |
 |---------------|--------------|----------------------------------------|
-| **Primärfarbe** | `#f7436e`    | <span style="background:#f7436e; padding:0.2em 1em; border-radius:4px; color:white;">#f7436e</span> |
-| **Grundfläche** | `#081a17`    | <span style="background:#081a17; padding:0.2em 1em; border-radius:4px; color:white;">#081a17</span> |
-| **Dunkelgrau**  | `#0b0c0e`    | <span style="background:#0b0c0e; padding:0.2em 1em; border-radius:4px; color:white;">#0b0c0e</span> |
-| **Sektionen hell** | `#f7f7f7` | <span style="background:#f7f7f7; padding:0.2em 1em; border-radius:4px;">#f7f7f7</span> |
-| **Text / Weiß** | `#ffffff`   | <span style="background:#ffffff; padding:0.2em 1em; border-radius:4px;">#ffffff</span> |
+| **Primärfarbe** | `#f7436e`    | ![#f7436e](https://placehold.co/15x15/f7436e/f7436e.png) |
+| **Grundfläche** | `#081a17`    | ![#081a17](https://placehold.co/15x15/081a17/081a17.png) |
+| **Dunkelgrau**  | `#0b0c0e`    |  ![#0b0c0e](https://placehold.co/15x15/0b0c0e/0b0c0e.png) |
+| **Sektionen hell** | `#f7f7f7` | ![#f7f7f7](https://placehold.co/15x15/f7f7f7/f7f7f7.png) |
+| **Text / Weiß** | `#ffffff`   | ![#ffffff](https://placehold.co/15x15/ffffff/ffffff.png) |
 
 ## Typografie
 - **Polentical Neon Bold** – Für markante Headlines & Branding.
