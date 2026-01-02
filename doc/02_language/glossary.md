@@ -171,6 +171,110 @@ A decision becomes relevant to Noesis only if it affects:
 
 ---
 
+
+## Learning Signal
+
+A Learning Signal is an explicit, observable outcome
+that reduces uncertainty and informs a decision.
+
+In Protopipe, a learning signal:
+- is tied to a hypothesis or experiment
+- is measurable or at least falsifiable
+- influences a decision or next step
+
+Activity, delivery, or effort alone
+do not constitute a learning signal.
+
+---
+
+## Business Ownership
+
+Business Ownership describes responsibility
+for hypotheses, experiments, and learning outcomes.
+
+In Protopipe, business ownership means:
+- defining the learning intent
+- owning the interpretation of results
+- being accountable for decisions based on learning
+
+Business ownership is independent of technical implementation
+and is typically held by:
+- stakeholders
+- product owners
+- product managers
+
+Ownership cannot be delegated without responsibility.
+
+---
+
+## Explicit Shared Meaning
+
+Explicit Shared Meaning refers to information
+that is intentionally expressed, referenceable,
+and understood consistently across roles.
+
+In Protopipe, shared meaning is:
+- written down
+- canonical or explicitly versioned
+- used as a reference instead of verbal alignment
+
+Meaning that exists only in conversations,
+presentations, or individual interpretation
+is considered implicit and non-canonical.
+
+---
+
+## Coordination
+
+Coordination is the act of aligning work,
+decisions, or responsibilities across people or teams.
+
+In Protopipe, coordination is considered a cost,
+not a goal.
+
+Coordination is only valid
+when it is based on explicit shared meaning.
+Implicit alignment increases coordination overhead
+and is treated as structural risk.
+
+---
+
+## Attribution Context
+
+Attribution Context is the minimal set of information
+required to relate signals to intent and outcome.
+
+In Protopipe, attribution context includes:
+- experiment context
+- process context
+- user context
+
+Attribution context must be attached
+at the point where events or telemetry are emitted
+and propagated unchanged downstream.
+
+Signals without attribution context
+cannot be evaluated meaningfully.
+
+
+---
+
+## Experiment Evaluation
+
+Experiment Evaluation is the act of interpreting
+experiment results to inform a decision.
+
+In Protopipe, experiment evaluation:
+- depends on complete attribution context
+- focuses on learning, not success or failure
+- results in a decision, continuation, or discard
+
+Evaluation is distinct from reporting or visualization.
+An experiment without evaluation is incomplete.
+
+
+---
+
 ## Protopipe Portfolio (ProtoPortfolio)
 
 The ProtoPortfolio is Protopipe’s portfolio model.
@@ -463,6 +567,38 @@ Benefits:
 - no toggle cleanup
 - clear Definition of Done at merge time
 - reproducible experiment results
+
+---
+
+## Reverse Feedback Loop
+
+The Reverse Feedback Loop describes the inversion
+of the classic **Build–Measure–Learn** cycle
+during planning and decision-making.
+
+While execution follows:
+
+Build → Measure → Learn
+
+planning follows the reverse direction:
+
+Learn → Measure → Build
+
+---
+
+In the Reverse Feedback Loop, work does not start from features
+or solutions, but from learning intent.
+
+Decisions are planned by defining:
+- what needs to be learned
+- how learning will be measured
+- what must be built to generate that learning
+
+The concept originates from **Lean Startup**
+and is used in Protopipe
+to enforce learning-first planning
+and prevent solution-driven execution.
+
 
 ---
 

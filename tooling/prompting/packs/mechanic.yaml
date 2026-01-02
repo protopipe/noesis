@@ -216,5 +216,4 @@ context:
     - "07_identity/**"
     - "08_contrasts/**"
     - "09_experiences/**"
-    - "**/*template.md"
 
