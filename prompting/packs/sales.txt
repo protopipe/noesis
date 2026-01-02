@@ -1,7 +1,0 @@
-01_why/golden-circle.md | Golden Circle
-06_narratives/README.md | Narrative Purpose
-06_narratives/contrasts/protopipe-vs-jira.md | Contrast: Jira
-06_narratives/contrasts/protopipe-vs-safe.md | Contrast: SAFe
-06_narratives/language/sales-principles.md | Sales Language
-07_glossary/glossary.md | Glossary
-

@@ -1,6 +1,0 @@
-08_design/README.md | Design Language Overview
-08_design/brand/brand-foundation.md | Brand Foundation
-08_design/guidelines/swimlane-visual-grammar.md | Swimlane Grammar
-08_design/ui/ui-principles.md | UI Principles
-07_glossary/glossary.md | Glossary
-

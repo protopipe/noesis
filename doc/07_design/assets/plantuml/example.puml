@@ -3,13 +3,6 @@
 !include protopipe-skin.puml
 
 
-!$BG = "#081a17"
-!$PANEL = "#0d2622"
-!$LINE = "#2b3a37"
-!$FG = "#F2F4F3"
-!$MUTED = "#A9B4B0"
-!$ACCENT = "#de083d"
-!$ACC2 = "#f7436e"
 title Protopipe - Example
 
 actor User
