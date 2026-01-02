@@ -1,198 +1,226 @@
 # Mechanics
 
-Mechanics are the **structural reinforcements**
-that turn organizational capabilities into lived reality.
+This directory contains the **canonical mechanics of Protopipe**.
 
-They are neither abstract principles
-nor concrete tool implementations.
+Mechanics are the structural core of Protopipe.
+They encode **non-negotiable consequences** that shorten feedback,
+reduce systemic risk, and make certain forms of work unavoidable
+while making others impossible or costly.
 
-Mechanics exist to make
-culture, feedback loops, and responsibility
-**operational and unavoidable**.
-
----
-
-## What Mechanics Are
-
-Mechanics are repeatable, structural means
-that enforce desired behavior in everyday work.
-
-They answer the question:
-
-> **How do we make the right behavior  
-> the easiest behavior — by design?**
-
-Mechanics operate at the intersection of:
-- architecture
-- process
-- feedback
-- organizational design
-
-They are simple to explain,
-but difficult to implement holistically.
+Mechanics are **not solutions**, **not patterns**, and **not best practices**.
+They are enforced trade-offs.
 
 ---
 
-## What Mechanics Are Not
+## What a Mechanic Is
 
-Mechanics are **not**:
+A mechanic exists to enforce a structural consequence.
 
-- features
-- tools
-- platforms
-- frameworks
-- methodologies
+A mechanic:
 
-Tools may implement mechanics.
-Frameworks may describe them.
-But neither defines them.
+- shortens feedback loops
+- removes options instead of adding features
+- encodes a deliberate trade-off
+- forces behavior through structure, not discipline
+- hurts a little — by design
 
-A mechanic exists
-even if the underlying tooling changes.
+If a rule can be ignored without consequence,
+it is not a mechanic.
 
 ---
 
-## Why Mechanics Matter
+## The Core Principle
 
-Most organizational change fails
-not because of missing intent,
-but because behavior is optional.
+> **Mechanics shorten feedback by enforcing consequences.**  
+> They do not describe solutions.  
+> They remove options.
 
-Culture is declared.
-Feedback is discussed.
-Responsibility is assigned.
-
-But nothing in the system
-*forces* these concepts to matter.
-
-Mechanics close this gap.
-
-They embed:
-- feedback into delivery
-- responsibility into boundaries
-- learning into execution
-- steering into daily work
-
-Without relying on discipline or heroics.
+This principle is the foundation for all mechanics in Protopipe.
 
 ---
 
-## Mechanics and Culture
+## Dependency Direction (Non-Negotiable)
 
-Culture does not scale through values.
-It scales through constraints and feedback.
+Mechanics sit in a strict dependency chain:
 
-Mechanics are the **technical expression of culture**.
+```
+Problem
+↓
+Use-Case
+↓
+Mechanic
+↓
+Implementation
+```
 
-They determine:
-- whether problems surface early or late
-- whether learning is optional or mandatory
-- whether responsibility is visible or diffused
-- whether decisions are revisited based on evidence
 
-If a mechanic contradicts the culture,
-the mechanic wins.
+- Problems describe tensions and pain.
+- Use-Cases describe desired, observable outcomes.
+- Mechanics enforce structural consequences.
+- Implementations are replaceable realizations.
 
-Always.
-
----
-
-## Mechanics and Feedback Cycles
-
-The strongest impact of mechanics
-is on feedback speed and quality.
-
-Good mechanics:
-- shorten feedback loops
-- localize feedback to the point of change
-- make cause and effect observable
-- reduce the need for coordination and escalation
-
-Poor or missing mechanics result in:
-- late feedback
-- global impact
-- defensive behavior
-- political decision-making
-
-Feedback is not a reporting problem.
-It is a structural one.
+**Noesis ends at the Mechanic.**  
+Implementations must never flow back.
 
 ---
 
-## Position in the Protopipe Layer Model
+## Naming Convention (Mandatory)
 
-Mechanics sit **below the narrative layer**
-and **above concrete implementations**.
+The **name of a mechanic is part of the mechanic**.
+It expresses the enforced trade-off explicitly.
 
-The overall layering is:
+All mechanics **must** use **one of the following three naming forms**.
+No other forms are allowed.
 
-1. **Problems**  
-   Systemic blockers that prevent learning and delivery.
+### 1. `X over Y` — Explicit Trade-off
 
-2. **Use-Cases**  
-   Observable outcomes once problems are addressed.
+Use this form when a mechanic enforces a clear preference
+between two competing approaches.
 
-3. **Capabilities (APDP)**  
-   Organizational abilities required to sustain these outcomes.
+**Meaning**  
+X is structurally preferred.  
+Y is still possible, but discouraged or costly.
 
-4. **Mechanics**  
-   Structural reinforcements that make these capabilities real.
+**Examples**
 
-5. **Implementations**  
-   Concrete technical realizations (tools, platforms, code).
-
-Mechanics translate **capabilities into system behavior**.
-
----
-
-## Why Mechanics Are Hard
-
-Mechanics are difficult because they:
-
-- cut across team and system boundaries
-- expose hidden assumptions
-- change power and responsibility distribution
-- require consistent application
-- cannot be “half implemented”
-
-They often fail
-not due to technical complexity,
-but due to organizational resistance.
+- *Composability over Convenience*
+- *Observation over Orchestration*
+- *Eventual Consistency over Global Process Engines*
 
 ---
 
-## How to Read This Section
+### 2. `X by Default, Y by Exception` — Default with Justification
 
-Each mechanic described here:
+Use this form when a behavior is allowed,
+but only with explicit justification.
 
-- links back to one or more APDP capabilities
-- explains the behavioral effect it enforces
-- avoids prescribing specific tools
-- highlights trade-offs and failure modes
+**Meaning**  
+X is the assumed baseline.  
+Y requires conscious, explicit reasoning.
 
-This section is **product knowledge**, not narrative.
+**Examples**
 
-It is intended for:
-- architects
-- senior engineers
-- technical leadership
-- presales and solution design
-
-Not for pitching.
+- *Eventual Consistency by Default, Atomicity by Exception*
+- *Open Source by Default, Closed Source by Justification*
 
 ---
 
-## Summary
+### 3. `No X without Y` — Hard Constraint
 
-Mechanics are the **leverage point** of Protopipe.
+Use this form when a behavior must never occur
+unless a prerequisite is fulfilled.
 
-They make culture executable.
-They make feedback unavoidable.
-They make responsibility structural.
+**Meaning**  
+X is forbidden unless Y is present.
 
-Without mechanics,
-capabilities remain aspirational.
+**Examples**
 
-With mechanics,
-behavior changes — even under pressure.
+- *No Process Step without Testable Outcome*
+- *No Cross-Context Read without Event-Carried State*
+- *No Release without Observable Feedback*
+
+---
+
+### Naming Guidance (Important)
+
+- If the name does **not** clearly express loss or constraint,
+  it is not a valid mechanic name.
+- If the name sounds comfortable or neutral,
+  it is likely a pattern or guideline — not a mechanic.
+- The name should make the trade-off obvious
+  even without reading the document.
+
+If the name does not “hurt” a little,
+rework it.
+
+---
+
+## Mechanics vs. Patterns vs. Features
+
+To avoid dilution, the following distinctions apply:
+
+- **Mechanic**  
+  Enforces a consequence. Removes options.
+
+- **Pattern**  
+  Suggests a recurring solution. Optional.
+
+- **Feature**  
+  Describes functionality or capability.
+
+Only mechanics belong in this directory.
+
+Patterns, features, tools, and implementations
+must live elsewhere (e.g. `dist/`, reference implementations).
+
+---
+
+
+## Reference Implementations (Dogfooding)
+
+Every mechanic **may** provide a reference implementation.
+
+Reference implementations are:
+
+- explicitly **non-canonical**
+- intentionally minimal
+- used to **experience the enforced constraints in practice**
+- a means to apply the “eat your own dogfood” principle
+
+Their purpose is **not** to prove technical correctness,
+completeness, or scalability.
+
+Their sole purpose is to validate the **consequence** of a mechanic:
+
+- Are options actually removed?
+- Is the constraint felt in daily work?
+- Does feedback become shorter or clearer?
+- Is the trade-off tolerable?
+
+A mechanic candidate **must not** be promoted to approved status
+unless its constraints have been experienced
+through a reference implementation.
+
+Dogfooding is **necessary, but not sufficient**.
+
+If a reference implementation fails,
+this does **not** automatically invalidate the mechanic.
+However, the mechanic **must be questioned**.
+
+Implementation must never justify the mechanic.
+The mechanic must justify the implementation.
+
+
+---
+
+## Candidate vs. Approved Mechanics
+
+Not every good idea is immediately canonical.
+
+Mechanics may exist in two states:
+
+- **Candidates**  
+  Under evaluation, consolidation, or refactoring
+
+- **Approved**  
+  Stable, invariant, and accepted as canonical
+
+Candidates are expected to change.
+Approved mechanics are expected to endure.
+
+---
+
+## Final Rule
+
+If a mechanic does not:
+
+- shorten feedback
+- enforce a trade-off
+- remove options
+- create visible consequences
+
+then it does not belong here.
+
+Be strict.
+Protopipe gains strength through constraint.
 
