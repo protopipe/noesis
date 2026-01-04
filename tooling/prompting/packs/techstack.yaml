@@ -136,14 +136,16 @@ context:
     - "02_language/*.md"
 
     # Problem & decision context
-    - "04_problems/**/*.md"
-    - "05_use-cases/**/*.md"
+    - "05_problems/**/*.md"
+    - "06_desired-outcomes/**/*.md"
 
     # Architecture & mechanics
-    - "06_mechanics/*.md"
+    - "07_mechanics/*.md"
+
+    - "08_capabilities/*.md"
 
   exclude:
     # Avoid biasing toward concrete stacks
-    - "07_identity/**"
+    - "09_identity/**"
 
 

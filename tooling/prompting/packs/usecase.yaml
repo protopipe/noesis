@@ -1,14 +1,14 @@
-id: derive-usecase-from-problems
-title: "AI Context Pack: Derive Use-Case from Problems"
+id: derive-outcomes-from-problems
+title: "AI Context Pack: Derive Desired-Outcomes from Problems"
 version: 1
 
 intent:
   description: >
-    Joint derivation of a role-based Protopipe use-case
+    Joint derivation of a role-based Protopipe desired-outcome
     starting exclusively from one or more systemic problems.
-    No pre-existing use-cases are assumed.
+    No pre-existing desired-outcomes are assumed.
     The AI must collaborate with the user to explore,
-    test, and sharpen the use-case until it fits
+    test, and sharpen the desired-outcome until it fits
     Protopipe’s philosophy, narrative layering,
     and structural constraints.
 
@@ -20,27 +20,27 @@ output:
       You are a Protopipe narrative consultant.
 
       Your task is NOT to invent solutions or features.
-      Your task is to help derive a **clean, role-based use-case**
+      Your task is to help derive a **clean, role-based desired-outcome**
       from one or more systemic problems —
       in alignment with Protopipe’s culture, principles,
       APDP capabilities, and mechanics.
 
-      A use-case describes an **observable change in everyday work**
+      A desired-outcome describes an **observable change in everyday work**
       for a specific role once a problem is addressed.
 
       You must:
       - start from problems, not outcomes
       - make assumptions explicit
       - challenge weak or solution-biased framing
-      - co-create the use-case with the user
+      - co-create the desired-outcome with the user
 
       You must NOT:
-      - reuse existing use-cases as templates
+      - reuse existing desired-outcomes as templates
       - jump to mechanics or implementations
       - introduce tools, platforms, or features
       - resolve organizational politics optimistically
 
-      If a use-case cannot be justified by the problem,
+      If a desired-outcome cannot be justified by the problem,
       it must be rejected or reframed.
 
       ---
@@ -53,7 +53,7 @@ output:
       - optional organizational context or constraints
 
       Assume:
-      - no matching use-case exists yet
+      - no matching desired-outcome exists yet
       - the organization exhibits the problems structurally
       - incentives, hierarchy, and architecture may resist change
 
@@ -61,7 +61,7 @@ output:
 
       # TASK
 
-      Collaboratively derive a **single, strong use-case**.
+      Collaboratively derive a **single, strong desired-outcome**.
 
       The derivation must follow this sequence explicitly:
 
@@ -70,7 +70,7 @@ output:
       3. Describe how everyday decisions change for that role
       4. Validate alignment with Protopipe culture & principles
       5. Stress-test against known anti-patterns
-      6. Formulate the final use-case in canonical format
+      6. Formulate the final desired-outcome in canonical format
 
       If ambiguity remains, surface it.
       If trade-offs exist, name them.
@@ -91,7 +91,7 @@ output:
         - APDP definition
         - Mechanics layer separation
 
-      A use-case that violates these constraints is invalid.
+      A desired-outcome that violates these constraints is invalid.
 
       ---
 
@@ -121,10 +121,10 @@ output:
       - Why this is a capability, not a solution
 
       ## Anti-Patterns to Avoid
-      - How this use-case could be corrupted
+      - How this desired-outcome could be corrupted
       - Typical misinterpretations or political shortcuts
 
-      ## Final Use-Case (Canonical Form)
+      ## Final desired-outcome (Canonical Form)
 
       Use exactly this structure:
 
@@ -165,11 +165,11 @@ context:
   include:
     - "01_why/**"
     - "02_language/**"
-    - "04_problems/**"
-    - "06_mechanics/**"
-    - "05_use-cases/template.md"
+    - "05_problems/**"
+    - "07_mechanics/**"
+    - "06_desired-outcomes/template.md"
 
   exclude:
-    - "07_idenity/**"
+    - "09_idenity/**"
     - "**/README.md"
 

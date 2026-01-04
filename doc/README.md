@@ -1,156 +1,258 @@
-# protopipe-noesis
+# Protopipe Noesis
 
-**Canonical mental model of Protopipe.**  
-Language, structure, mechanics, and shared understanding start here.
+**Canonical reference model of Protopipe.**
 
----
+Noesis contains the shared facts, constraints, relations, and language
+that define how Protopipe reasons about problems, outcomes, and structure.
 
-## What “Noesis” means
-
-*Noesis* (νοῦς) refers to understanding and reasoning — the act of grasping
-how things relate, why they matter, and what follows from them.
-
-This repository is that layer for Protopipe.
-
-It contains the **canonical thinking system**:
-- the *why* behind Protopipe
-- the shared language we use
-- the problems we explicitly acknowledge
-- the use-cases we optimize for
-- the mechanics that make certain behaviors unavoidable
-
-Everything else derives from this.
+No decisions are made here.
+All decisions are derived *outside* this repository
+and can be validated *against* it.
 
 ---
 
-## What this repository is
+## What Noesis is
 
-This repository is:
+Noesis is the **canonical reasoning space** of Protopipe.
 
-- The **canonical source of truth** for Protopipe’s mental model  
-- A **structured reasoning system**, not a collection of documents  
-- **Versioned, reviewable, diffable context** for humans and machines  
-- The foundation for **consistent AI context generation**  
-- A place where *meaning*, *constraints*, and *structure* are made explicit  
+It contains:
+- the purpose and framing (*why*)
+- the shared language (*how we think and speak*)
+- acknowledged problems
+- stakeholder-bound desired outcomes
+- global mechanics that encode trade-offs and consequences
+- capabilities the platform must be able to provide
 
-If something appears here, it is assumed to be:
+Everything in Noesis is:
 - intentional
+- reviewable
+- versioned
 - stable enough to reason about
-- shared across the organization
+
+If something is present here, it is assumed to be canonical.
 
 ---
 
-## What this repository is not
+## What Noesis is not
 
-This repository is **not**:
+Noesis is **not**:
 
-- A backlog, roadmap, or ticket system  
-- A collection of implementation details  
-- A customer-specific solution space  
-- A place for architectural diagrams of concrete systems  
-- A dump for artifacts that merely happen to exist  
+- a backlog or roadmap
+- a list of features
+- a set of decisions
+- an architecture of concrete systems
+- an organizational chart
+- a customer-specific solution space
 
-Implementation happens **downstream**.
-This repository defines the *mental and structural preconditions* for implementation.
-
----
-
-## Canonical by design
-
-Noesis is intentionally opinionated.
-
-It captures:
-- shared language
-- framing
-- invariants
-- enforced structures
-
-It does **not** capture:
-- historical decision trails
-- transient tool choices
-- social process artifacts
-
-Decisions emerge through pull requests, reviews, and iteration.
-If a decision becomes obsolete, it disappears through change —
-not through an archive of past intent.
-
-> If it’s not in Noesis, it is not canonical.
+Implementation, selection, prioritization, and trade-off decisions
+are produced **outside Noesis** (e.g. in `dist/`)
+using Noesis as a reference and constraint system.
 
 ---
 
-## AI context: why this repository exists
+## Canonical vs. Decisional
 
-This repository is designed to be a **high-signal context source**
-for both humans **and** machines.
+**Noesis is declarative, not operative.**
 
-Selected subsets of this repository can be used as:
-- AI context packs
-- prompt grounding
-- constraint definition
-- terminology alignment
+- Noesis defines *what is true*, *what matters*, and *what follows if X is chosen*.
+- It does **not** decide *what to choose*.
 
-This reduces:
-- context leakage between projects or customers
-- inconsistent terminology
-- hidden assumptions in AI-assisted work
+Decisions:
+- are always contextual
+- are always local
+- are always reversible
+- must always be explainable by referencing Noesis
 
-It enables:
-- reproducible reasoning
-- aligned outputs
-- shared understanding across roles
+> If something feels like a decision, it does not belong in Noesis.
 
 ---
 
-## Repository structure (reading order)
+## Mechanics and Desired Outcomes
+
+Desired Outcomes are the **strategic fix stars** of Protopipe.
+They express *what different stakeholders ultimately want to achieve*.
+
+Mechanics are **global, canonical relation rules** derived from recurring
+conflicts between desired outcomes.
+
+They function like **directional signposts**:
+
+- They do not choose a direction.
+- They describe consequences of choosing one direction over another.
+- They remain valid even when the desired outcome is temporarily obscured,
+  in conflict, or locally unreachable.
+
+Mechanics:
+- are not solutions
+- are not patterns
+- are not best practices
+- remove options instead of adding features
+
+They are referenced during decision-making,
+but never applied inside Noesis itself.
+
+---
+
+## Capabilities
+
+Capabilities describe **what the Protopipe platform must be able to do**
+in order to address acknowledged problems
+and enable desired outcomes.
+
+Capabilities:
+- are solution-neutral
+- are not features
+- are not implementations
+- serve as entry points for complexity analysis
+
+When a capability is explored in depth,
+its internal complexity, invariants, and structural cuts
+are derived locally from that capability.
+
+---
+
+
+## About Relationships
+
+Noesis intentionally does not maintain explicit relationships
+between its elements.
+
+Problems, desired outcomes, mechanics, and capabilities
+are stored as **atomic, canonical facts**.
+
+Relationships between them are:
+- derived when needed
+- context-specific
+- generated via prompts
+- explained, not assumed
+
+This avoids:
+- manual relationship maintenance
+- hidden assumptions
+- outdated dependency graphs
+
+Prompts are the primary mechanism
+for discovering, explaining, and challenging relationships.
+
+---
+
+## Repository structure (canonical reading order)
 
 The numbering defines an **intentional reading and reasoning order**.
-It is used both by humans and by automated context generators.
+It reflects *conceptual dependency*, not execution order.
 
-1. **`01_why/`**  
-   Vision, Golden Circle, strategic framing, non-negotiables.
+### 01_why
+Purpose, vision, Golden Circle, and non-negotiable framing.
 
-2. **`02_language/`**  
-   Glossary, APDP, and other language constructs that define how we think and speak.
+Why Protopipe exists.
 
-3. **`03_culture/`**  
-   Culture code, principles, and mental models that shape behavior.
+---
 
-4. **`04_problems/`**  
-   Explicit problem narratives, grouped by domain.
-   These describe *tensions we acknowledge* — not solutions.
+### 02_language
+Canonical terminology and definitions.
 
-5. **`05_use-cases/`**  
-   Outcome-oriented role-based use-cases.
-   These describe *what must become possible*.
+How we think, speak, and avoid ambiguity.
 
-6. **`06_mechanics/`**  
-   Structural mechanisms that enforce behavior and enable capabilities.
-   Mechanics are organizational and architectural constraints — not tools.
+---
 
-7. **`07_identity/`**  
-   Corporate identity and visual language.
-   Design is treated as **canonical shared semantics**, not decoration.
+### 03_culture
+Cultural principles and mental models.
 
-8. **`08_contrasts/`**  
-   Deliberate comparisons to other tools and approaches to sharpen positioning.
+How behavior is shaped implicitly.
+No rules, no enforcement logic.
 
-9. **`09_experiences/`**  
-   Narrative experiences that illustrate how the system is encountered in practice.
+---
+
+### 04_stakeholders
+Stakeholders as responsibility holders and decision perspectives.
+
+Not personas. Not users. Not org charts.
+
+---
+
+### 05_problems
+Explicitly acknowledged systemic problems and tensions.
+
+Problems describe *what is broken or insufficient* — never solutions.
+
+---
+
+### 06_desired-outcomes
+Desired outcomes bound to stakeholders.
+
+Outcomes describe *what must become true* if problems are addressed.
+They are not implementations.
+
+---
+
+### 07_mechanics
+Global, canonical mechanics.
+
+Mechanics encode enforced trade-offs and consequences.
+They apply across architecture, organization, and process.
+
+No decisions live here.
+
+---
+
+### 08_capabilities
+Capabilities of the Protopipe platform.
+
+They describe *what the platform must be able to enable*,
+independent of how it is implemented.
+
+---
+
+### 09_identity
+Identity, design language, and self-description.
+
+This layer provides shared semantics and recognition,
+not constraints or rules.
+
+---
+
+### 10_contrasts
+Deliberate contrasts to other tools, methods, and approaches.
+
+Used to sharpen understanding through comparison.
+No new rules are introduced here.
+
+---
+
+### 11_experiences
+Narrative, experiential descriptions of how Protopipe is encountered.
+
+Used for understanding, not for derivation or constraint.
+
+---
+
+## AI context usage
+
+Noesis is designed to be consumed by humans **and machines**.
+
+Subsets of this repository may be used as:
+- AI context packs
+- prompt grounding
+- constraint sources
+- terminology alignment
+
+AI-generated outputs are expected to:
+- reference Noesis explicitly
+- respect its constraints
+- never invent facts or rules not present here
 
 ---
 
 ## Contribution rules (non-negotiable)
 
-- All changes happen via pull requests with review
-- Prefer **small, atomic, intention-revealing diffs**
-- Do not introduce implementation detail
-- New concepts must be backed by:
-  - language (glossary)
-  - problems
-  - use-cases
-  - or mechanics
-- Diagrams, if any, must be **text-based**
+- All changes via pull request
+- Small, intention-revealing diffs
+- No implementation detail
+- No decisions
+- No tool- or vendor-specific content
 
-Noesis is not optimized for speed.
-It is optimized for **clarity, consistency, and long-term reasoning**.
+If something must be debated,
+debate it **before** it enters Noesis.
+
+Noesis gains strength through constraint.
 

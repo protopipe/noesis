@@ -1,6 +1,6 @@
 id: architecture
 title: "AI Context Pack: architecture"
-version: 3
+version: 4
 
 intent:
   description: >
@@ -167,6 +167,59 @@ output:
 
       ---
 
+      # DIAGRAMS (PLANTUML) — WHEN AND HOW
+
+      When a diagram would reduce ambiguity, increase shared understanding,
+      or clarify responsibilities/boundaries, you must:
+
+      1) **Suggest an appropriate PlantUML diagram type** and why it helps.
+      2) **Provide a runnable PlantUML snippet** using fenced code blocks: ```plantuml
+      3) Keep diagrams aligned with Protopipe language (Glossary/Noesis).
+      4) Prefer diagrams that make coupling, boundaries, and responsibility visible.
+
+      Default diagram choices (pick the simplest that works):
+      - **C4 Context / Container**: system boundaries, responsibilities, actors
+      - **Component diagram**: ownership, contracts, dependency direction
+      - **Sequence diagram**: critical flows, contracts, failure modes
+      - **State diagram**: lifecycle, invariants, allowed transitions
+      - **Activity diagram**: process flows, gates, decision points
+      - **Deployment diagram**: runtime topology, environment isolation
+
+      Diagram rules:
+      - No “decorative” diagrams. Each diagram must answer a concrete question.
+      - If facts are missing, annotate the diagram with explicit assumptions.
+      - If a diagram introduces new terms, produce **Glossary Proposals**.
+
+      ---
+
+      # BLOG VISUAL PROMPTS (SORA / IMAGE MODELS)
+
+      When you produce or structure an architectural blog article,
+      also produce **Visual Prompt Packs** for generating:
+      - hero/header images
+      - subtle background textures
+      - section dividers / abstract visuals
+
+      Requirements for Visual Prompt Packs:
+      - Provide **3–6 prompts** per article (variant styles), each with:
+        - **Intent** (what the image should communicate)
+        - **Prompt** (model-ready)
+        - **Negative prompt** (what to avoid)
+        - **Format suggestions** (e.g., 16:9, 21:9, 4:1 header strip)
+        - **Style constraints** (aligned with Protopipe CI when applicable)
+      - Avoid false specificity (no invented logos, no fake screenshots of UIs).
+      - Prefer abstract, architectural, system/metaphor visuals over literal depictions.
+      - Keep prompts compatible with corporate publishing: no gore, no political motifs,
+        no trademark-heavy content.
+
+      If Protopipe CI is requested, default to:
+      - dark, low-saturation technical textures
+      - subtle grid / blueprint / circuit motifs
+      - accent highlights that can map to Protopipe accent color
+      - high negative space for typography overlays
+
+      ---
+
       # TASKS YOU SUPPORT
 
       You may be asked to:
@@ -213,6 +266,10 @@ output:
       - Risks & Trade-offs
       - Consistency Check
 
+      Additionally, when applicable:
+      - PlantUML Diagrams (runnable snippets)
+      - Visual Prompt Packs (for blog imagery)
+
       Do not invent structure where none exists.
       Make gaps, tensions, and uncertainty visible.
 
@@ -230,14 +287,18 @@ context:
     # Culture & principles
     - "03_culture/*.md"
 
+    - "04_stakeholders/*.md"
+
     # Problem space
-    - "04_problems/**/*.md"
+    - "05_problems/**/*.md"
 
     # Use-Cases (upper boundary for enterprise architecture)
-    - "05_use-cases/**/*.md"
+    - "06_desired-outcomes/**/*.md"
 
     # Mechanics (structural invariants)
-    - "06_mechanics/*.md"
+    - "07_mechanics/*.md"
+
+    - "08_capabilities/*.md"
 
     # Canonical terminology
     - "02_language/glossary.md"

@@ -27,106 +27,482 @@ It means “currently accepted as the shared frame of reference”.
 Everything outside Noesis may change freely.
 Everything inside Noesis must justify its existence.
 
+---
+
+## Architecture
+
+In Protopipe, architecture is the **management of dependencies**.
+
+Architecture is concerned with:
+- coupling and cohesion
+- direction of dependencies
+- placement of invariants
+- responsibility boundaries
+
+Architecture is not:
+- a component diagram
+- a technology stack
+- a deployment model
+
+Architecture exists to reduce complexity
+by shaping how changes propagate.
+
+Good architecture allows change
+without global reasoning.
+
+
+---
+
+## Complexity
+
+Complexity describes the degree to which a system
+cannot be understood, changed, or reasoned about locally.
+
+In Protopipe, complexity is not defined by size,
+but by **entanglement of dependencies**.
+
+Complexity increases when:
+- changes affect multiple components simultaneously
+- invariants are scattered
+- responsibilities are unclear
+- reasoning requires global knowledge
+
+Complexity is the primary reason
+why mechanics, capabilities, and structure exist.
+
+If a problem can be solved locally,
+no architecture is required.
+
+---
+
+## Coupling
+
+Coupling describes the degree to which two elements
+must change together.
+
+High coupling means:
+- changes propagate
+- coordination increases
+- local reasoning breaks down
+
+Coupling is a force that **pulls elements together**.
+
+> Coupling and cohesion are opposing forces.
+> Architecture is the art of balancing them.
+
+---
+
+## Cohesion
+
+Cohesion describes the degree to which elements
+belong together because they share purpose,
+invariants, or change rhythm.
+
+High cohesion justifies proximity.
+
+Cohesion is a force that **keeps elements together**.
+
+> Coupling and cohesion are opposing forces.
+> Architecture is the art of balancing them.
+
+
+---
+
+## Invariant
+
+An invariant is a rule about state or behavior
+that must never be violated within a defined scope.
+
+In Protopipe, invariants are primarily **local**:
+- they belong to a capability, boundary, or responsibility unit
+- they exist to reduce complexity by enabling local reasoning
+
+Distributed invariants are treated as a structural smell:
+if an invariant must be enforced in multiple places,
+the system is likely cut incorrectly.
+
+A good structural cut makes invariants local.
+
+### Local Invariant
+
+A local invariant is enforced in exactly one place (one boundary).
+It enables local reasoning and low coordination.
+
+### Distributed Invariant
+
+A distributed invariant must be re-implemented or re-checked
+across multiple components or teams.
+It increases coupling and coordination cost.
+
+
+---
+
+## Information Hiding (Secrecy Principle)
+
+Information hiding means that a boundary conceals the details
+that are likely to change (volatility),
+so that change does not propagate across the system.
+
+In Protopipe, information hiding is used to keep invariants local:
+- if an invariant depends on volatile details,
+  those details must be encapsulated behind a stable interface
+
+Information hiding is not about secrecy.
+It is about change containment.
+
+
+---
+
+## Surgical Cut (Chirurgical Cut Line)
+
+A surgical cut is a deliberate structural separation
+that reduces complexity
+without destroying coherence.
+
+A cut is justified when:
+- complexity is reduced
+- invariants become local
+- reasoning becomes possible again
+
+A cut is invalid when:
+- changes still affect both sides
+- coordination remains mandatory
+- invariants remain distributed
+
+„A valid cut creates a boundary where information hiding is possible and invariants become local.“
+
+Surgical cuts are reversible in theory,
+but expensive in practice.
+
+They must be chosen with care.
+
+---
+
+## Fix Star (Desired Outcome)
+
+A Fix Star is a long-term desired outcome
+that provides orientation without prescribing a path.
+
+Fix stars:
+- guide direction
+- do not guarantee reachability
+- may conflict with other fix stars
+
+Fix stars are used for navigation,
+not for planning.
+
+When fix stars are temporarily obscured,
+mechanics provide local guidance.
+
+---
+
+## Global
+
+Global describes scope.
+
+A concept may be:
+- canonical but local
+- global but non-canonical
+- both
+- neither
+
+In Protopipe, mechanics are both
+global and canonical.
+
 
 ---
 
 ## Noesis
 
-**Noesis** refers to understanding and reasoning — the act of grasping
-relationships, constraints, and consequences.
+Noesis describes the **canonical reasoning space of Protopipe**.
 
-In Protopipe, Noesis is the **canonical mental model** of the organization.
+It contains the shared facts, relations, constraints, and language
+that define how Protopipe understands problems, outcomes, structure,
+and consequences.
+
+Noesis is **declarative**, not operative.
+
+It does not contain decisions.
+It does not prescribe actions.
+It does not select solutions.
+
+Noesis exists so that decisions can be derived,
+explained, challenged, and revised **outside** of it.
+
+---
+
+### What Noesis Contains
+
+Noesis contains only **canonical elements**:
+
+- shared language and definitions
+- acknowledged problems
+- stakeholder-bound desired outcomes
+- global mechanics that encode enforced trade-offs
+- capabilities the platform must be able to provide
+- structural relations and constraints
+
+Everything in Noesis is:
+- intentional
+- reviewable
+- versioned
+- stable enough to reason about
+
+If something is present in Noesis,
+it is assumed to be authoritative within its scope.
+
+---
+
+### What Noesis Explicitly Excludes
+
+Noesis explicitly excludes:
+
+- decisions
+- priorities
+- roadmaps
+- implementations
+- tools and technologies
+- organizational assignments
+
+If something answers the question  
+**“What should we do in this situation?”**  
+it does not belong in Noesis.
+
+That question is answered elsewhere
+(e.g. via decision prompts in `dist/`)
+by referencing Noesis.
+
+---
+
+### Noesis and Decisions
+
+Noesis is **not** a decision framework.
+
+It does not decide between alternatives.
+It does not resolve trade-offs.
+
+Instead, Noesis defines:
+- which trade-offs exist
+- which consequences follow from certain choices
+- which options are structurally discouraged or impossible
+
+Decisions are:
+- contextual
+- situational
+- reversible
+- produced outside Noesis
+
+A decision is considered valid
+if it can be explained by referencing Noesis
+without modifying it.
+
+---
+
+### Noesis and Mechanics
+
+Mechanics are a **core element of Noesis**.
+
+They encode **non-negotiable structural consequences**
+derived from recurring conflicts between
+stakeholder-bound desired outcomes.
+
+Mechanics do not recommend solutions.
+They remove options.
+
+Noesis does not apply mechanics.
+It only defines them.
+
+Mechanics are referenced during decision-making
+to evaluate consequences,
+not to dictate outcomes.
+
+---
+
+### Noesis and Desired Outcomes
+
+Desired outcomes act as **strategic fix stars**.
+
+They describe what must become true
+from the perspective of a stakeholder,
+without prescribing a path.
+
+Noesis records desired outcomes
+as canonical points of orientation.
+
+When desired outcomes conflict,
+Noesis does not resolve the conflict.
+
+Instead, it provides mechanics
+that make the consequences of choosing
+one direction over another explicit.
+
+---
+
+### Noesis and Capabilities
+
+Capabilities describe
+what the Protopipe platform must be able to enable
+to address acknowledged problems
+and support desired outcomes.
+
+Capabilities are part of Noesis,
+but they do not contain decisions or implementations.
+
+They serve as **entry points into complexity**.
+
+When a capability is explored,
+complexity, invariants, and structural cuts
+are derived locally from that capability,
+while remaining constrained by mechanics.
+
+---
+
+### Noesis and Architecture
+
+Noesis is not an architecture description.
+
+Architecture is treated as one possible
+application domain of Noesis.
+
+In Protopipe, architecture is understood as
+the management of dependencies
+(coupling, cohesion, invariants, boundaries).
+
+Noesis provides the canonical frame
+within which architectural decisions
+can be reasoned about,
+but it does not define architectures itself.
+
+---
+
+### Canonical, Not Global
+
+Noesis is canonical, not necessarily global.
+
+Canonical means:
+- authoritative
+- shared
+- intentionally maintained
+
+Some elements of Noesis are global
+(e.g. mechanics),
+others may be canonical within a limited scope
+(e.g. capability-local invariants).
+
+Noesis does not require uniformity.
+It requires explicitness.
+
+---
+
+### Noesis and AI
+
+Noesis is designed to be **human-readable and machine-readable**.
+
+It exists to close a gap commonly found in organizations:
+knowledge is scattered across tools, documents, teams, and individuals,
+resulting in hidden context, implicit assumptions, and local truths.
+
+Noesis provides a **single canonical reference space**
+that can be shared by:
+- humans (for reasoning, alignment, and explanation)
+- machines (for grounding, constraint checking, and derivation)
+
+By being:
+- declarative
+- canonical
+- explicit
+- decision-free
+
+Noesis enables AI systems to:
+- reason without guessing intent
+- derive options without inventing rules
+- explain consequences by referencing shared constraints
+- operate across organizational and technical boundaries
+
+Noesis does not replace tools.
+It replaces **implicit context**.
+
+AI systems interacting with Protopipe
+are expected to treat Noesis as:
+- a grounding source
+- a constraint system
+- a shared language layer
+
+Any AI-generated output
+that contradicts Noesis
+is considered invalid by definition.
+
+
+---
+
+### Final Statement
+
+Noesis is the **fixed reference space**
+of Protopipe.
 
 It defines:
-- shared language
-- acknowledged problems
-- intended outcomes (use-cases)
-- enabling capabilities
-- structural mechanics
+- what is true
+- what matters
+- what follows if certain choices are made
 
-Noesis is not implementation.
-It is the thinking layer from which implementation derives.
+It never defines:
+- what must be chosen
 
-### Problem it addresses
-
-Noesis is Protopipe’s structural response to the problem of
-**implicit knowledge and fragmented AI contexts**.
-
-Without a canonical thinking layer:
-- knowledge remains scattered across documents, tools, and people
-- AI systems are fed inconsistent, partial, or contradictory context
-- decisions depend on tacit assumptions instead of shared understanding
-
-### Mechanic it enables
-
-Noesis enables the mechanic
-**“Organization Maintains Canonical AI Contexts”**.
-
-By defining:
-- a shared language
-- an explicit problem space
-- a structured reasoning order
-- and clear inclusion boundaries
-
-Noesis makes it possible to provide
-**high-signal, bounded, reproducible AI context**
-to both humans and machines.
-
-If something is not represented in Noesis,
-it is not considered canonical.
-
-### Eat your own dogfood
-
-Protopipe explicitly follows the principle
-**“eat your own dogfood”**.
-
-Noesis is the primary expression of this principle.
-
-The same mechanism Protopipe proposes for organizations —
-maintaining canonical, bounded, high-signal context —
-is applied internally through Noesis itself.
-
-Noesis is intentionally:
-- simple
-- text-based
-- versioned
-- review-driven
-
-This is not an abstraction layer or a product feature.
-It is a minimal, real-world implementation of the mechanic
-**“Organization Maintains Canonical AI Contexts”**.
-
-If this approach does not work for Protopipe itself,
-it is considered invalid for customers.
+Protopipe gains clarity
+by keeping Noesis stable
+and decisions explicit.
 
 
 ---
 
 ## Augmented Product Development Platform (APDP)
 
-An Augmented Product Development Platform (APDP) is a system that augments
-an organization’s ability to make product, architectural, and strategic
-decisions under uncertainty by embedding feedback, measurement, and
-responsibility directly into the development process.
+An APDP is a system that augments an organization’s
+ability to make **reversible, informed decisions under uncertainty**.
 
-An APDP does not replace product development.
-It augments decision-making by making assumptions explicit, measurable,
-and revisable.
+An APDP is more than:
+- a technical platform
+- an architectural framework
+- a product toolchain
 
-APDP is the **capability layer** in the Protopipe narrative model.
+It integrates:
+- strategy
+- organization
+- architecture
+- feedback
+- responsibility
 
-It sits between:
-- **Use-Cases** (observable outcomes), and
-- **Mechanics** (structural reinforcements such as Review Environments or CDCT).
+APDP operates **above architecture**,
+using architecture as one of several instruments
+to manage complexity.
 
-APDP is not a feature list.
+---
+
+## Stakeholder
+
+A stakeholder is a responsibility holder and decision perspective.
+
+Stakeholders are not users or personas.
+They define which outcomes matter,
+which trade-offs are acceptable,
+and which risks are owned.
+
 
 ---
 
 ## Mechanic
 
-A **Mechanic** is a structural reinforcement that makes certain behaviors
-inevitable or unavoidable.
+A **Mechanic** is a structural reinforcement
+that makes certain behaviors inevitable or unavoidable.
+
+Mechanics act like **directional signposts**.
+
+They do not tell you where to go.
+They tell you what will happen if you choose a direction.
+
+Mechanics remain valid
+even when desired outcomes conflict
+or are temporarily unreachable.
 
 Mechanics are not tools, patterns, or best practices.
 
@@ -136,17 +512,43 @@ They define:
 - enforced boundaries
 - responsibility distribution
 
-Mechanics sit between:
-- **Use-Cases** (what must become possible), and
-- **Capabilities (APDP)** (what the organization must be able to do)
+Mechanics are **derived from recurring conflicts between
+stakeholder-bound desired outcomes**.
+
+They encode the non-negotiable consequences
+that apply whenever a decision is made,
+independent of the concrete solution.
+
+Mechanics are **referenced by capabilities**
+and **used during decision-making**,
+but they do not prescribe implementations.
 
 Examples of mechanics include:
 - Review Environments
 - Artifact-based Experiments
 - Consumer Driven Contract Tests
 
-A mechanic is successful when it removes the need
-for repeated discussion or coordination.
+A mechanic is successful
+when it removes the need
+for repeated discussion or coordination
+by making trade-offs structurally explicit.
+
+---
+
+## Trade-off
+
+A trade-off is a situation
+where improving one dimension
+necessarily worsens another.
+
+In Protopipe, trade-offs are:
+- explicit
+- enforced through mechanics
+- never solved, only chosen
+
+If a decision claims to avoid a trade-off,
+it is considered suspicious.
+
 
 ---
 
@@ -165,7 +567,7 @@ They typically emerge through pull requests, reviews, and iteration.
 A decision becomes relevant to Noesis only if it affects:
 - shared language
 - acknowledged problems
-- use-cases
+- desired-outcomes
 - or mechanics
 
 
@@ -711,19 +1113,6 @@ within which a decision is made.
 
 In Protopipe, context is explicit and versioned.
 Implicit context is treated as risk.
-
----
-
-## Decision
-
-A decision is a commitment to act under uncertainty.
-
-In Protopipe, decisions are:
-- explicit
-- measurable
-- revisable
-
-A decision without feedback is considered incomplete.
 
 ---
 

@@ -191,17 +191,17 @@ context:
     - "02_language/*.md"
 
     # Problems (narratives)
-    - "04_problems/**/*.md"
+    - "05_problems/**/*.md"
 
     # Use-Cases
-    - "05_use-cases/**/*.md"
+    - "06_desired-outcomes/**/*.md"
 
     # Mechanics (canonical constraints)
-    - "06_mechanics/*.md"
+    - "07_mechanics/*.md"
 
   exclude:
     # Non-relevant for playbooks
-    - "07_identity/**"
+    - "09_identity/**"
     - "**/README.md"
     - "**/*template.md"
 

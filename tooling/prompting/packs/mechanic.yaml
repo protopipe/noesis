@@ -195,15 +195,15 @@ context:
 
   include:
     # Mechanics (primary focus)
-    - "06_mechanics/approved/*.md"
-    - "06_mechanics/candidates/*.md"
-    - "06_mechanics/*.md"
+    - "07_mechanics/approved/*.md"
+    - "07_mechanics/candidates/*.md"
+    - "07_mechanics/*.md"
 
     # Problems (justification and pressure)
-    - "04_problems/**/*.md"
+    - "05_problems/**/*.md"
 
     # Use-Cases (outcome validation)
-    - "05_use-cases/**/*.md"
+    - "06_desired-outocmes/**/*.md"
 
     # Canonical terminology
     - "02_language/glossary.md"
@@ -213,7 +213,7 @@ context:
 
   exclude:
     # Not relevant for mechanic-level reasoning
-    - "07_identity/**"
-    - "08_contrasts/**"
-    - "09_experiences/**"
+    - "09_identity/**"
+    - "10_contrasts/**"
+    - "11_experiences/**"
 

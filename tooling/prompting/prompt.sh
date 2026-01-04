@@ -13,6 +13,7 @@ Usage:
   prompting/prompt.sh <mode> [options]
 
 Modes:
+  meta           Dump everything in this repo, so you can use AI to do meta tasks
   all            Dump entire Noesis (all Markdown under doc/)
   none           No content; only header/role/keywords
   <pack-id>      Render one curated pack from prompting/packs/<pack-id>.yml|yaml
@@ -150,6 +151,21 @@ Return structured output in Markdown.
 ---
 
 EOF
+}
+
+emit_header_meta() {
+  cat >> "$tmp" <<EOF
+# AI Meta:
+
+Use the following repository context. You'll find everything you need in this dump. Its structured and explained in README.md files.
+You get the whole repository as a text-baed dump including toolingscripts, github-actions and everything else.
+
+Try to read the Readmes first, from the Readme at the Root context, to the readme in the docs folder and all the readmes in the sections.
+Also follow the read directions, which is why sections are numbered. There is an inteded logical flow.
+---
+
+EOF
+
 }
 
 emit_role() {
@@ -324,6 +340,25 @@ main() {
       emit_all_chapters
       emit_keywords
       out="$OUT_DIR/all.md"
+      ;;
+    meta)
+      local source_comments="true"
+      local separator="\n\n---\n\n"
+      local structure=$(tree $ROOT)
+      # find text based files
+      local files=$(find $ROOT -type f -not -path '*/.git/*' -exec grep -lI "" {} +)
+
+      emit_header_meta
+      printf "# Noesis File Structure\n\n$structure" >> "$tmp"
+
+      printf "# Noesis File Contents\n\n" >> "$tmp"
+
+      for file in $files; do
+        local title=$(basename $file)
+        local abs=$(normalize_abs $file)
+        emit_section_single $title $abs $source_comments $separator
+        out="$OUT_DIR/meta.md"
+      done
       ;;
     *)
       pf="$(read_pack_files)"
