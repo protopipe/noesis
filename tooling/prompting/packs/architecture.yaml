@@ -306,6 +306,8 @@ context:
     # APDP
     - "02_language/apdp.md"
 
+    - "**/*template.md"
+
   exclude:
     # Not relevant for architectural reasoning
     - "07_identity/**"

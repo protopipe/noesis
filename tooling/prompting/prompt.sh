@@ -168,6 +168,11 @@ EOF
 
 }
 
+emit_structure() {
+  local structure=$(tree $ROOT)
+  printf "# Noesis File Structure\n Use this tree to navigate and to list e.g. Problems and go in to Details for specific problems.\n$structure" >> "$tmp"
+}
+
 emit_role() {
   [[ -z "$ROLE" ]] && return 0
   local rf="$ROLES_DIR/$ROLE.md"
@@ -185,6 +190,7 @@ emit_all_chapters() {
 
   # Titel-Sektion für den Dump (optional, aber hilfreich)
   printf "## Noesis Dump (doc/)\n\n" >> "$tmp"
+  emit_structure
 
   while IFS= read -r abs; do
     [[ -z "$abs" ]] && continue
@@ -236,6 +242,7 @@ render_pack() {
     fi
   fi
 
+  emit_structure
   emit_role
 
   mapfile -t excludes < <(yq -r '.context.exclude[]?' "$pack_file")
@@ -344,12 +351,11 @@ main() {
     meta)
       local source_comments="true"
       local separator="\n\n---\n\n"
-      local structure=$(tree $ROOT)
       # find text based files
       local files=$(find $ROOT -type f -not -path '*/.git/*' -exec grep -lI "" {} +)
 
       emit_header_meta
-      printf "# Noesis File Structure\n\n$structure" >> "$tmp"
+      emit_structure
 
       printf "# Noesis File Contents\n\n" >> "$tmp"
 
