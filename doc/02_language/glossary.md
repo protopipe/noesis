@@ -1175,3 +1175,33 @@ provided to AI systems to ensure aligned reasoning.
 
 The glossary is a primary source for AI context stability.
 
+---
+
+## Invariant
+
+An invariant is a property or constraint
+that must remain unchanged within its defined context.
+
+Invariants define what an element guarantees,
+regardless of where or how it is used.
+
+Experiments may introduce variants,
+but they must not silently change invariants.
+If an invariant must change,
+the affected element must be substituted,
+not modified in place.
+
+---
+
+## Preserved Constraint
+
+A preserved constraint is a constraint
+that remains valid across composition,
+abstraction, or experimentation boundaries.
+
+Higher-level abstractions must not weaken
+constraints protecting lower-level invariants.
+
+If a constraint is incompatible,
+the element must be substituted
+instead of modified implicitly.
