@@ -1,0 +1,29 @@
+---
+title: "Protopipe"
+subtitle: "Shared Reality for Product, Architecture and Delivery"
+author: "Protopipe"
+date: last-modified
+format:
+  revealjs:
+    title-slide-attributes:
+      data-background-image: "../assets/images/hero-placeholder.svg"
+      data-background-size: cover
+      data-background-position: center
+---
+
+{{< include chapters/00-title.qmd >}}
+
+{{< include chapters/01-act-problem.qmd >}}
+
+{{< include chapters/02-act-missing-layer.qmd >}}
+
+{{< include chapters/03-act-protopipe.qmd >}}
+
+{{< include chapters/04-act-integrated-loop.qmd >}}
+
+{{< include chapters/05-act-consulting-entry.qmd >}}
+
+{{< include chapters/06-act-vision.qmd >}}
+
+{{< include chapters/90-appendix.qmd >}}
+

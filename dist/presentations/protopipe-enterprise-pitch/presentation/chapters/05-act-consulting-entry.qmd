@@ -1,0 +1,45 @@
+# Act 5: Consulting Entry Strategy {.section}
+
+---
+
+## 23. Bottom-Up Entry
+
+::: {.toc-only}
+Start with Noesis, a local LLM, a team culture database, and organizational
+memory.
+:::
+
+---
+
+## 24. Why Local AI Matters
+
+::: {.toc-only}
+Explain confidentiality, sovereignty, trust, latency, and client-specific
+context grounding.
+:::
+
+---
+
+## 25. Why OSS Matters
+
+::: {.toc-only}
+Explain auditability, adoption, extension, client trust, and ecosystem leverage.
+:::
+
+---
+
+## 26. Expansion Path
+
+::: {.flow}
+Team Memory -> Delivery -> Architecture -> Strategy -> KPI Systems
+:::
+
+---
+
+## 27. Consulting Motion
+
+::: {.toc-only}
+Protopipe as a transformation entry point: low-risk start, visible value,
+expanding strategic surface.
+:::
+
