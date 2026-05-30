@@ -29,15 +29,14 @@ Golden Circle / Purpose -> Strategy -> Product -> Architecture -> Development
 | 8 | Responsibility Without Control | Show accountability without authority, context, or system-level influence. |
 | 9 | Survival of the Fastest | Summarize the problem as organizational decision latency. |
 
-## Act 2: The Missing Layer
+## Act 2: Outcomes and Mechanics
 
 | # | Slide | Purpose |
 |---:|---|---|
-| 8 | Not Another Planning Tool | Differentiate from existing tool categories. |
-| 9 | Augmented Product Development Platform | Introduce the missing capability layer. |
-| 10 | The Chain That Must Stay Connected | Show the end-to-end decision chain. |
-| 11 | Why AI Changes the Feasibility Curve | Position AI as synchronization and translation. |
-| 12 | Why DevOps Was Not Enough | Explain the remaining strategy-to-learning gap. |
+| 9 | From Problems to Desired Outcomes | Show stakeholder-bound fix stars before solutions. |
+| 10 | Mechanics Make Outcomes Unavoidable | Explain mechanics as enforced trade-offs. |
+| 11 | The First Mechanics | Introduce shared meaning, observable feedback, learning signal, and business ownership. |
+| 12 | The Missing Layer | Position shared reality between intent and implementation. |
 
 ## Act 3: Protopipe
 
