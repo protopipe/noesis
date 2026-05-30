@@ -1,0 +1,45 @@
+# Act 2: The Missing Layer {.section}
+
+---
+
+## 07. Not Another Planning Tool
+
+::: {.toc-only}
+Separate Protopipe from backlog, documentation, reporting, and governance tools.
+:::
+
+---
+
+## 08. Shared Reality Infrastructure
+
+::: {.toc-only}
+Introduce the category: infrastructure for organizational meaning, evidence,
+memory, and decision traceability.
+:::
+
+---
+
+## 09. The Chain That Must Stay Connected
+
+::: {.flow}
+Problem -> Hypothesis -> Experiment -> Architecture -> Implementation -> Metrics -> Decision
+:::
+
+---
+
+## 10. Why AI Changes the Feasibility Curve
+
+::: {.toc-only}
+Position AI as synchronization, retrieval, critique, and translation capacity,
+not as generic automation.
+:::
+
+---
+
+## 11. Why DevOps Was Not Enough
+
+::: {.toc-only}
+Show that deployment feedback improved delivery, but did not fully connect
+strategy, product, architecture, and organizational memory.
+:::
+

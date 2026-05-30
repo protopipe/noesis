@@ -1,0 +1,24 @@
+# Appendix {.section}
+
+---
+
+## Source Anchors
+
+| Noesis Area | Use in Deck |
+|---|---|
+| `01_why` | Purpose, feedback loops, strategic frame |
+| `02_language` | Canonical terms and ambiguity control |
+| `03_culture` | Decision lenses and working culture |
+| `05_problems` | Problem taxonomy and narrative evidence |
+| `07_mechanics` | Trade-off logic and consequence framing |
+| `09_identity` | Brand tone, colors, and visual anchors |
+
+---
+
+## Future Detail Slides
+
+::: {.toc-only}
+Reserve appendix space for deeper theory references, component examples,
+consulting packages, case studies, and technical implementation notes.
+:::
+

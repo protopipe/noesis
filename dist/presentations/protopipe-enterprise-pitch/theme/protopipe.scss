@@ -1,0 +1,134 @@
+/*-- scss:defaults --*/
+
+$backgroundColor: #081a17;
+$mainColor: #f7f7f7;
+$headingColor: #ffffff;
+$linkColor: #f7436e;
+$selectionBackgroundColor: #f7436e;
+
+$mainFont: "Helvetica Neue", "Inter", "Segoe UI", system-ui, sans-serif;
+$headingFont: "Helvetica Neue", "Inter", "Segoe UI", system-ui, sans-serif;
+$codeFont: "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
+
+$headingTextTransform: none;
+$headingLetterSpacing: 0;
+$headingFontWeight: 750;
+$mainFontSize: 34px;
+
+/*-- scss:rules --*/
+
+:root {
+  --pp-bg: #081a17;
+  --pp-bg-deep: #0b0c0e;
+  --pp-surface: #102520;
+  --pp-surface-2: #142d27;
+  --pp-line: rgba(255, 255, 255, 0.16);
+  --pp-text: #ffffff;
+  --pp-muted: rgba(255, 255, 255, 0.72);
+  --pp-dim: rgba(255, 255, 255, 0.52);
+  --pp-accent: #f7436e;
+  --pp-accent-2: #41d6c3;
+  --pp-warning: #f6c56f;
+}
+
+.reveal {
+  background:
+    linear-gradient(135deg, rgba(247, 67, 110, 0.08), transparent 34%),
+    linear-gradient(180deg, var(--pp-bg), var(--pp-bg-deep));
+  color: var(--pp-text);
+}
+
+.reveal .slides {
+  text-align: left;
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3 {
+  letter-spacing: 0;
+  line-height: 1.02;
+}
+
+.reveal h1 {
+  max-width: 13ch;
+  font-size: 3.2em;
+}
+
+.reveal h2 {
+  max-width: 22ch;
+  font-size: 1.95em;
+}
+
+.reveal .subtitle {
+  max-width: 23ch;
+  color: var(--pp-muted);
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+.reveal .section {
+  color: var(--pp-accent);
+}
+
+.reveal p,
+.reveal li {
+  max-width: 44ch;
+}
+
+.reveal table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.68em;
+}
+
+.reveal th {
+  color: var(--pp-text);
+  font-weight: 700;
+}
+
+.reveal td,
+.reveal th {
+  border-bottom: 1px solid var(--pp-line);
+  padding: 0.55rem 0.7rem;
+  vertical-align: top;
+}
+
+.slide-intent,
+.toc-only,
+.diagram-slot,
+.flow {
+  max-width: 980px;
+  border-left: 4px solid var(--pp-accent);
+  padding: 0.8rem 1rem;
+  color: var(--pp-muted);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.diagram-slot {
+  border-color: var(--pp-accent-2);
+}
+
+.flow {
+  border-color: var(--pp-warning);
+  color: var(--pp-text);
+  font-family: $codeFont;
+  font-size: 0.88em;
+}
+
+.reveal .footer {
+  color: var(--pp-dim);
+  font-size: 0.42em;
+}
+
+.reveal .slide-number {
+  color: var(--pp-muted);
+}
+
+.reveal pre code {
+  max-height: 560px;
+}
+
+.title-slide h1 {
+  color: var(--pp-text);
+}
+

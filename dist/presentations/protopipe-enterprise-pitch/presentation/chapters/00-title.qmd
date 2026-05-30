@@ -1,0 +1,26 @@
+# Protopipe {.title}
+
+## Shared Reality for Product, Architecture and Delivery {.subtitle}
+
+::: {.speaker-note}
+Purpose: establish the deck as an enterprise-grade strategic narrative, not a
+tool demo or agile consulting pitch.
+:::
+
+---
+
+## Deck Architecture
+
+| Act | Narrative Job | Canonical Anchor |
+|---|---|---|
+| 1 | Name the organizational communication crisis | Problems, culture, language |
+| 2 | Define the missing infrastructure layer | Shared language, visibility, feedback |
+| 3 | Introduce Protopipe components | Noesis, ProtoPortfolio, Composer, Storybook |
+| 4 | Show the integrated decision loop | Problem to knowledge |
+| 5 | Explain consulting entry strategy | Local AI, culture database, memory |
+| 6 | State the vision | Shared organizational reality |
+
+::: {.speaker-note}
+This is a table of contents slide, not a final content slide.
+:::
+

@@ -1,0 +1,55 @@
+# Act 1: The Problem {.section}
+
+---
+
+## 01. Modern Organizations Do Not Share One Reality
+
+::: {.slide-intent}
+Frame the core crisis: teams act rationally inside incompatible local realities.
+:::
+
+---
+
+## 02. Local Optimization Creates Organizational Drift
+
+::: {.toc-only}
+CFO, CTO, Product, Sales, Operations, and Developers optimize different evidence,
+cadences, incentives, and risk models.
+:::
+
+---
+
+## 03. Luhmann: Organizations Are Communication Systems
+
+::: {.toc-only}
+Use Luhmann to explain why communication, not intent, becomes the operating
+material of the organization.
+:::
+
+---
+
+## 04. Habermas: Decisions Need Shared Understanding
+
+::: {.toc-only}
+Use Habermas to connect deliberation, evidence, legitimacy, and mutual
+understanding.
+:::
+
+---
+
+## 05. The Missing Conditions
+
+::: {.toc-only}
+Organizations lack shared language, shared evidence, and shared memory.
+:::
+
+---
+
+## 06. Problem Taxonomy
+
+::: {.toc-only}
+Map Noesis problem categories to the enterprise crisis: decision-making,
+organization and process, culture and mental models, architecture and systems,
+learning and product, metrics and steering.
+:::
+
