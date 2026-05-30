@@ -20,6 +20,7 @@ The deck is configured in `_quarto.yml`.
 - Controls, progress, hash navigation, history, and overview enabled
 - Centering disabled to support enterprise-style composed layouts
 - Code copy enabled for technical appendix slides
+- Footer: `Protopipe | Augmented Product Development Platform`
 
 ## Rendering
 
@@ -34,4 +35,3 @@ Use preview mode while authoring:
 ```bash
 ./scripts/preview.sh
 ```
-

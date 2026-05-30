@@ -2,54 +2,171 @@
 
 ---
 
-## 01. Modern Organizations Do Not Share One Reality
+## 01. The Golden Circle
 
-::: {.slide-intent}
-Frame the core crisis: teams act rationally inside incompatible local realities.
-:::
+Most organizations communicate from the outside in:
+
+<div class="communication-flow">
+What we build -> How it works -> Why it matters
+</div>
+
+The Golden Circle reverses that flow:
+
+<div class="communication-flow accent">
+Why it matters -> How we make it true -> What we build
+</div>
+
+<div class="references">
+Reference: Simon Sinek, <a href="https://www.ted.com/talks/simon_sinek_how_great_leaders_inspire_action">How great leaders inspire action</a>, TEDxPuget Sound.
+</div>
+
+<aside class="notes">
+This deck follows the Golden Circle deliberately. First establish the failure
+mode Protopipe exists to address, then the operating model, then the platform
+components.
+</aside>
 
 ---
 
-## 02. Local Optimization Creates Organizational Drift
+## 02. Why This Matters for Protopipe
 
-::: {.toc-only}
-CFO, CTO, Product, Sales, Operations, and Developers optimize different evidence,
-cadences, incentives, and risk models.
-:::
+<div class="circle-stack">
+<div class="circle-item why">
+<strong>Why</strong>
+
+The failure we are unwilling to accept.
+</div>
+
+<div class="circle-item how">
+<strong>How</strong>
+
+The operating model that makes the failure preventable.
+</div>
+
+<div class="circle-item what">
+<strong>What</strong>
+
+The platform that makes the model tangible.
+</div>
+</div>
+
+<aside class="notes">
+Use this slide to explain the communication purpose: the audience should not
+evaluate Protopipe as a feature list. They should first understand the failure
+mode, then the operating model, then the product surface.
+</aside>
 
 ---
 
-## 03. Luhmann: Organizations Are Communication Systems
+## 03. Protopipe's Golden Circle
 
-::: {.toc-only}
+<div class="golden-circle">
+<table>
+<thead>
+<tr>
+<th>Why</th>
+<th>How</th>
+<th>What</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>What failure are we unwilling to accept?</td>
+<td>What operating model makes the failure preventable?</td>
+<td>What platform makes the model tangible?</td>
+</tr>
+<tr>
+<td>Missing feedback, invisible dependencies, opinion-driven decisions.</td>
+<td>Shared language, measurable hypotheses, observable responsibility.</td>
+<td>An Augmented Product Development Platform.</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+---
+
+## 04. Core Thesis
+
+Organizations do not primarily fail because of bad people, bad tools, or bad intentions.
+
+They fail because decisions, dependencies, and discussions are not connected to measurable reality.
+
+<div class="problem-triad">
+<div class="problem">
+<strong>Decisions without measurable feedback</strong>
+
+Strategy becomes belief when impact cannot be observed.
+</div>
+
+<div class="problem">
+<strong>Invisible dependencies</strong>
+
+Architecture becomes risk when change propagation is hidden.
+</div>
+
+<div class="problem">
+<strong>Discussions that produce opinions instead of responsibility</strong>
+
+Communication becomes theater when nobody owns observable consequences.
+</div>
+</div>
+
+<aside class="notes">
+This is the first real content slide. Keep it sharp and let the rest of the deck
+unpack these three claims.
+</aside>
+
+---
+
+## 05. Modern Organizations Do Not Share One Reality
+
+<div class="toc-only">
+CFO, CTO, Product, Sales, Operations, and Developers each operate with different
+evidence, cadences, incentives, and risk models.
+</div>
+
+---
+
+## 06. Local Optimization Creates Organizational Drift
+
+<div class="toc-only">
+Each function can make rational decisions locally while the organization drifts
+globally.
+</div>
+
+---
+
+## 07. Luhmann: Organizations Are Communication Systems
+
+<div class="toc-only">
 Use Luhmann to explain why communication, not intent, becomes the operating
 material of the organization.
-:::
+</div>
 
 ---
 
-## 04. Habermas: Decisions Need Shared Understanding
+## 08. Habermas: Decisions Need Shared Understanding
 
-::: {.toc-only}
+<div class="toc-only">
 Use Habermas to connect deliberation, evidence, legitimacy, and mutual
 understanding.
-:::
+</div>
 
 ---
 
-## 05. The Missing Conditions
+## 09. The Missing Conditions
 
-::: {.toc-only}
+<div class="toc-only">
 Organizations lack shared language, shared evidence, and shared memory.
-:::
+</div>
 
 ---
 
-## 06. Problem Taxonomy
+## 10. Problem Taxonomy
 
-::: {.toc-only}
+<div class="toc-only">
 Map Noesis problem categories to the enterprise crisis: decision-making,
 organization and process, culture and mental models, architecture and systems,
 learning and product, metrics and steering.
-:::
-
+</div>

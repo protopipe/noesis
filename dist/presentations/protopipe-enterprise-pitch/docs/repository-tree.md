@@ -21,11 +21,15 @@ protopipe-enterprise-pitch/
 │   ├── fonts/
 │   ├── images/
 │   └── logos/
+│       ├── README.md
+│       └── protopipe-logo-color-full.svg
 ├── diagrams/
 │   ├── generated/
 │   └── source/
+│       └── plantuml/
 ├── scripts/
 │   ├── preview.sh
+│   ├── render-plantuml.sh
 │   └── render.sh
 └── docs/
     ├── deck-outline.md
@@ -38,4 +42,3 @@ protopipe-enterprise-pitch/
     ├── repository-tree.md
     └── scss-architecture.md
 ```
-

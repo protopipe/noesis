@@ -16,9 +16,15 @@ than to a startup hype deck or stock-photo consulting brochure.
 
 ## Layout Principles
 
+- Use the exported Protopipe full-color logo from the identity chapter in the
+  Reveal footer as a restrained persistent brand marker.
 - Slides should be dense enough for enterprise audiences, but not cramped.
 - Use tables for responsibility maps and transformation paths.
-- Use flow diagrams for loops and system interactions.
+- Use Protopipe swimlanes for BPM-style process flows, responsibility,
+  handovers, and domain boundaries.
+- Use flow diagrams only for simple loops and system interactions where
+  responsibility is not the main point.
+- Use compact reference lines for theory sources, talks, papers, and books.
 - Avoid rounded decorative card stacks unless showing repeated items.
 - Avoid stock-photo metaphors and agile workshop imagery.
 
@@ -26,4 +32,3 @@ than to a startup hype deck or stock-photo consulting brochure.
 
 Use system fallbacks by default for portability. If brand fonts are licensed for
 distribution, place them in `assets/fonts/` and wire them into `theme/`.
-

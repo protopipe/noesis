@@ -1,0 +1,37 @@
+@startuml
+
+!include ../../../../../../doc/09_identity/assets/plantuml/protopipe-skin.puml
+
+title Protopipe - Golden Circle Communication Flow
+
+|Why|
+start
+:Decisions without measurable feedback;
+:Invisible dependencies;
+:Discussions that produce opinions instead of responsibility;
+
+|How|
+:Make problems explicit before solutions;
+:Connect hypotheses to measurements;
+:Make responsibility observable;
+
+|What|
+:Augmented Product Development Platform;
+:Noesis;
+:ProtoPortfolio;
+:Composer;
+:Storybook;
+
+|Observation|
+:Monitoring and observations;
+:Learning signal;
+:Revisable decision;
+stop
+
+legend right
+  Swimlanes visualize responsibility.
+  A transition is a handover of control,
+  evidence, or accountability.
+endlegend
+
+@enduml

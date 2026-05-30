@@ -2,10 +2,10 @@
 
 ---
 
-## 18. From Problem to Knowledge
+## 18. From Purpose to Knowledge
 
 ::: {.flow}
-Problem -> Discussion -> Hypothesis -> Prototype -> Experiment -> Metric -> Decision -> Knowledge
+Golden Circle -> Strategy -> Problem -> Discussion -> Hypothesis -> Prototype -> Experiment -> Implementation -> Monitoring -> Observation -> Decision -> Knowledge
 :::
 
 ---
@@ -18,19 +18,20 @@ Connect risk-first exploration, reversibility, and feedback over opinion.
 
 ---
 
-## 20. Architecture Becomes Observable
+## 20. Architecture and Development Become Observable
 
 ::: {.toc-only}
 Show architecture as dependency management, invariant placement, and blast
-radius reduction.
+radius reduction, connected to implementation feedback and runtime observation.
 :::
 
 ---
 
-## 21. Metrics Become Causal, Not Decorative
+## 21. Monitoring Becomes Causal, Not Decorative
 
 ::: {.toc-only}
-Tie KPI trees to hypotheses and experiments so metrics can explain decisions.
+Tie KPI trees, telemetry, observations, hypotheses, and experiments so metrics
+can explain decisions.
 :::
 
 ---
@@ -40,4 +41,3 @@ Tie KPI trees to hypotheses and experiments so metrics can explain decisions.
 ::: {.toc-only}
 Show how evidence, trade-offs, and canonical references survive beyond meetings.
 :::
-

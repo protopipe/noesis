@@ -31,7 +31,7 @@ Explain auditability, adoption, extension, client trust, and ecosystem leverage.
 ## 26. Expansion Path
 
 ::: {.flow}
-Team Memory -> Delivery -> Architecture -> Strategy -> KPI Systems
+Team Memory -> Development -> Architecture -> Strategy -> KPI Systems -> Observability
 :::
 
 ---
@@ -42,4 +42,3 @@ Team Memory -> Delivery -> Architecture -> Strategy -> KPI Systems
 Protopipe as a transformation entry point: low-risk start, visible value,
 expanding strategic surface.
 :::
-

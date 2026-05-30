@@ -10,11 +10,11 @@ Separate Protopipe from backlog, documentation, reporting, and governance tools.
 
 ---
 
-## 08. Shared Reality Infrastructure
+## 08. Augmented Product Development Platform
 
 ::: {.toc-only}
-Introduce the category: infrastructure for organizational meaning, evidence,
-memory, and decision traceability.
+Introduce APDP as the capability layer that connects purpose, strategy,
+product, architecture, development, observations, learning, and decision.
 :::
 
 ---
@@ -22,7 +22,7 @@ memory, and decision traceability.
 ## 09. The Chain That Must Stay Connected
 
 ::: {.flow}
-Problem -> Hypothesis -> Experiment -> Architecture -> Implementation -> Metrics -> Decision
+Purpose -> Strategy -> Problem -> Hypothesis -> Experiment -> Architecture -> Development -> Monitoring -> Observations -> Decision -> Learning
 :::
 
 ---
@@ -39,7 +39,7 @@ not as generic automation.
 ## 11. Why DevOps Was Not Enough
 
 ::: {.toc-only}
-Show that deployment feedback improved delivery, but did not fully connect
-strategy, product, architecture, and organizational memory.
+Show that deployment feedback improved engineering flow, but did not fully
+connect purpose, strategy, product, architecture, observations, and
+organizational memory.
 :::
-
