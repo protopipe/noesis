@@ -653,6 +653,145 @@ $mainFontSize: 34px;
   font-weight: 750;
 }
 
+.outcome-map {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.85rem;
+  margin-top: 1.3rem;
+  max-width: 1240px;
+}
+
+.outcome-card {
+  min-height: 250px;
+  border: 1px solid var(--pp-line);
+  border-top: 4px solid var(--pp-accent);
+  padding: 0.85rem;
+  color: var(--pp-muted);
+  background: rgba(255, 255, 255, 0.04);
+  font-size: 0.54em;
+  line-height: 1.22;
+}
+
+.outcome-card span {
+  display: block;
+  margin-bottom: 0.65rem;
+  color: var(--pp-dim);
+  font-size: 0.84em;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.outcome-card strong {
+  display: block;
+  margin-bottom: 0.75rem;
+  color: var(--pp-text);
+  font-size: 1.22em;
+  line-height: 1.08;
+}
+
+
+.outcome-card i {
+  font-style: italic!important;
+}
+
+.mechanic-chain {
+  display: grid;
+  grid-template-columns: 1fr 34px 1fr 34px 1fr 34px 1fr 34px 1fr;
+  gap: 0.55rem;
+  align-items: center;
+  margin-top: 1.4rem;
+  max-width: 1240px;
+}
+
+.mechanic-step {
+  min-height: 86px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.42);
+  border-radius: 9px;
+  padding: 0.65rem;
+  color: var(--pp-text);
+  background: rgba(255, 255, 255, 0.045);
+  font-size: 0.56em;
+  font-weight: 750;
+  text-align: center;
+}
+
+.mechanic-step.critical {
+  border-color: rgba(247, 67, 110, 0.75);
+  background: rgba(247, 67, 110, 0.09);
+}
+
+.mechanic-arrow {
+  color: var(--pp-accent);
+  font-family: $codeFont;
+  font-size: 0.82em;
+  text-align: center;
+}
+
+.mechanic-punchline,
+.shared-reality-punchline {
+  max-width: 1240px;
+  margin-top: 1rem;
+  border-left: 4px solid var(--pp-accent);
+  padding: 0.75rem 0.9rem;
+  color: var(--pp-text);
+  background: rgba(247, 67, 110, 0.07);
+  font-size: 0.62em;
+  font-weight: 750;
+}
+
+.mechanic-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.85rem;
+  margin-top: 1.3rem;
+  max-width: 1240px;
+}
+
+.mechanic-card {
+  min-height: 230px;
+  border-left: 4px solid var(--pp-accent);
+  padding: 0.85rem;
+  color: var(--pp-muted);
+  background: rgba(255, 255, 255, 0.04);
+  font-size: 0.52em;
+  line-height: 1.2;
+}
+
+
+.mechanic-card strong {
+  display: block;
+  margin-bottom: 0.75rem;
+  color: var(--pp-text);
+  font-size: 1.18em;
+  line-height: 1.08;
+}
+
+.shared-reality-flow {
+  display: grid;
+  grid-template-columns: repeat(9, minmax(0, 1fr));
+  gap: 0.45rem;
+  margin-top: 1.4rem;
+  max-width: 1240px;
+}
+
+.shared-reality-flow div {
+  min-height: 84px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.42);
+  border-radius: 9px;
+  padding: 0.55rem;
+  color: var(--pp-text);
+  background: rgba(255, 255, 255, 0.045);
+  font-size: 0.46em;
+  font-weight: 700;
+  text-align: center;
+}
+
 .responsibility-bpm {
   display: grid;
   gap: 0.9rem;
@@ -906,6 +1045,10 @@ $mainFontSize: 34px;
   .responsibility-lane,
   .responsibility-effects,
   .survival-anchors,
+  .outcome-map,
+  .mechanic-chain,
+  .mechanic-grid,
+  .shared-reality-flow,
   .circle-stack,
   .golden-visual,
   .bpm-flow,
@@ -920,6 +1063,8 @@ $mainFontSize: 34px;
   .problem,
   .wound-card,
   .architecture-card,
+  .outcome-card,
+  .mechanic-card,
   .circle-item {
     min-height: 0;
   }
@@ -939,6 +1084,10 @@ $mainFontSize: 34px;
   }
 
   .responsibility-arrow {
+    transform: rotate(90deg);
+  }
+
+  .mechanic-arrow {
     transform: rotate(90deg);
   }
 }
