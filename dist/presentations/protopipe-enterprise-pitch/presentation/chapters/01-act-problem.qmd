@@ -42,145 +42,279 @@ components.
 
 ---
 
-## 02. Why This Matters for Protopipe
+## 02. Protopipe's Golden Circle
 
-<div class="circle-stack">
-<div class="circle-item why">
+<p class="slide-kicker">Fall in love with the problem, not the solution <span class="kicker-source"><a href="https://urilevine.com/book/">Uri Levine</a></span></p>
+
+<div class="golden-visual">
+<div class="golden-rings" aria-label="Protopipe Golden Circle">
+<div class="golden-ring what">
+<span class="ring-label">What</span>
+<span class="ring-copy">Augmented Product Development Platform</span>
+</div>
+<div class="golden-ring how">
+<span class="ring-label">How</span>
+<span class="ring-copy">Experiments built in</span>
+</div>
+<div class="golden-ring why">
+<span class="ring-label">Why</span>
+<span class="ring-copy">Wrong and slow decisions</span>
+</div>
+</div>
+<div class="golden-explainer">
+<div class="golden-note why">
 <strong>Why</strong>
-
-The failure we are unwilling to accept.
+Decisions without measurable feedback, invisible dependencies, and discussions without responsibility waste organizational time.
 </div>
-
-<div class="circle-item how">
+<div class="golden-note how">
 <strong>How</strong>
-
-The operating model that makes the failure preventable.
+Protopipe makes problems explicit, connects hypotheses to measurements, and turns responsibility into something observable.
 </div>
-
-<div class="circle-item what">
+<div class="golden-note what">
 <strong>What</strong>
+The platform makes this operating model tangible across strategy, product, architecture, development, monitoring, and learning.
+</div>
+</div>
+</div>
 
-The platform that makes the model tangible.
+---
+
+## 03. The Strategy Is Defined. It Just Does Not Arrive.
+
+<p class="slide-kicker">The problem is not missing intent. The problem is broken transmission.</p>
+
+<div class="wound-grid">
+<div class="wound-card">
+<strong>Golden Circle exists</strong>
+Many organizations have a purpose statement, values, principles, and strategic language.
+</div>
+
+<div class="wound-card">
+<strong>Strategy exists</strong>
+Steering meetings produce decisions, priorities, roadmaps, and transformation narratives.
+</div>
+
+<div class="wound-card critical">
+<strong>Daily work does not change</strong>
+Documentation becomes write-only. Culture shifts rarely reach teams formally, and even less often become internalized behavior.
 </div>
 </div>
 
 <aside class="notes">
-Use this slide to explain the communication purpose: the audience should not
-evaluate Protopipe as a feature list. They should first understand the failure
-mode, then the operating model, then the product surface.
+Press the wound: most organizations do not lack strategy artifacts. They lack a
+living transmission layer that turns purpose, strategy, and culture into daily
+decision behavior.
 </aside>
 
 ---
 
-## 03. Protopipe's Golden Circle
+## 04. Organizations Speak Different Codes
 
-<div class="golden-circle">
-<table>
-<thead>
-<tr>
-<th>Why</th>
-<th>How</th>
-<th>What</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>What failure are we unwilling to accept?</td>
-<td>What operating model makes the failure preventable?</td>
-<td>What platform makes the model tangible?</td>
-</tr>
-<tr>
-<td>Missing feedback, invisible dependencies, opinion-driven decisions.</td>
-<td>Shared language, measurable hypotheses, observable responsibility.</td>
-<td>An Augmented Product Development Platform.</td>
-</tr>
-</tbody>
-</table>
+<p class="slide-kicker">The same signal becomes different communication in different systems.</p>
+
+<div class="luhmann-codes">
+<div class="code-card">
+<span class="code-owner">Engineering</span>
+<strong>Truth</strong>
+<p>Does it work? Is it correct? Can we prove the failure?</p>
 </div>
 
----
-
-## 04. Core Thesis
-
-Organizations do not primarily fail because of bad people, bad tools, or bad intentions.
-
-They fail because decisions, dependencies, and discussions are not connected to measurable reality.
-
-<div class="problem-triad">
-<div class="problem">
-<strong>Decisions without measurable feedback</strong>
-
-Strategy becomes belief when impact cannot be observed.
+<div class="code-card">
+<span class="code-owner">Finance</span>
+<strong>Money</strong>
+<p>What does it cost? Which budget moves? What is the business effect?</p>
 </div>
 
-<div class="problem">
-<strong>Invisible dependencies</strong>
-
-Architecture becomes risk when change propagation is hidden.
+<div class="code-card critical">
+<span class="code-owner">C-Level / Management</span>
+<strong>Power</strong>
+<p>Can it be decided? Does it fit priorities, timing, ownership, and narrative?</p>
 </div>
 
-<div class="problem">
-<strong>Discussions that produce opinions instead of responsibility</strong>
-
-Communication becomes theater when nobody owns observable consequences.
+<div class="code-card">
+<span class="code-owner">Product / Market</span>
+<strong>Demand</strong>
+<p>Does the market care? Which user behavior confirms or rejects it?</p>
 </div>
+</div>
+
+<div class="translation-wound">
+<div class="translation-row">
+<span class="translation-from">Developer says</span>
+<strong>“The system is built wrong.”</strong>
+</div>
+<div class="translation-row">
+<span class="translation-from">C-Level hears</span>
+<strong>“This threatens roadmap, budget, ownership, and commitment.”</strong>
+</div>
+<div class="translation-result">
+Not the best idea wins. The most connectable communication wins.
+</div>
+</div>
+
+<div class="references">
+Theory anchor: Niklas Luhmann, organizational systems as communication systems. Applied reading: Alwin Mark, <a href="https://onlu.ch/warum-sich-in-unternehmen-nicht-die-besten-ideen-durchsetzen/">Warum sich in Unternehmen nicht die besten Ideen durchsetzen</a>, ONLU AG.
 </div>
 
 <aside class="notes">
-This is the first real content slide. Keep it sharp and let the rest of the deck
-unpack these three claims.
+Condense the Onlu/Luhmann argument: organizations are communication systems.
+Departments and hierarchy levels use different codes. Engineering often speaks
+truth; finance speaks money; management speaks power, prioritization, and
+decision premises. Good ideas fail when they cannot connect across those codes.
 </aside>
 
 ---
 
-## 05. Modern Organizations Do Not Share One Reality
+## 05. Deliberation Needs Observable Reality
 
-<div class="toc-only">
-CFO, CTO, Product, Sales, Operations, and Developers each operate with different
-evidence, cadences, incentives, and risk models.
+<p class="slide-kicker">Decision meetings loop when there is no shared object to reason about.</p>
+
+<div class="habermas-slide">
+<div class="meeting-loop">
+<div class="loop-step">More meetings</div>
+<div class="loop-arrow">-></div>
+<div class="loop-step">More slides</div>
+<div class="loop-arrow">-></div>
+<div class="loop-step">More opinions</div>
+<div class="loop-arrow">-></div>
+<div class="loop-step critical">Power word</div>
+<div class="loop-arrow">-></div>
+<div class="loop-step low-reward">Low-risk,<br>low-reward decision</div>
 </div>
+
+
+<div class="deliberation-punchline">
+Without observable reality, meetings and politics become a substitute for knowledge.
+</div>
+</div>
+
+<div class="deliberation-model">
+<div class="deliberation-block">
+<span>Bowtie</span>
+<strong>Shared model</strong>
+<p>Causes, risks, consequences, barriers, and assumptions become explicit.</p>
+</div>
+<div class="deliberation-plus">+</div>
+<div class="deliberation-block">
+<span>Habermas</span>
+<strong>Structured argument</strong>
+<p>Claims must be justified, located, challenged, and understood.</p>
+</div>
+<div class="deliberation-plus">+</div>
+<div class="deliberation-block critical">
+<span>System architecture</span>
+<strong>Observable reality</strong>
+<p>Metrics, events, tests, monitoring, and feedback make claims decidable.</p>
+</div>
+</div>
+
+
+<div class="references">
+Theory anchor: Jürgen Habermas, communicative action and deliberation. Applied reading: Alwin Mark, <a href="https://onlu.ch/deliberation-statt-endlosschleife/">Deliberation statt Endlosschleife</a>, ONLU AG.
+</div>
+
+<aside class="notes">
+Connect Habermas to the enterprise wound: deliberation requires shared
+understanding and justifiable claims. In practice, this only works if the system
+produces observable reality. Otherwise meetings replace missing observability.
+</aside>
 
 ---
 
-## 06. Local Optimization Creates Organizational Drift
+## 06. Ivory Tower Architecture
 
-<div class="toc-only">
-Each function can make rational decisions locally while the organization drifts
-globally.
+<p class="slide-kicker">Architecture principles fail when they are not connected to implementation feedback.</p>
+
+<div class="architecture-wound">
+<div class="architecture-card">
+<strong>Architects do not get feedback</strong>
+Principles are defined far away from the friction of delivery, runtime behavior, incidents, and developer experience.
 </div>
+
+<div class="architecture-card">
+<strong>Developers do not apply principles</strong>
+Architecture becomes documentation, not a working constraint inside daily decisions, code reviews, tests, or releases.
+</div>
+
+<div class="architecture-card critical">
+<strong>Trade-offs disappear</strong>
+Principles sound like pure improvement. Coupling, cost, migration effort, latency, ownership, and operational risk stay hidden.
+</div>
+</div>
+
+<div class="architecture-punchline">
+Architecture without feedback becomes belief. Architecture without trade-offs becomes theater.
+</div>
+
+<aside class="notes">
+Press the wound: architecture is often communicated as principles and target
+states, but not tested as a living system. If developers do not feed back where
+principles fail, and architects do not expose negative consequences, architecture
+turns into documentation instead of decision capability.
+</aside>
 
 ---
 
-## 07. Luhmann: Organizations Are Communication Systems
+## 07. Responsibility Without Control
 
-<div class="toc-only">
-Use Luhmann to explain why communication, not intent, becomes the operating
-material of the organization.
+<p class="slide-kicker">Teams are accountable for outcomes they cannot fully influence.</p>
+
+<div class="responsibility-bpm">
+<div class="responsibility-lane team">
+<div class="responsibility-lane-label">Team responsibility</div>
+<div class="responsibility-flow">
+<div class="responsibility-token">Own outcome</div>
+<div class="responsibility-arrow">-></div>
+<div class="responsibility-token">Find constraint</div>
+<div class="responsibility-arrow">-></div>
+<div class="responsibility-token blocked">Cannot change it</div>
 </div>
+</div>
+
+<div class="responsibility-lane control">
+<div class="responsibility-lane-label">Central control</div>
+<div class="responsibility-flow">
+<div class="responsibility-token">Decision rights</div>
+<div class="responsibility-token">Architecture boundary</div>
+<div class="responsibility-token">Budget / risk gate</div>
+</div>
+</div>
+</div>
+
+<div class="responsibility-effects">
+<span>Escalation becomes the operating model.</span>
+<span>Teams optimize locally to survive.</span>
+<span>Management becomes the delivery bottleneck.</span>
+</div>
+
+<aside class="notes">
+This is a Noesis problem: responsibility is delegated faster than authority,
+context, and system-level influence. Teams are blamed for outcomes they cannot
+shape. This connects hierarchy, architecture, autonomy, and decision boundaries.
+</aside>
 
 ---
 
-## 08. Habermas: Decisions Need Shared Understanding
+## 08. Survival of the Fastest
 
-<div class="toc-only">
-Use Habermas to connect deliberation, evidence, legitimacy, and mutual
-understanding.
+<p class="slide-kicker">The real problem is not one bad decision. It is organizational decision latency.</p>
+
+<div class="survival-slide">
+<div class="survival-core">
+<strong>Organizations become too slow for their own reality.</strong>
+<span>Problems are known, strategy is written, architecture is documented, meetings happen, and responsibility is assigned. But feedback does not move fast enough to change decisions.</span>
 </div>
 
----
-
-## 09. The Missing Conditions
-
-<div class="toc-only">
-Organizations lack shared language, shared evidence, and shared memory.
+<div class="survival-anchors">
+<div>Write-only strategy</div>
+<div>Different communication codes</div>
+<div>Meeting loops</div>
+<div>Ivory tower architecture</div>
+<div>Responsibility without control</div>
+<div>Decisions without feedback</div>
 </div>
 
----
-
-## 10. Problem Taxonomy
-
-<div class="toc-only">
-Map Noesis problem categories to the enterprise crisis: decision-making,
-organization and process, culture and mental models, architecture and systems,
-learning and product, metrics and steering.
+<div class="survival-punchline">
+Slow organizations do not fail because they lack ideas. They fail because reality reaches decisions too late.
+</div>
 </div>

@@ -21,15 +21,13 @@ Golden Circle / Purpose -> Strategy -> Product -> Architecture -> Development
 | # | Slide | Purpose |
 |---:|---|---|
 | 2 | The Golden Circle | Explain why the deck starts with purpose before platform. |
-| 3 | Why This Matters for Protopipe | Explain the intended communication flow. |
-| 4 | Protopipe's Golden Circle | Apply Why, How, What to the deck narrative. |
-| 5 | Core Thesis | Name decisions without measurable feedback, invisible dependencies, and opinion-driven discussions. |
-| 6 | Modern Organizations Do Not Share One Reality | Name the communication crisis. |
-| 7 | Local Optimization Creates Organizational Drift | Show role-specific realities. |
-| 8 | Luhmann: Organizations Are Communication Systems | Ground the crisis in systems theory. |
-| 9 | Habermas: Decisions Need Shared Understanding | Ground decision legitimacy in shared understanding. |
-| 10 | The Missing Conditions | Name shared language, evidence, and memory. |
-| 11 | Problem Taxonomy | Connect the crisis to Noesis problem areas. |
+| 3 | Protopipe's Golden Circle | Apply Why, How, What to the deck narrative. |
+| 4 | The Strategy Is Defined. It Just Does Not Arrive. | Press the wound: purpose, strategy, and culture exist as artifacts but do not change daily work. |
+| 5 | The Best Idea Does Not Automatically Win | Condense the Luhmann/Onlu wound: organizations select what connects to communication. |
+| 6 | Deliberation Needs Observable Reality | Show Habermas, Bowtie, and architecture as escape from decision-meeting loops. |
+| 7 | Ivory Tower Architecture | Show architecture principles without feedback, application, or visible trade-offs. |
+| 8 | Responsibility Without Control | Show accountability without authority, context, or system-level influence. |
+| 9 | Survival of the Fastest | Summarize the problem as organizational decision latency. |
 
 ## Act 2: The Missing Layer
 
