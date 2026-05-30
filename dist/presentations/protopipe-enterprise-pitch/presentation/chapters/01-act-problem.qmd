@@ -4,16 +4,30 @@
 
 ## 01. The Golden Circle
 
-Most organizations communicate from the outside in:
+<p class="slide-kicker">Direction of thinking and communicating</p>
 
-<div class="communication-flow">
-What we build -> How it works -> Why it matters
+<div class="bpm-compare">
+<div class="bpm-flow muted">
+<div class="bpm-lane">Default communication</div>
+<div class="bpm-steps">
+<div class="bpm-step">What we build</div>
+<div class="bpm-arrow">-></div>
+<div class="bpm-step">How it works</div>
+<div class="bpm-arrow">-></div>
+<div class="bpm-step weak">Why it matters</div>
+</div>
 </div>
 
-The Golden Circle reverses that flow:
-
-<div class="communication-flow accent">
-Why it matters -> How we make it true -> What we build
+<div class="bpm-flow accent">
+<div class="bpm-lane">Golden Circle communication</div>
+<div class="bpm-steps">
+<div class="bpm-step primary">Why it matters</div>
+<div class="bpm-arrow">-></div>
+<div class="bpm-step">How we make it true</div>
+<div class="bpm-arrow">-></div>
+<div class="bpm-step">What we build</div>
+</div>
+</div>
 </div>
 
 <div class="references">
