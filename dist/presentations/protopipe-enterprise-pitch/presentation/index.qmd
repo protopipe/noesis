@@ -1,7 +1,7 @@
 ---
-title: "Protopipe"
-subtitle: "Shared Reality for Product, Architecture and Delivery"
-author: "Protopipe"
+title: 'Protopipe'
+subtitle: "Augmented Product Development Platform"
+author: "Alwin Mark"
 date: last-modified
 format:
   revealjs:
@@ -26,4 +26,3 @@ format:
 {{< include chapters/06-act-vision.qmd >}}
 
 {{< include chapters/90-appendix.qmd >}}
-

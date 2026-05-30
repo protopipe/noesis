@@ -15,7 +15,7 @@ memory visible.
 
 ::: {.toc-only}
 Organizations become faster because learning loops become explicit and
-architecturally supported.
+supported from strategic intent to runtime observation.
 :::
 
 ---
@@ -34,4 +34,3 @@ Debate remains valuable, but ungrounded opinion loses veto power.
 End with the strategic promise: better decisions, faster, with less waste and
 more responsibility.
 :::
-

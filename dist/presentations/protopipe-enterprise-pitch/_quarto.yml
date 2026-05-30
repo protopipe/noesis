@@ -36,7 +36,7 @@ format:
     incremental: false
     code-copy: true
     code-overflow: wrap
-    footer: "Protopipe | Shared Reality for Product, Architecture and Delivery"
+    footer: "Protopipe | Augmented Product Development Platform"
     title-slide-attributes:
       data-background-color: "#081a17"
       data-state: "title-slide"

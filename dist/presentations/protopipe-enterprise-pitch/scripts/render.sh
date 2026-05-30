@@ -2,5 +2,4 @@
 set -euo pipefail
 
 cd "$(dirname "$0")/.."
-quarto render
-
+quarto render presentation/index.qmd

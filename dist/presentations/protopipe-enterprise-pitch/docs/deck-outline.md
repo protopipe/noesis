@@ -2,32 +2,41 @@
 
 Working title: **Protopipe**
 
-Subtitle: **Shared Reality for Product, Architecture and Delivery**
+Subtitle: **Augmented Product Development Platform**
+
+Primary narrative path:
+
+Golden Circle / Purpose -> Strategy -> Product -> Architecture -> Development
+-> Monitoring and Observations -> Learning -> Decision
 
 ## Act 0: Opening
 
 | # | Slide | Purpose |
 |---:|---|---|
 | 0 | Protopipe | Establish the deck frame and category. |
-| 1 | Deck Architecture | Show the six-act narrative map. |
+| 1 | Deck Architecture | Show the Golden Circle-driven narrative map. |
 
 ## Act 1: The Problem
 
 | # | Slide | Purpose |
 |---:|---|---|
-| 2 | Modern Organizations Do Not Share One Reality | Name the communication crisis. |
-| 3 | Local Optimization Creates Organizational Drift | Show role-specific realities. |
-| 4 | Luhmann: Organizations Are Communication Systems | Ground the crisis in systems theory. |
-| 5 | Habermas: Decisions Need Shared Understanding | Ground decision legitimacy in shared understanding. |
-| 6 | The Missing Conditions | Name shared language, evidence, and memory. |
-| 7 | Problem Taxonomy | Connect the crisis to Noesis problem areas. |
+| 2 | The Golden Circle | Explain why the deck starts with purpose before platform. |
+| 3 | Why This Matters for Protopipe | Explain the intended communication flow. |
+| 4 | Protopipe's Golden Circle | Apply Why, How, What to the deck narrative. |
+| 5 | Core Thesis | Name decisions without measurable feedback, invisible dependencies, and opinion-driven discussions. |
+| 6 | Modern Organizations Do Not Share One Reality | Name the communication crisis. |
+| 7 | Local Optimization Creates Organizational Drift | Show role-specific realities. |
+| 8 | Luhmann: Organizations Are Communication Systems | Ground the crisis in systems theory. |
+| 9 | Habermas: Decisions Need Shared Understanding | Ground decision legitimacy in shared understanding. |
+| 10 | The Missing Conditions | Name shared language, evidence, and memory. |
+| 11 | Problem Taxonomy | Connect the crisis to Noesis problem areas. |
 
 ## Act 2: The Missing Layer
 
 | # | Slide | Purpose |
 |---:|---|---|
 | 8 | Not Another Planning Tool | Differentiate from existing tool categories. |
-| 9 | Shared Reality Infrastructure | Introduce the missing category. |
+| 9 | Augmented Product Development Platform | Introduce the missing capability layer. |
 | 10 | The Chain That Must Stay Connected | Show the end-to-end decision chain. |
 | 11 | Why AI Changes the Feasibility Curve | Position AI as synchronization and translation. |
 | 12 | Why DevOps Was Not Enough | Explain the remaining strategy-to-learning gap. |
@@ -47,10 +56,10 @@ Subtitle: **Shared Reality for Product, Architecture and Delivery**
 
 | # | Slide | Purpose |
 |---:|---|---|
-| 19 | From Problem to Knowledge | Present the operating loop. |
+| 19 | From Purpose to Knowledge | Present the full operating loop. |
 | 20 | Experiments Beat Large Upfront Decisions | Explain risk-first exploration. |
-| 21 | Architecture Becomes Observable | Connect architecture to measurable change. |
-| 22 | Metrics Become Causal, Not Decorative | Tie metrics to hypotheses. |
+| 21 | Architecture and Development Become Observable | Connect architecture and implementation to measurable change. |
+| 22 | Monitoring Becomes Causal, Not Decorative | Tie observations and metrics to hypotheses. |
 | 23 | Decisions Become Traceable | Preserve evidence and trade-offs. |
 
 ## Act 5: Consulting Entry Strategy
@@ -78,4 +87,3 @@ Subtitle: **Shared Reality for Product, Architecture and Delivery**
 |---:|---|---|
 | 33 | Source Anchors | Show Noesis source areas used by the deck. |
 | 34 | Future Detail Slides | Reserve structured depth for later authoring. |
-

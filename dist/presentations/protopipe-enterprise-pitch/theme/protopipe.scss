@@ -96,7 +96,8 @@ $mainFontSize: 34px;
 .slide-intent,
 .toc-only,
 .diagram-slot,
-.flow {
+.flow,
+.problem {
   max-width: 980px;
   border-left: 4px solid var(--pp-accent);
   padding: 0.8rem 1rem;
@@ -115,20 +116,187 @@ $mainFontSize: 34px;
   font-size: 0.88em;
 }
 
+.communication-flow {
+  max-width: 1120px;
+  margin: 0.8rem 0 1.4rem;
+  border: 1px solid var(--pp-line);
+  border-left: 4px solid var(--pp-dim);
+  padding: 0.85rem 1rem;
+  color: var(--pp-muted);
+  background: rgba(255, 255, 255, 0.035);
+  font-family: $codeFont;
+  font-size: 0.78em;
+}
+
+.communication-flow.accent {
+  border-left-color: var(--pp-accent);
+  color: var(--pp-text);
+}
+
+.circle-stack {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.1rem;
+  margin-top: 1.4rem;
+}
+
+.circle-item {
+  min-height: 250px;
+  border: 1px solid var(--pp-line);
+  border-top: 4px solid var(--pp-accent);
+  padding: 1.1rem;
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--pp-muted);
+  font-size: 0.72em;
+}
+
+.circle-item strong {
+  display: block;
+  margin-bottom: 1rem;
+  color: var(--pp-text);
+  font-size: 1.45em;
+}
+
+.circle-item.why {
+  border-top-color: var(--pp-accent);
+}
+
+.circle-item.how {
+  border-top-color: var(--pp-warning);
+}
+
+.circle-item.what {
+  border-top-color: var(--pp-accent-2);
+}
+
+.problem-triad {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1.3rem;
+}
+
+.problem {
+  min-height: 220px;
+  border-color: var(--pp-accent);
+  font-size: 0.72em;
+}
+
+.problem strong {
+  display: block;
+  margin-bottom: 0.9rem;
+  color: var(--pp-text);
+  font-size: 1.12em;
+  line-height: 1.08;
+}
+
+.golden-circle table {
+  margin-top: 1.2rem;
+  font-size: 0.62em;
+}
+
+.golden-circle th {
+  color: var(--pp-accent);
+  text-transform: uppercase;
+}
+
+.references {
+  margin-top: 1.5rem;
+  max-width: 760px;
+  color: var(--pp-dim);
+  font-size: 0.46em;
+  line-height: 1.35;
+}
+
+.references a {
+  color: var(--pp-muted);
+  text-decoration: underline;
+  text-decoration-color: rgba(247, 67, 110, 0.7);
+  text-underline-offset: 0.14em;
+}
+
+@media (max-width: 900px) {
+  .problem-triad,
+  .circle-stack {
+    grid-template-columns: 1fr;
+  }
+
+  .problem,
+  .circle-item {
+    min-height: 0;
+  }
+}
+
 .reveal .footer {
   color: var(--pp-dim);
   font-size: 0.42em;
+  left: 1.2rem;
+  right: auto;
+  bottom: 0.5rem;
+  padding-left: 150px;
+  min-height: 30px;
+  line-height: 30px;
+  background-image: url("../../../../assets/logos/protopipe-logo-color-full.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 126px auto;
 }
 
 .reveal .slide-number {
   color: var(--pp-muted);
+  bottom: 0.5rem;
+  right: 1.2rem;
+  font-size: 0.42em;
+}
+
+.reveal::after {
+  content: "Alwin Mark | 2026-05-30";
+  position: fixed;
+  right: 5.1rem;
+  bottom: 0.5rem;
+  z-index: 30;
+  color: var(--pp-dim);
+  font-size: 0.42em;
+  line-height: 30px;
+  pointer-events: none;
 }
 
 .reveal pre code {
   max-height: 560px;
 }
 
-.title-slide h1 {
-  color: var(--pp-text);
+#title-slide {
+  text-align: left;
 }
 
+#title-slide h1,
+#title-slide .quarto-title-authors,
+#title-slide .date {
+  display: none;
+}
+
+#title-slide::before {
+  content: "";
+  display: block;
+  width: min(620px, 48vw);
+  height: 150px;
+  margin: 0 0 1.6rem;
+  background-image: url("../../../../assets/logos/protopipe-logo-color-full.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left center;
+}
+
+#title-slide .subtitle {
+  max-width: 17ch;
+  margin: 0;
+  color: var(--pp-muted);
+  font-size: 1.25em;
+  font-weight: 650;
+  line-height: 1.12;
+  text-align: left;
+}
+
+#title-slide h1 {
+  color: var(--pp-text);
+}
