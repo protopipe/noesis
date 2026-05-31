@@ -2,7 +2,7 @@
 
 ---
 
-## 23. Bottom-Up Entry
+## 25. Bottom-Up Entry
 
 ::: {.toc-only}
 Start with Noesis, a local LLM, a team culture database, and organizational
@@ -11,7 +11,7 @@ memory.
 
 ---
 
-## 24. Why Local AI Matters
+## 26. Why Local AI Matters
 
 ::: {.toc-only}
 Explain confidentiality, sovereignty, trust, latency, and client-specific
@@ -20,7 +20,7 @@ context grounding.
 
 ---
 
-## 25. Why OSS Matters
+## 27. Why OSS Matters
 
 ::: {.toc-only}
 Explain auditability, adoption, extension, client trust, and ecosystem leverage.
@@ -28,7 +28,7 @@ Explain auditability, adoption, extension, client trust, and ecosystem leverage.
 
 ---
 
-## 26. Expansion Path
+## 28. Expansion Path
 
 ::: {.flow}
 Team Memory -> Development -> Architecture -> Strategy -> KPI Systems -> Observability
@@ -36,7 +36,7 @@ Team Memory -> Development -> Architecture -> Strategy -> KPI Systems -> Observa
 
 ---
 
-## 27. Consulting Motion
+## 29. Consulting Motion
 
 ::: {.toc-only}
 Protopipe as a transformation entry point: low-risk start, visible value,
