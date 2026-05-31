@@ -1,0 +1,14 @@
+## Deck Architecture
+
+| Act | Narrative Job | Canonical Anchor |
+|---|---|---|
+| 1 | Why: name the failure mode | Golden Circle, problems |
+| 2 | How: define APDP as the missing capability layer | Shared language, visibility, feedback |
+| 3 | What: introduce Protopipe components | Noesis, ProtoPortfolio, Composer, Storybook |
+| 4 | Loop: connect work to observations | Purpose to observations to knowledge |
+| 5 | Entry: show transformation path | Local AI, culture database, memory |
+| 6 | Vision: state the organizational outcome | Shared organizational reality |
+
+::: {.notes}
+This is a table of contents slide, not a final content slide.
+:::

@@ -1,0 +1,11 @@
+services:
+  plantuml:
+    image: plantuml/plantuml:1.2025.2
+    working_dir: /work
+    volumes:
+      - ../../..:/work
+    command:
+      - -tsvg
+      - -o
+      - ../../generated
+      - dist/presentations/protopipe-enterprise-pitch/diagrams/source/plantuml
