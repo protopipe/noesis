@@ -2,7 +2,7 @@
 
 ---
 
-## 12. Protopipe System Map
+## 14. Protopipe System Map
 
 ::: {.diagram-slot}
 Diagram target: component topology of Noesis, ProtoPortfolio, Composer, and
@@ -11,7 +11,7 @@ Storybook around the shared reality loop.
 
 ---
 
-## 13. Noesis: Canonical Reasoning Space
+## 15. Noesis: Canonical Reasoning Space
 
 ::: {.toc-only}
 AI-enforced synchronization, single source of truth, shared organizational
@@ -20,7 +20,7 @@ memory, and decision traceability.
 
 ---
 
-## 14. ProtoPortfolio: Augmented Strategy
+## 16. ProtoPortfolio: Augmented Strategy
 
 ::: {.toc-only}
 KPI Tree, hypothesis-driven strategy, and the business-product-architecture
@@ -29,7 +29,7 @@ translation layer.
 
 ---
 
-## 15. Composer: Architecture as an Experiment System
+## 17. Composer: Architecture as an Experiment System
 
 ::: {.toc-only}
 RFAs, strangler transformations, search-and-replace migrations, and reversible
@@ -38,7 +38,7 @@ architectural learning.
 
 ---
 
-## 16. Storybook: UX Communication Layer
+## 18. Storybook: UX Communication Layer
 
 ::: {.toc-only}
 Marketing, prototype generation, contracts, and future WYSIWYG assembly.
@@ -46,7 +46,7 @@ Marketing, prototype generation, contracts, and future WYSIWYG assembly.
 
 ---
 
-## 17. Component Responsibilities
+## 19. Component Responsibilities
 
 | Component | Primary Job | Failure It Prevents |
 |---|---|---|
@@ -54,4 +54,3 @@ Marketing, prototype generation, contracts, and future WYSIWYG assembly.
 | ProtoPortfolio | Connect strategy to measurable hypotheses | Activity steering |
 | Composer | Make architecture experimentally changeable | Big upfront commitments |
 | Storybook | Make experience inspectable and negotiable | Invisible UX assumptions |
-

@@ -45,17 +45,17 @@ Architecture localizes change, risk, and understanding as the organization grows
 <div class="mechanic-arrow">-></div>
 <div class="mechanic-step critical">Mechanic</div>
 <div class="mechanic-arrow">-></div>
-<div class="mechanic-step">Decision</div>
+<div class="mechanic-step">Contextual Decision</div>
 <div class="mechanic-arrow">-></div>
-<div class="mechanic-step">Implementation</div>
+<div class="mechanic-step">Realization</div>
 </div>
 
 <div class="mechanic-punchline">
 If a rule can be ignored without consequence, it is not a mechanic.
 </div>
 
-<div class="outcome-map">
-<div class="outcome-card">
+<div class="mechanic-type-grid">
+<div class="mechanic-type-card">
 <span>X over Y</span>
 Use when a mechanic enforces a clear preference
 between two competing approaches.
@@ -63,7 +63,7 @@ between two competing approaches.
 <i>Y is excluded by default. It needs strong justification to be chosen over X.</i>
 </div>
 
-<div class="outcome-card">
+<div class="mechanic-type-card">
 <span>X by Default, Y by Exception</span>
 Use when a behavior is allowed,
 but only with explicit justification.
@@ -71,7 +71,7 @@ but only with explicit justification.
 <i>Y is allowed, but only for the given exception</i>
 </div>
 
-<div class="outcome-card">
+<div class="mechanic-type-card">
 <span>No X without Y</span>
 Use when a behavior must never occur
 unless a prerequisite is fulfilled.
@@ -110,23 +110,63 @@ Experiments need accountable interpretation, not just technical execution.
 
 ---
 
-## 12. The Missing Layer
+## 12. Gapless Organizational Learning Process
 
-<p class="slide-kicker">Shared reality is the operational layer between intent and implementation.</p>
+<p class="slide-kicker">Purpose, strategy, delivery, observation, and learning stay in one measurable loop.</p>
 
-<div class="shared-reality-flow">
-<div>Purpose</div>
-<div>Strategy</div>
-<div>Hypothesis</div>
-<div>Experiment</div>
-<div>Architecture</div>
-<div>Development</div>
-<div>Observation</div>
-<div>Decision</div>
-<div>Learning</div>
+```{=html}
+<div class="enterprise-bpm">
+<img class="enterprise-bpmn-img" src="../assets/diagrams/shared-reality-bpmn.svg" alt="BPMN-style shared reality process across C-Level, Product Ownership, Developers, and Learning lanes">
 </div>
+```
 
 <div class="shared-reality-punchline">
-Protopipe exists to keep this chain connected, explicit, observable, and revisable.
+Protopipe exists to keep this loop connected, explicit, observable, and revisable.
 </div>
 
+---
+
+## 13. Process Transition Artifacts
+
+<p class="slide-kicker">Every handover becomes visible as a shared artifact that the next lane can understand and act on.</p>
+
+<div class="artifact-flow">
+<div class="artifact-card">
+<span>Purpose</span>
+<strong>Golden Circle</strong>
+Why, how, and what become a stable reference for strategic and product conversations.
+<em>Visible as shared orientation.</em>
+</div>
+
+<div class="artifact-card">
+<span>Strategy</span>
+<strong>Strategy Topic + KPI Tree</strong>
+Strategy replaces roadmap-only steering. KPI trees make business intent inspectable in ProtoPortfolio.
+<em>Visible as portfolio structure.</em>
+</div>
+
+<div class="artifact-card">
+<span>Hypothesis</span>
+<strong>Strategy-linked Claim</strong>
+A hypothesis belongs to a strategy topic and states what should become measurably true.
+<em>Visible as strategic assumption.</em>
+</div>
+
+<div class="artifact-card">
+<span>Experiment</span>
+<strong>Measured System Change</strong>
+An experiment tries to prove a hypothesis by changing or replacing part of the current system and expecting metric movement.
+<em>Visible as portfolio experiment.</em>
+</div>
+
+<div class="artifact-card">
+<span>Development</span>
+<strong>Feature Files / Scenarios</strong>
+Instead of story points, progress is visible as missing scenario steps on the experiment branch.
+<em>Visible on the experiment.</em>
+</div>
+</div>
+
+<div class="artifact-punchline">
+Artifacts are not write-only documentation. They are the shared objects that carry responsibility across the process.
+</div>

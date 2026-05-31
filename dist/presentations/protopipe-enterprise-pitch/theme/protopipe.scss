@@ -742,6 +742,42 @@ $mainFontSize: 34px;
   font-weight: 750;
 }
 
+.mechanic-type-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin-top: 1rem;
+  max-width: 940px;
+}
+
+.mechanic-type-card {
+  min-height: 190px;
+  border: 1px solid var(--pp-line);
+  border-top: 4px solid var(--pp-accent);
+  padding: 0.75rem 0.85rem;
+  color: var(--pp-muted);
+  background: rgba(255, 255, 255, 0.035);
+  font-size: 0.48em;
+  line-height: 1.18;
+}
+
+.mechanic-type-card span {
+  display: block;
+  margin-bottom: 0.65rem;
+  color: var(--pp-dim);
+  font-size: 0.82em;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.mechanic-type-card i {
+  display: block;
+  margin-top: 0.65rem;
+  color: var(--pp-muted);
+  font-style: italic;
+  font-weight: 500;
+}
+
 .mechanic-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -790,6 +826,74 @@ $mainFontSize: 34px;
   font-size: 0.46em;
   font-weight: 700;
   text-align: center;
+}
+
+.enterprise-bpm {
+  margin-top: 1.25rem;
+  max-width: 1320px;
+}
+
+.enterprise-bpmn-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 475px;
+}
+
+.artifact-flow {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 0.65rem;
+  margin-top: 1.2rem;
+  max-width: 1320px;
+}
+
+.artifact-card {
+  min-height: 265px;
+  border: 1px solid var(--pp-line);
+  border-top: 4px solid rgba(246, 197, 111, 0.86);
+  border-radius: 8px;
+  padding: 0.72rem;
+  color: var(--pp-muted);
+  background: rgba(255, 255, 255, 0.035);
+  font-size: 0.46em;
+  line-height: 1.18;
+}
+
+.artifact-card span {
+  display: block;
+  margin-bottom: 0.55rem;
+  color: #ffe08d;
+  font-size: 0.82em;
+  font-weight: 850;
+  text-transform: uppercase;
+}
+
+.artifact-card strong {
+  display: block;
+  margin-bottom: 0.7rem;
+  color: var(--pp-text);
+  font-size: 1.12em;
+  line-height: 1.08;
+}
+
+.artifact-card em {
+  display: block;
+  margin-top: 0.7rem;
+  color: var(--pp-dim);
+  font-style: italic;
+  font-weight: 650;
+}
+
+.artifact-punchline {
+  max-width: 1180px;
+  margin-top: 0.9rem;
+  border-left: 4px solid var(--pp-accent);
+  padding: 0.7rem 0.9rem;
+  color: var(--pp-text);
+  background: rgba(247, 67, 110, 0.07);
+  font-size: 0.58em;
+  font-weight: 750;
 }
 
 .responsibility-bpm {
@@ -1047,7 +1151,9 @@ $mainFontSize: 34px;
   .survival-anchors,
   .outcome-map,
   .mechanic-chain,
+  .mechanic-type-grid,
   .mechanic-grid,
+  .artifact-flow,
   .shared-reality-flow,
   .circle-stack,
   .golden-visual,
@@ -1064,7 +1170,9 @@ $mainFontSize: 34px;
   .wound-card,
   .architecture-card,
   .outcome-card,
+  .mechanic-type-card,
   .mechanic-card,
+  .artifact-card,
   .circle-item {
     min-height: 0;
   }

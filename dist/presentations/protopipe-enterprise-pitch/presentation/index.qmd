@@ -15,7 +15,7 @@ format:
 
 {{< include chapters/01-act-problem.qmd >}}
 
-{{< include chapters/02-act-missing-layer.qmd >}}
+{{< include chapters/02-act-gapless-org-learning.qmd >}}
 
 {{< include chapters/03-act-protopipe.qmd >}}
 
