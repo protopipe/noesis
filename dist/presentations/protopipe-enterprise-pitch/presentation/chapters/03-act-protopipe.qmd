@@ -280,6 +280,20 @@ BDD is the communication protocol. The catalog is the living product knowledge i
 <strong>A feature is green when all of its steps are verified.</strong>
 </div>
 
+<div class="catalog-progress-shift">
+<div class="estimated">
+<span>Instead of</span>
+<strong>Story Points</strong>
+<small>Estimated effort without verified product behavior</small>
+</div>
+<b>→</b>
+<div class="verified">
+<span>Progress becomes</span>
+<strong>Green Feature Steps</strong>
+<small>Observable behavior implemented and verified on the feature branch</small>
+</div>
+</div>
+
 ---
 
 ## 22. Composer: Architecture as an Experiment System
@@ -344,26 +358,68 @@ BDD is the communication protocol. The catalog is the living product knowledge i
 
 ## 23. Storybook: UX Communication Layer
 
-::: {.toc-only}
-Marketing, prototype generation, contracts, and future WYSIWYG assembly.
-:::
+<p class="slide-kicker">Storybook turns frontend intent into an executable product contract before productive backends or runtime integration exist.</p>
+
+<div class="storybook-system">
+<div class="storybook-inputs">
+<span>Shared inputs</span>
+<div class="storybook-input-grid">
+<i><b>Product</b>Hypothesis and success criteria</i>
+<i><b>UX</b>Interaction and visual language</i>
+<i><b>Frontend</b>Components, actions, and contexts</i>
+<i><b>Backend</b>Capabilities and constraints</i>
+</div>
+</div>
+
+<div class="storybook-core">
+<span>Executable specification</span>
+<strong>Component + Context + Action + Story</strong>
+<div class="storybook-preview">
+<div class="storybook-browser">
+<i></i><i></i><i></i>
+</div>
+<div class="storybook-ui">
+<b>Checkout confirmation</b>
+<small>Context: delayed provider response</small>
+<button type="button">Retry payment</button>
+</div>
+</div>
+<p>Product, design, engineering, QA, and test participants review the same interactive behavior without waiting for a backend.</p>
+</div>
+
+<div class="storybook-gates">
+<span>Validation gates</span>
+<div class="storybook-gate-list">
+<i class="green"><b>Behavior</b>Actions and context transitions execute</i>
+<i class="green"><b>Visual constraints</b>Design invariants survive composition</i>
+<i class="green"><b>Contracts</b>Backend expectations become explicit</i>
+<i class="experiment"><b>Experiments</b>Variants substitute artifacts explicitly</i>
+</div>
+</div>
+</div>
+
+<div class="storybook-publication">
+<div>
+<span>Draft</span>
+<b>→</b>
+<span>Validated in Storybook</span>
+<b>→</b>
+<span>Contract-compatible</span>
+<b>→</b>
+<strong>Publish RFA / IFA to Composer</strong>
+</div>
+<em><b>Future interaction layer</b>WYSIWYG assembly over validated artifacts.</em>
+</div>
+
+<div class="storybook-punchline">
+Storybook is not a visual gallery. It is the quality gate where UI becomes negotiable, executable, and safe to promote.
+</div>
+
+<p class="source-note">Source: Protopipe Storybook arc42 architecture.</p>
 
 ---
 
-## 24. Component Responsibilities
-
-| Component | Primary Job | Failure It Prevents |
-|---|---|---|
-| Noesis | Keep shared meaning stable | Semantic drift |
-| Cockpit | Keep strategy connected to reality | Strategy detachment |
-| ProtoPortfolio | Connect strategy to measurable hypotheses | Activity steering |
-| ProtoCatalog | Make expected behavior explicit and testable | Invisible assumptions |
-| Composer | Make architecture experimentally changeable | Big upfront commitments |
-| Storybook | Make experience inspectable and negotiable | Invisible UX assumptions |
-
----
-
-## 25. How Shared Artifacts Stay Alive
+## 24. How Shared Artifacts Stay Alive
 
 <p class="slide-kicker">The artifact defines shared meaning. The tooling keeps it connected, executable, and open to validation.</p>
 

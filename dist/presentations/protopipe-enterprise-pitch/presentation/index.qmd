@@ -19,8 +19,4 @@ format:
 
 {{< include chapters/04-act-consulting-entry.qmd >}}
 
-{{< include chapters/05-act-architecture.qmd >}}
-
 {{< include chapters/06-act-vision.qmd >}}
-
-{{< include chapters/90-appendix.qmd >}}
