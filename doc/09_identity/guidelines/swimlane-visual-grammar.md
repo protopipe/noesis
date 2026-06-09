@@ -21,7 +21,7 @@ Diese Datei beschreibt die visuelle Grammatik der Swimlanes in Protopipe. Ziel i
 | Aspekt         | Konvention                                                   |
 |----------------|--------------------------------------------------------------|
 | **Ausrichtung**| Vertikal bevorzugt für Klarheit bei Entscheidungen im Zeitverlauf |
-| **Farben**     | Lane-Grenzen dunkelgrau (#222), aktive Token leuchten in Rot (#f7436e) |
+| **Farben**     | Lane-Grenzen bleiben neutral. Probleme, Experimente und aktive Veränderung sind Pink (`#f7436e`). Learning, Evidenz und validierte Wirkung sind Gold (`#f6c56f`). |
 | **Typografie** | Helvetica für Labels, Polentical für aktive Elemente oder States |
 | **Icons**      | Minimalistisch, Fokus auf Bedeutung (z. B. „?“, „✔“, „↻“)     |
 
@@ -34,6 +34,12 @@ Diese Datei beschreibt die visuelle Grammatik der Swimlanes in Protopipe. Ziel i
 - Hypothesen-Grid mit Lane-Struktur
 - Review-Dashboard mit Swimlane-Übersicht
 - Interaktive Prozessdarstellung
+
+Farben beschreiben die Bedeutung eines Tokens, nicht seine bloße Aktivität:
+
+- Ein aktives Experiment bleibt pink.
+- Das daraus gewonnene Learning wird golden.
+- Unbewertete Prozessschritte und Entscheidungen bleiben neutral.
 
 ---
 
@@ -63,4 +69,3 @@ Diese Datei beschreibt die visuelle Grammatik der Swimlanes in Protopipe. Ziel i
 Siehe auch:
 - [`ui-principles.md`](../ui/ui-principles.md)
 - [`brand-foundation.md`](../brand/brand-foundation.md)
-
