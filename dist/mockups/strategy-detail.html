@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Protopipe Strategy Detail</title>
+<style>
+:root{
+  --bg:#081a17;--panel:#102b27;--text:#e9f3f0;--muted:#8fa8a1;
+  --line:rgba(255,255,255,.075);--red:#f7436e;--warn:#f1c98f;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;color:var(--text);font-family:Inter,"Helvetica Neue",Arial,sans-serif;
+  background:radial-gradient(circle at 18% 10%,rgba(222,8,61,.16),transparent 28%),linear-gradient(135deg,#06120f,#081a17 45%,#0b1f1b);
+}
+.app{max-width:1180px;margin:0 auto;padding:24px}
+.topbar,.panel{
+  border:1px solid var(--line);background:linear-gradient(180deg,rgba(16,43,39,.92),rgba(8,26,23,.88));
+  border-radius:22px;box-shadow:0 16px 50px rgba(0,0,0,.22);
+}
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:16px 20px}
+.brand{font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+.brand span{display:block;margin-top:3px;color:var(--muted);font-size:11px;letter-spacing:normal;text-transform:none}
+a{color:var(--text);text-decoration:none}
+.back{font-size:12px;color:var(--muted)}
+.back:hover{color:var(--red)}
+.hero{padding:42px 4px 24px}
+.eyebrow{color:var(--warn);font-size:11px;letter-spacing:.12em;text-transform:uppercase}
+h1{margin:8px 0;font-size:42px;letter-spacing:-.04em}
+.meta{color:var(--muted);font-size:13px}
+.grid{display:grid;grid-template-columns:1.4fr .8fr;gap:16px}
+.panel{padding:20px}
+.panel h2{margin:0 0 14px;font-size:17px}
+.statement{font-size:22px;line-height:1.4}
+.list{display:grid;gap:10px}
+.row{display:flex;justify-content:space-between;gap:16px;padding:11px 0;border-bottom:1px solid var(--line);color:var(--muted);font-size:13px}
+.row:last-child{border:0}
+.row strong{color:var(--text)}
+.experiment{padding:13px;border:1px solid var(--line);border-radius:14px;background:rgba(255,255,255,.03)}
+.experiment + .experiment{margin-top:9px}
+.experiment b{display:block;margin-bottom:5px}
+.experiment span{color:var(--muted);font-size:12px}
+@media(max-width:800px){.grid{grid-template-columns:1fr}.topbar{align-items:flex-start;gap:15px}.topbar{flex-direction:column}}
+</style>
+</head>
+<body>
+<div class="app">
+  <nav class="topbar">
+    <div class="brand">Protopipe<span>Product Owner Strategy View</span></div>
+    <a class="back" href="ProtopipeCockpit.html">← Back to Executive Cockpit</a>
+  </nav>
+
+  <header class="hero">
+    <div class="eyebrow">Active Strategy</div>
+    <h1 id="strategyName">Enterprise Expansion</h1>
+    <div class="meta" id="strategyMeta">Q2–Q4 2026 · Owner CEO / CPO</div>
+  </header>
+
+  <main class="grid">
+    <section class="panel">
+      <h2>Strategic Hypothesis</h2>
+      <div class="statement" id="hypothesis">The partner network can scale without proportional increases in onboarding costs.</div>
+    </section>
+    <section class="panel">
+      <h2>Operating Position</h2>
+      <div class="list">
+        <div class="row"><span>Budget</span><strong id="budget">CHF 5.2M</strong></div>
+        <div class="row"><span>Capacity</span><strong id="capacity">30%</strong></div>
+        <div class="row"><span>Priority</span><strong id="priority">Critical</strong></div>
+      </div>
+    </section>
+    <section class="panel">
+      <h2>Current Experiments</h2>
+      <div id="experiments"></div>
+    </section>
+    <section class="panel">
+      <h2>Decision Context</h2>
+      <div class="list">
+        <div class="row"><span>Primary friction</span><strong id="friction">Sales cycle exceeds target</strong></div>
+        <div class="row"><span>Critical risk</span><strong id="risk">Competitive response</strong></div>
+      </div>
+    </section>
+  </main>
+</div>
+<script>
+const strategies={
+ "enterprise-expansion":{name:"Enterprise Expansion",meta:"Q2–Q4 2026 · Owner CEO / CPO",budget:"CHF 5.2M",capacity:"30%",priority:"Critical",hypothesis:"The partner network can scale without proportional increases in onboarding costs.",friction:"Sales cycle exceeds the target range by 21 days",risk:"Aggressive response from an established competitor",experiments:[["Partner pilot","Testing scalable partner onboarding"],["Budget shift","Moving spend toward partner enablement"]]},
+ "profitability-first":{name:"Profitability First",meta:"Q3 2026–Q1 2027 · Owner CFO",budget:"CHF 3.7M",capacity:"24%",priority:"High",hypothesis:"Customers will accept reduced packaging without a churn spike.",friction:"Cloud costs are rising faster than margin improvements",risk:"Underinvestment reduces future growth options",experiments:[["Cost review","Validating sustainable infrastructure savings"]]},
+ "ai-first-productization":{name:"AI-First Productization",meta:"Q2–Q4 2026 · Owner CTO / CPO",budget:"CHF 4.4M",capacity:"22%",priority:"Critical",hypothesis:"AI capabilities deliver decision quality customers are willing to pay for.",friction:"Inference costs create margin uncertainty",risk:"Regulatory requirements increase audit effort",experiments:[["AI pilot","Testing product value with selected customers"],["Pricing test","Validating willingness to pay"]]},
+ "market-resilience":{name:"Market Resilience",meta:"Q3 2026 · Owner CEO / CFO",budget:"CHF 2.1M",capacity:"10%",priority:"Medium",hypothesis:"Existing customers stabilize revenue under market pressure.",friction:"Demand indicators diverge across regions",risk:"Interest-rate or regulatory changes reduce investment",experiments:[["Market signal","Testing regional demand resilience"]]},
+ "operational-excellence":{name:"Operational Excellence",meta:"Q2–Q3 2026 · Owner COO / CTO",budget:"CHF 2.8M",capacity:"14%",priority:"High",hypothesis:"Process standardization reduces friction without sacrificing autonomy.",friction:"Automation reduces effort more slowly than expected",risk:"Excessive centralization creates coordination costs",experiments:[["Cloud response","Reducing infrastructure cost exposure"],["Ops change","Testing a new operating model"]]}
+};
+const slug=new URLSearchParams(location.search).get("strategy")||"enterprise-expansion";
+const strategy=strategies[slug]||strategies["enterprise-expansion"];
+document.title=`${strategy.name} · Protopipe`;
+strategyName.textContent=strategy.name;
+strategyMeta.textContent=strategy.meta;
+hypothesis.textContent=strategy.hypothesis;
+budget.textContent=strategy.budget;
+capacity.textContent=strategy.capacity;
+priority.textContent=strategy.priority;
+friction.textContent=strategy.friction;
+risk.textContent=strategy.risk;
+experiments.innerHTML=strategy.experiments.map(([name,description])=>`<div class="experiment"><b>${name}</b><span>${description}</span></div>`).join("");
+</script>
+</body>
+</html>
