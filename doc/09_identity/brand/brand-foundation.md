@@ -23,10 +23,29 @@ Protopipe ist das Rückgrat moderner Unternehmensführung. Es verbindet strategi
 | Zweck         | Farbe        | Vorschau                               |
 |---------------|--------------|----------------------------------------|
 | **Primärfarbe** | `#f7436e`    | ![#f7436e](https://placehold.co/15x15/f7436e/f7436e.png) |
+| **Learning / Erfolg** | `#f6c56f` | ![#f6c56f](https://placehold.co/15x15/f6c56f/f6c56f.png) |
 | **Grundfläche** | `#081a17`    | ![#081a17](https://placehold.co/15x15/081a17/081a17.png) |
 | **Dunkelgrau**  | `#0b0c0e`    |  ![#0b0c0e](https://placehold.co/15x15/0b0c0e/0b0c0e.png) |
 | **Sektionen hell** | `#f7f7f7` | ![#f7f7f7](https://placehold.co/15x15/f7f7f7/f7f7f7.png) |
 | **Text / Weiß** | `#ffffff`   | ![#ffffff](https://placehold.co/15x15/ffffff/ffffff.png) |
+
+### Semantische Farbbedeutung
+
+Die Akzentfarben sind nicht austauschbare Dekoration. Sie tragen eine
+wiederkehrende Bedeutung über Präsentationen, Diagramme und Produktoberflächen.
+
+| Farbe | Bedeutung | Typische Anwendung |
+|---|---|---|
+| **Protopipe Pink** (`#f7436e`) | Veränderung, Feedback, Spannung, Herausforderung und Problem | Probleme, Fokusthemen, Experimente, aktive Veränderung und kritische Rückkanäle |
+| **Learning Gold** (`#f6c56f`) | Lernen, Evidenz, gewünschte Wirkung und sichtbarer Erfolg | Desired Outcomes, validierte Erkenntnisse, normative Mechanics, Learning Records und beobachtbare Realität |
+| **Neutralfarben** | Kontext, Struktur und noch nicht bewertete Zustände | Purpose, Hypothesen, Entscheidungen, Prozessschritte, Grenzen und unterstützende Information |
+
+Pink markiert, **wo Realität herausgefordert oder verändert wird**.
+Gold markiert, **was daraus gelernt, bestätigt oder als Wirkung sichtbar wird**.
+
+Gold darf nicht für beliebige Hervorhebungen verwendet werden. Pink darf nicht
+jeden interaktiven Zustand dominieren. Die semantische Bedeutung geht vor
+dekorativer Markenwirkung.
 
 ## Typografie
 - **Polentical Neon Bold** – Für markante Headlines & Branding.
@@ -54,4 +73,3 @@ Das ist keine Evolution von Jira. Es ist die Antwort auf seine Schwächen.
 ---
 
 Diese Foundation wird in den weiteren Design-, UI- und Guideline-Dokumenten präzisiert.
-
