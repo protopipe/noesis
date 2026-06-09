@@ -9,9 +9,9 @@
   </defs>
 
   <rect x="0" y="0" width="1320" height="430" rx="14" fill="rgba(255,255,255,0.025)" stroke="rgba(255,255,255,0.12)" stroke-width="1.5"/>
-  <rect x="0" y="0" width="170" height="98" fill="rgba(247,67,110,0.34)"/>
-  <rect x="0" y="98" width="170" height="98" fill="rgba(246,197,111,0.24)"/>
-  <rect x="0" y="196" width="170" height="98" fill="rgba(65,214,195,0.18)"/>
+  <rect x="0" y="0" width="170" height="98" fill="rgba(255,255,255,0.08)"/>
+  <rect x="0" y="98" width="170" height="98" fill="rgba(255,255,255,0.065)"/>
+  <rect x="0" y="196" width="170" height="98" fill="rgba(255,255,255,0.05)"/>
   <rect x="0" y="294" width="170" height="136" fill="rgba(246,197,111,0.18)"/>
   <g stroke="rgba(255,255,255,0.13)" stroke-width="1.5">
     <line x1="0" y1="98" x2="1320" y2="98"/>
@@ -29,13 +29,13 @@
     <text x="24" y="378" font-size="18" fill="#b9c3bf" font-weight="700">Canonical</text>
   </g>
 
-  <circle cx="215" cy="49" r="18" fill="rgba(246,197,111,0.08)" stroke="#f6c56f" stroke-width="4"/>
+  <circle cx="215" cy="49" r="18" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.7)" stroke-width="4"/>
 
   <g fill="rgba(255,255,255,0.045)" stroke="rgba(255,255,255,0.62)" stroke-width="1.7">
     <rect x="260" y="24" width="118" height="50" rx="9"/>
     <rect x="420" y="24" width="118" height="50" rx="9"/>
     <rect x="580" y="122" width="126" height="50" rx="9"/>
-    <rect x="750" y="122" width="126" height="50" rx="9"/>
+    <rect x="750" y="122" width="126" height="50" rx="9" fill="rgba(247,67,110,0.1)" stroke="#f7436e"/>
     <rect x="900" y="220" width="132" height="50" rx="9"/>
     <rect x="1080" y="220" width="132" height="50" rx="9"/>
   </g>
@@ -49,7 +49,7 @@
     <text x="1146" y="250">Observation</text>
   </g>
 
-  <polygon points="1220,111 1260,151 1220,191 1180,151" fill="rgba(247,67,110,0.08)" stroke="#ff3e72" stroke-width="2"/>
+  <polygon points="1220,111 1260,151 1220,191 1180,151" fill="rgba(255,255,255,0.045)" stroke="rgba(255,255,255,0.62)" stroke-width="2"/>
   <g font-family="Inter, Arial, sans-serif" text-anchor="middle" fill="#f4fbf8" font-weight="800">
     <text x="1220" y="145" font-size="17">Decision</text>
     <text x="1220" y="164" font-size="14" fill="#b9c3bf" font-weight="700">gate</text>

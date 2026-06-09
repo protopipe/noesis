@@ -1,86 +1,66 @@
-# Presentation Chapter Structure and Slide TOC
+# Presentation Chapter Structure
 
 Working title: **Protopipe**
 
 Subtitle: **Augmented Product Development Platform**
 
-Primary narrative path:
+Primary narrative:
 
-Golden Circle / Purpose -> Strategy -> Product -> Architecture -> Development
--> Monitoring and Observations -> Learning -> Decision
+Problem Statement -> Communication Artifacts -> Enforcing Tools ->
+Consulting Entry -> Architecture and Observability -> Vision
 
-## Act 0: Opening
+The title slide opens directly into Act 1. A separate table-of-contents slide is
+intentionally omitted: the act dividers provide orientation without delaying the
+narrative.
 
-| # | Slide | Purpose |
-|---:|---|---|
-| 0 | Protopipe | Establish the deck frame and category. |
-| 1 | Deck Architecture | Show the Golden Circle-driven narrative map. |
+## Act 1: Problem Statement
 
-## Act 1: The Problem
+| Slides | Narrative Job |
+|---|---|
+| 01-02 | Establish the Golden Circle and Protopipe's why, how, and what. |
+| 03-08 | Expose write-only strategy, incompatible communication codes, decision loops, ivory-tower architecture, responsibility without control, and organizational latency. |
 
-| # | Slide | Purpose |
-|---:|---|---|
-| 2 | The Golden Circle | Explain why the deck starts with purpose before platform. |
-| 3 | Protopipe's Golden Circle | Apply Why, How, What to the deck narrative. |
-| 4 | The Strategy Is Defined. It Just Does Not Arrive. | Press the wound: purpose, strategy, and culture exist as artifacts but do not change daily work. |
-| 5 | The Best Idea Does Not Automatically Win | Condense the Luhmann/Onlu wound: organizations select what connects to communication. |
-| 6 | Deliberation Needs Observable Reality | Show Habermas, Bowtie, and architecture as escape from decision-meeting loops. |
-| 7 | Ivory Tower Architecture | Show architecture principles without feedback, application, or visible trade-offs. |
-| 8 | Responsibility Without Control | Show accountability without authority, context, or system-level influence. |
-| 9 | Survival of the Fastest | Summarize the problem as organizational decision latency. |
+## Act 2: Communication Artifacts
 
-## Act 2: Outcomes and Mechanics
+| Slides | Narrative Job |
+|---|---|
+| 09-11 | Move from problems to desired outcomes and normative mechanics. |
+| 12 | Show the gapless organizational learning process across roles. |
+| 13 | Introduce the visible artifacts handed from purpose through development. |
 
-| # | Slide | Purpose |
-|---:|---|---|
-| 9 | From Problems to Desired Outcomes | Show stakeholder-bound fix stars before solutions. |
-| 10 | Mechanics Make Outcomes Unavoidable | Explain mechanics as enforced trade-offs. |
-| 11 | The First Mechanics | Introduce shared meaning, observable feedback, learning signal, and business ownership. |
-| 12 | The Missing Layer | Position shared reality between intent and implementation. |
+## Act 3: Enforcing Tools
 
-## Act 3: Protopipe
+| Slides | Narrative Job |
+|---|---|
+| 14-16 | Make purpose and culture available at the point of work through Noesis and AI-assisted context. |
+| 17 | Show the Protopipe Cockpit as the C-level surface for strategy health, reality signals, strategic focus, and decision detail. |
+| 18 | Demonstrate the executable Cockpit mock as product evidence. |
+| 19 | Connect strategy to hypothesis-driven experimentation through ProtoPortfolio. |
+| 20-21 | Present ProtoCatalog as one versioned behavior model and make feature-branch progress observable through verified steps. |
+| 22 | Show how Composer creates a reversible experiment boundary inside a legacy system and shortens the path to a first production experiment. |
+| 23-24 | Introduce Storybook and summarize component responsibilities. |
+| 25 | Revisit the communication artifacts with the tooling that keeps each one current, executable, and testable. |
 
-| # | Slide | Purpose |
-|---:|---|---|
-| 13 | Protopipe System Map | Show component relationships. |
-| 14 | Noesis: Canonical Reasoning Space | Introduce shared memory and traceability. |
-| 15 | ProtoPortfolio: Augmented Strategy | Connect KPI trees, hypotheses, and strategy. |
-| 16 | Composer: Architecture as an Experiment System | Show reversible architecture work. |
-| 17 | Storybook: UX Communication Layer | Show prototype, marketing, and contract surfaces. |
-| 18 | Component Responsibilities | Clarify each component's job. |
+## Act 4: Consulting Entry
 
-## Act 4: The Integrated Loop
+| Slides | Narrative Job |
+|---|---|
+| 26-30 | Show a low-risk entry through Noesis, local AI, OSS, organizational memory, and an incremental expansion path. |
 
-| # | Slide | Purpose |
-|---:|---|---|
-| 19 | From Purpose to Knowledge | Present the full operating loop. |
-| 20 | Experiments Beat Large Upfront Decisions | Explain risk-first exploration. |
-| 21 | Architecture and Development Become Observable | Connect architecture and implementation to measurable change. |
-| 22 | Monitoring Becomes Causal, Not Decorative | Tie observations and metrics to hypotheses. |
-| 23 | Decisions Become Traceable | Preserve evidence and trade-offs. |
+## Act 5: Architecture and Observability
 
-## Act 5: Consulting Entry Strategy
-
-| # | Slide | Purpose |
-|---:|---|---|
-| 24 | Bottom-Up Entry | Start with Noesis, local LLM, culture database, memory. |
-| 25 | Why Local AI Matters | Address sovereignty, trust, and context. |
-| 26 | Why OSS Matters | Address auditability and adoption. |
-| 27 | Expansion Path | Show movement from memory to KPI systems. |
-| 28 | Consulting Motion | Define transformation entry strategy. |
+| Slides | Narrative Job |
+|---|---|
+| 31 | Connect experiments to architecture, development, observation, decisions, and learning. |
+| 32-35 | Explain reversible architecture, observable development, causal monitoring, and traceable decisions. |
 
 ## Act 6: Vision
 
-| # | Slide | Purpose |
-|---:|---|---|
-| 29 | Shared Organizational Reality | State the end-state category. |
-| 30 | Faster Experimentation | Show learning speed as strategic capability. |
-| 31 | Fewer Political Decisions | Replace ungrounded opinion with evidence. |
-| 32 | Evidence-Driven Enterprise Change | Close the enterprise promise. |
+| Slides | Narrative Job |
+|---|---|
+| 36-39 | Close with shared organizational reality, faster experimentation, fewer political decisions, and evidence-driven change. |
 
 ## Appendix
 
-| # | Slide | Purpose |
-|---:|---|---|
-| 33 | Source Anchors | Show Noesis source areas used by the deck. |
-| 34 | Future Detail Slides | Reserve structured depth for later authoring. |
+- Source anchors
+- Future theory, component, consulting, case-study, and implementation detail
