@@ -1,4 +1,6 @@
-# Act 2: Outcomes and Mechanics {.section}
+# Act 2: Communication Artifacts {.section .learning-section}
+
+<p class="section-subtitle">How shared meaning becomes visible, transferable, and actionable.</p>
 
 ---
 
@@ -43,7 +45,7 @@ Architecture localizes change, risk, and understanding as the organization grows
 <div class="mechanic-arrow">-></div>
 <div class="mechanic-step">Desired Outcome</div>
 <div class="mechanic-arrow">-></div>
-<div class="mechanic-step critical">Mechanic</div>
+<div class="mechanic-step learning">Mechanic</div>
 <div class="mechanic-arrow">-></div>
 <div class="mechanic-step">Contextual Decision</div>
 <div class="mechanic-arrow">-></div>
@@ -138,7 +140,7 @@ Why, how, and what become a stable reference for strategic and product conversat
 <em>Visible as shared orientation.</em>
 </div>
 
-<div class="artifact-card">
+<div class="artifact-card focus">
 <span>Strategy</span>
 <strong>Strategy Topic + KPI Tree</strong>
 Strategy replaces roadmap-only steering. KPI trees make business intent inspectable in ProtoPortfolio.
@@ -152,7 +154,7 @@ A hypothesis belongs to a strategy topic and states what should become measurabl
 <em>Visible as strategic assumption.</em>
 </div>
 
-<div class="artifact-card">
+<div class="artifact-card experiment">
 <span>Experiment</span>
 <strong>Measured System Change</strong>
 An experiment tries to prove a hypothesis by changing or replacing part of the current system and expecting metric movement.

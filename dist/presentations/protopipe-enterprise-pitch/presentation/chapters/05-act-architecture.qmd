@@ -1,16 +1,16 @@
-# Act 4: The Integrated Loop {.section}
+# Act 5: Architecture and Observability {.section .learning-section}
 
 ---
 
-## 20. From Purpose to Knowledge
+## 31. Architecture Carries the Experiment
 
-::: {.flow}
-Golden Circle -> Strategy -> Problem -> Discussion -> Hypothesis -> Prototype -> Experiment -> Implementation -> Monitoring -> Observation -> Decision -> Knowledge
+::: {.flow .learning-flow}
+Hypothesis -> Experiment -> Architecture -> Development -> Observation -> Decision -> Learning
 :::
 
 ---
 
-## 21. Experiments Beat Large Upfront Decisions
+## 32. Experiments Beat Large Upfront Decisions
 
 ::: {.toc-only}
 Connect risk-first exploration, reversibility, and feedback over opinion.
@@ -18,7 +18,7 @@ Connect risk-first exploration, reversibility, and feedback over opinion.
 
 ---
 
-## 22. Architecture and Development Become Observable
+## 33. Development Becomes Observable
 
 ::: {.toc-only}
 Show architecture as dependency management, invariant placement, and blast
@@ -27,7 +27,7 @@ radius reduction, connected to implementation feedback and runtime observation.
 
 ---
 
-## 23. Monitoring Becomes Causal, Not Decorative
+## 34. Monitoring Becomes Causal, Not Decorative
 
 ::: {.toc-only}
 Tie KPI trees, telemetry, observations, hypotheses, and experiments so metrics
@@ -36,7 +36,7 @@ can explain decisions.
 
 ---
 
-## 24. Decisions Become Traceable
+## 35. Decisions Become Traceable
 
 ::: {.toc-only}
 Show how evidence, trade-offs, and canonical references survive beyond meetings.

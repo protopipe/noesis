@@ -1,6 +1,8 @@
 project:
   type: website
   output-dir: _site
+  pre-render:
+    - scripts/sync-mockups.sh
   render:
     - presentation/index.qmd
 

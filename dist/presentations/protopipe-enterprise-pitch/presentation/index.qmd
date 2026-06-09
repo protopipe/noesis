@@ -11,17 +11,15 @@ format:
       data-background-position: center
 ---
 
-{{< include chapters/00-title.qmd >}}
-
 {{< include chapters/01-act-problem.qmd >}}
 
 {{< include chapters/02-act-gapless-org-learning.qmd >}}
 
 {{< include chapters/03-act-protopipe.qmd >}}
 
-{{< include chapters/04-act-integrated-loop.qmd >}}
+{{< include chapters/04-act-consulting-entry.qmd >}}
 
-{{< include chapters/05-act-consulting-entry.qmd >}}
+{{< include chapters/05-act-architecture.qmd >}}
 
 {{< include chapters/06-act-vision.qmd >}}
 

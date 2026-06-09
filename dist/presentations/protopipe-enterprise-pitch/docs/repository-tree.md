@@ -7,18 +7,19 @@ protopipe-enterprise-pitch/
 ├── presentation/
 │   ├── index.qmd
 │   └── chapters/
-│       ├── 00-title.qmd
 │       ├── 01-act-problem.qmd
-│       ├── 02-act-missing-layer.qmd
+│       ├── 02-act-gapless-org-learning.qmd
 │       ├── 03-act-protopipe.qmd
-│       ├── 04-act-integrated-loop.qmd
-│       ├── 05-act-consulting-entry.qmd
+│       ├── 04-act-consulting-entry.qmd
+│       ├── 05-act-architecture.qmd
 │       ├── 06-act-vision.qmd
 │       └── 90-appendix.qmd
 ├── theme/
 │   └── protopipe.scss
 ├── assets/
 │   ├── fonts/
+│   ├── diagrams/
+│   │   └── shared-reality-bpmn.svg
 │   ├── images/
 │   └── logos/
 │       ├── README.md

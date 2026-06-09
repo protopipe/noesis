@@ -1,4 +1,4 @@
-# Act 1: The Problem {.section}
+# Act 1: Problem Statement {.section .focus-section}
 
 ---
 
@@ -201,7 +201,7 @@ Without observable reality, meetings and politics become a substitute for knowle
 <p>Claims must be justified, located, challenged, and understood.</p>
 </div>
 <div class="deliberation-plus">+</div>
-<div class="deliberation-block critical">
+<div class="deliberation-block learning">
 <span>System architecture</span>
 <strong>Observable reality</strong>
 <p>Metrics, events, tests, monitoring, and feedback make claims decidable.</p>

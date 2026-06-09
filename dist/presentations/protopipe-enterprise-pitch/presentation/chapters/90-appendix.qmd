@@ -1,4 +1,4 @@
-# Appendix {.section}
+# Appendix {.section .neutral-section}
 
 ---
 
@@ -21,4 +21,3 @@
 Reserve appendix space for deeper theory references, component examples,
 consulting packages, case studies, and technical implementation notes.
 :::
-

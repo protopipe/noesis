@@ -1,8 +1,8 @@
-# Act 6: Vision {.section}
+# Act 6: Vision {.section .learning-section}
 
 ---
 
-## 30. Shared Organizational Reality
+## 36. Shared Organizational Reality
 
 ::: {.toc-only}
 Protopipe reduces political decisions by making assumptions, evidence, and
@@ -11,7 +11,7 @@ memory visible.
 
 ---
 
-## 31. Faster Experimentation
+## 37. Faster Experimentation
 
 ::: {.toc-only}
 Organizations become faster because learning loops become explicit and
@@ -20,7 +20,7 @@ supported from strategic intent to runtime observation.
 
 ---
 
-## 32. Fewer Political Decisions
+## 38. Fewer Political Decisions
 
 ::: {.toc-only}
 Debate remains valuable, but ungrounded opinion loses veto power.
@@ -28,7 +28,7 @@ Debate remains valuable, but ungrounded opinion loses veto power.
 
 ---
 
-## 33. Evidence-Driven Enterprise Change
+## 39. Evidence-Driven Enterprise Change
 
 ::: {.toc-only}
 End with the strategic promise: better decisions, faster, with less waste and
