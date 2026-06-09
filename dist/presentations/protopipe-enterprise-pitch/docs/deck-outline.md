@@ -7,7 +7,7 @@ Subtitle: **Augmented Product Development Platform**
 Primary narrative:
 
 Problem Statement -> Communication Artifacts -> Enforcing Tools ->
-Consulting Entry -> Architecture and Observability -> Vision
+Consulting Entry -> Vision
 
 The title slide opens directly into Act 1. A separate table-of-contents slide is
 intentionally omitted: the act dividers provide orientation without delaying the
@@ -38,29 +38,24 @@ narrative.
 | 19 | Connect strategy to hypothesis-driven experimentation through ProtoPortfolio. |
 | 20-21 | Present ProtoCatalog as one versioned behavior model and make feature-branch progress observable through verified steps. |
 | 22 | Show how Composer creates a reversible experiment boundary inside a legacy system and shortens the path to a first production experiment. |
-| 23-24 | Introduce Storybook and summarize component responsibilities. |
-| 25 | Revisit the communication artifacts with the tooling that keeps each one current, executable, and testable. |
+| 23 | Position Storybook as the executable frontend specification and quality gate before artifacts enter Composer. |
+| 24 | Revisit the communication artifacts with the tooling that keeps each one current, executable, and testable. |
 
 ## Act 4: Consulting Entry
 
 | Slides | Narrative Job |
 |---|---|
-| 26-30 | Show a low-risk entry through Noesis, local AI, OSS, organizational memory, and an incremental expansion path. |
+| 25 | Establish committed executive sponsorship as the ideal entry, grounded in operational reality and a sovereign OSS/AI trust foundation. |
+| 26 | Select an existing transformation pressure point instead of selling a generic framework. |
+| 27 | Show the operational trust path when executive access is not yet available. |
+| 28 | Close with one high-risk feature as a bounded, reversible, measurable experiment. |
 
-## Act 5: Architecture and Observability
-
-| Slides | Narrative Job |
-|---|---|
-| 31 | Connect experiments to architecture, development, observation, decisions, and learning. |
-| 32-35 | Explain reversible architecture, observable development, causal monitoring, and traceable decisions. |
-
-## Act 6: Vision
+## Act 5: Vision
 
 | Slides | Narrative Job |
 |---|---|
-| 36-39 | Close with shared organizational reality, faster experimentation, fewer political decisions, and evidence-driven change. |
+| 29 | Close with shared organizational reality, short feedback loops, and canonical learning. |
 
-## Appendix
-
-- Source anchors
-- Future theory, component, consulting, case-study, and implementation detail
+Architecture, observability, runtime contracts, and implementation mechanics
+move into a dedicated architectural whitepaper rather than the introductory
+pitch deck.
