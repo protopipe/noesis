@@ -2,7 +2,7 @@
 
 ---
 
-## 25. Ideal Entry
+## 26. Ideal Entry
 
 <p class="slide-kicker">Transformation becomes actionable when executive legitimacy meets operational reality.</p>
 
@@ -56,7 +56,7 @@ Top-down legitimacy. Bottom-up reality. Evidence-driven expansion.
 
 ---
 
-## 26. Transformation Pressure Point
+## 27. Transformation Pressure Point
 
 <p class="slide-kicker">Do not sell a transformation framework. Operationalize a strategic pain the organization already feels.</p>
 
@@ -105,7 +105,7 @@ The entry point is credible when leadership can name the pain, teams recognize i
 
 ---
 
-## 27. Operational Entry
+## 28. Operational Entry
 
 <p class="slide-kicker">Operational excellence can earn strategic access, but only when observed friction is translated into visible impact.</p>
 
@@ -154,7 +154,7 @@ Observable operational impact earns the right to address structural causes.
 
 ---
 
-## 28. High-Risk Feature
+## 29. High-Risk Feature
 
 <p class="slide-kicker">The first engagement is deliberately small, production-relevant, and designed to earn the next decision.</p>
 

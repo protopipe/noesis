@@ -19,4 +19,6 @@ format:
 
 {{< include chapters/04-act-consulting-entry.qmd >}}
 
+{{< include chapters/05-act-extensions.qmd >}}
+
 {{< include chapters/06-act-vision.qmd >}}

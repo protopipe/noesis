@@ -1,0 +1,107 @@
+# Ecosystem Extensions {.section .neutral-section}
+
+<p class="section-subtitle">Optional capabilities that expand the evidence and governance around the Protopipe core.</p>
+
+---
+
+## 30. External Reality Signals
+
+<p class="slide-kicker">Optional metric providers can enrich the KPI Tree with market evidence that the organization cannot produce internally.</p>
+
+<div class="extension-badge">Optional SaaS Add-on</div>
+
+<div class="external-signals">
+<div class="external-provider">
+<span>External metric provider</span>
+<strong>Sellytics</strong>
+<p>A potential ecosystem partner for continuously supplied external market and commercial signals.</p>
+<a href="https://sellytics.com/">sellytics.com</a>
+</div>
+
+<div class="external-arrow">→</div>
+
+<div class="external-contract">
+<span>Protopipe signal contract</span>
+<strong>Source · timestamp · confidence · KPI relation</strong>
+<div>
+<i>Normalized</i>
+<i>Traceable</i>
+<i>Comparable</i>
+<i>Challengeable</i>
+</div>
+</div>
+
+<div class="external-arrow">→</div>
+
+<div class="external-destination">
+<span>Core platform</span>
+<strong>Reality Signal Matrix + KPI Tree</strong>
+<p>External evidence can support or contradict a strategy, but it never replaces an accountable decision.</p>
+</div>
+</div>
+
+<div class="extension-boundary">
+<b>Core:</b> Protopipe accepts attributable reality signals.
+<b>Add-on:</b> A provider supplies and maintains external evidence as a service.
+</div>
+
+---
+
+## 31. Synesis: Deliberation with Memory
+
+<p class="slide-kicker">An optional deliberation platform can make perspectives, arguments, evidence, and unresolved conflict part of the decision record.</p>
+
+<div class="extension-badge">Optional Governance Add-on · MVP Concept</div>
+
+<div class="synesis-model">
+<div class="synesis-input">
+<span>Participants enter with context</span>
+<div>
+<i><b>Perspective</b>Which reality do I represent?</i>
+<i><b>Position</b>What do I currently support?</i>
+<i><b>Hypothesis</b>What would change my mind?</i>
+</div>
+</div>
+
+<div class="synesis-arrow">→</div>
+
+<div class="synesis-core">
+<span>Structured deliberation</span>
+<strong>Claims · evidence · alternatives · consent</strong>
+<div class="synesis-ai">
+AI summarizes, clusters arguments, detects repetition, and points new participants to the existing discourse.
+</div>
+</div>
+
+<div class="synesis-arrow">→</div>
+
+<div class="synesis-output">
+<span>Canonical decision memory</span>
+<div>
+<i>Convergence status</i>
+<i>Reasoned vetoes</i>
+<i>Open assumptions</i>
+<i>Decision rationale</i>
+</div>
+</div>
+</div>
+
+<div class="synesis-integration">
+<div>
+<span>Habermas</span>
+<strong>Target model</strong>
+<small>Understanding through reasoned, challengeable argument.</small>
+</div>
+<div>
+<span>Luhmann</span>
+<strong>Threat model</strong>
+<small>Power, system logic, and self-reference remain explicit risks.</small>
+</div>
+<div class="learning">
+<span>Protopipe</span>
+<strong>Decision integration</strong>
+<small>The resulting rationale links to strategy, hypothesis, experiment, and KPI Tree.</small>
+</div>
+</div>
+
+<p class="source-note">Source: <em>Synesis – Diskursplattform für konvergente Entscheidungsfindung</em>, internal MVP canvas.</p>

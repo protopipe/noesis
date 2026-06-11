@@ -160,15 +160,131 @@ The cockpit does not report activity. It forces strategy to remain connected to 
 
 ---
 
-## 19. Proto-Portfolio: Strategy-Linked Experimentation
+## 19. KPI Tree: The Cockpit Backbone
 
-::: {.diagram-slot}
-  Proto Portfolio connects strategy to experiments by making strategic hypotheses explicit, measurable, and continuously observable.
-:::
+<p class="slide-kicker">The KPI Tree is the working model of CFO and Controlling: it makes the causal path from strategic intent to financial effect explicit.</p>
+
+<div class="kpi-backbone">
+<div class="kpi-tree">
+<div class="kpi-level outcome">
+<span>Strategic outcome</span>
+<strong>Profitable customer growth</strong>
+<small>Owned and funded at portfolio level</small>
+</div>
+<div class="kpi-connector">↓</div>
+<div class="kpi-level-row business">
+<div class="kpi-level">
+<span>Financial KPI</span>
+<strong>Contribution margin</strong>
+<small>CHF impact and opportunity cost</small>
+</div>
+<div class="kpi-level">
+<span>Customer KPI</span>
+<strong>Checkout completion</strong>
+<small>Expected behavioral effect</small>
+</div>
+</div>
+<div class="kpi-connector split">↓</div>
+<div class="kpi-level-row signals">
+<div class="kpi-level">
+<span>Operational driver</span>
+<strong>Payment recovery rate</strong>
+<small>Process performance</small>
+</div>
+<div class="kpi-level">
+<span>Technical signal</span>
+<strong>Provider timeout rate</strong>
+<small>System behavior</small>
+</div>
+<div class="kpi-level experiment">
+<span>Experiment</span>
+<strong>EXP-024 · Recovery flow</strong>
+<small>Attributed intervention</small>
+</div>
+</div>
+</div>
+
+<div class="cfo-model">
+<span>CFO + Controlling</span>
+<strong>Steer through causality, not reporting cycles.</strong>
+<div class="cfo-questions">
+<i>Which strategic bet moves financial reality?</i>
+<i>Where is capital producing learning or impact?</i>
+<i>Which risk is provisionable now?</i>
+<i>What is the opportunity cost of waiting?</i>
+</div>
+<div class="cfo-decision">Fund · constrain · revise · stop</div>
+</div>
+</div>
+
+<div class="kpi-punchline">
+The Cockpit is the decision surface. The KPI Tree is the causal model underneath it.
+</div>
 
 ---
 
-## 20. ProtoCatalog: One Behavior Model
+## 20. Reality Must Flow Back
+
+<p class="slide-kicker">Protopipe closes the loop by accepting only attributable signals and returning their financial meaning to strategy.</p>
+
+<div class="reality-feedback">
+<div class="feedback-inputs">
+<div class="feedback-source">
+<span>Financial reality</span>
+<strong>Revenue · cost · liquidity · risk</strong>
+</div>
+<div class="feedback-source">
+<span>Product reality</span>
+<strong>Behavior · adoption · conversion</strong>
+</div>
+<div class="feedback-source">
+<span>System reality</span>
+<strong>Reliability · latency · incidents</strong>
+</div>
+</div>
+
+<div class="feedback-arrow">→</div>
+
+<div class="feedback-gate">
+<span>Attribution gate</span>
+<strong>Experiment + process + user context</strong>
+<small>Signals without causal context are invalid.</small>
+</div>
+
+<div class="feedback-arrow">→</div>
+
+<div class="feedback-core">
+<span>Core operating model</span>
+<strong>KPI Tree</strong>
+<small>Connects technical and operational movement to strategic and financial outcomes.</small>
+</div>
+
+<div class="feedback-arrow">→</div>
+
+<div class="feedback-surface">
+<span>Decision surface</span>
+<strong>Protopipe Cockpit</strong>
+<small>CFO, Controlling, and C-level see impact, uncertainty, and opportunity cost.</small>
+</div>
+</div>
+
+<div class="feedback-return">
+<span>Observed effect</span>
+<b>→</b>
+<span>Investment decision</span>
+<b>→</b>
+<span>Strategy update</span>
+<b>→</b>
+<strong>Next hypothesis</strong>
+</div>
+
+<div class="feedback-punchline">
+A strategy without feedback is opinion. Anything that does not connect back through feedback is not Protopipe.
+</div>
+
+---
+
+## 21. ProtoCatalog: One Behavior Model
 
 <p class="slide-kicker">Requirements, specifications, implementation, and tests drift when each role maintains a different model of the product.</p>
 
@@ -219,7 +335,7 @@ BDD is the communication protocol. The catalog is the living product knowledge i
 
 ---
 
-## 21. Progress Becomes Observable
+## 22. Progress Becomes Observable
 
 <p class="slide-kicker">A feature branch is visible in the catalog while it belongs to an experiment and its strategic hypothesis.</p>
 
@@ -296,7 +412,7 @@ BDD is the communication protocol. The catalog is the living product knowledge i
 
 ---
 
-## 22. Composer: Architecture as an Experiment System
+## 23. Composer: Architecture as an Experiment System
 
 <p class="slide-kicker">Composer creates an experimental boundary inside the existing system before a migration program exists.</p>
 
@@ -356,7 +472,7 @@ BDD is the communication protocol. The catalog is the living product knowledge i
 
 ---
 
-## 23. Storybook: UX Communication Layer
+## 24. Storybook: UX Communication Layer
 
 <p class="slide-kicker">Storybook turns frontend intent into an executable product contract before productive backends or runtime integration exist.</p>
 
@@ -419,7 +535,7 @@ Storybook is not a visual gallery. It is the quality gate where UI becomes negot
 
 ---
 
-## 24. How Shared Artifacts Stay Alive
+## 25. How Shared Artifacts Stay Alive
 
 <p class="slide-kicker">The artifact defines shared meaning. The tooling keeps it connected, executable, and open to validation.</p>
 
@@ -437,10 +553,10 @@ Noesis
 <div class="artifact-card focus">
 <span>Strategy</span>
 <strong>Strategy Topic + KPI Tree</strong>
-Strategic intent remains connected to measurable outcomes and portfolio governance.
+Strategic intent remains connected to financial outcomes, operational drivers, and technical signals.
 <div class="artifact-tool">
 <b>Enforced by</b>
-Protopipe Cockpit
+KPI Tree + Protopipe Cockpit
 </div>
 </div>
 

@@ -12,6 +12,7 @@ protopipe-enterprise-pitch/
 │       ├── 03-act-protopipe.qmd
 │       ├── 04-act-consulting-entry.qmd
 │       ├── 05-act-architecture.qmd  # reserved for the architecture whitepaper
+│       ├── 05-act-extensions.qmd    # optional ecosystem extensions
 │       ├── 06-act-vision.qmd
 │       └── 90-appendix.qmd          # source material, not rendered
 ├── theme/
