@@ -25,6 +25,17 @@ Diese Datei beschreibt die visuelle Grammatik der Swimlanes in Protopipe. Ziel i
 | **Typografie** | Helvetica für Labels, Polentical für aktive Elemente oder States |
 | **Icons**      | Minimalistisch, Fokus auf Bedeutung (z. B. „?“, „✔“, „↻“)     |
 
+### Lesbarkeit von Elementen und Übergängen
+
+- Texte müssen vollständig innerhalb ihrer Boxen, Tokens und Decision Gates
+  bleiben. Bei Platzmangel werden Texte gekürzt, umgebrochen oder das Element
+  vergrößert.
+- Übergangspfeile benötigen zwischen zwei Elementen einen klar sichtbaren
+  Schaft. Eine Pfeilspitze allein reicht nicht aus, um einen Handover eindeutig
+  zu zeigen.
+- Abstände und Schriftgrößen werden in der tatsächlichen Ausgabegröße geprüft,
+  nicht nur in der editierbaren Diagrammquelle.
+
 ---
 
 ## 🔁 Anwendungskontexte
