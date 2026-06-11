@@ -118,7 +118,7 @@ Experiments need accountable interpretation, not just technical execution.
 
 ```{=html}
 <div class="enterprise-bpm">
-<img class="enterprise-bpmn-img" src="../assets/diagrams/shared-reality-bpmn.svg" alt="BPMN-style shared reality process across C-Level, Product Ownership, Developers, and Learning lanes">
+<img class="enterprise-bpmn-img" src="../assets/diagrams/shared-reality-bpmn.svg" alt="BPMN-style shared reality process across C-Level, Product Ownership, Developers and Analysts, and Learning lanes; analysis combines experiment metrics with external factors such as weather">
 </div>
 ```
 
@@ -143,8 +143,8 @@ Why, how, and what become a stable reference for strategic and product conversat
 <div class="artifact-card focus">
 <span>Strategy</span>
 <strong>Strategy Topic + KPI Tree</strong>
-Strategy replaces roadmap-only steering. KPI trees make business intent inspectable in ProtoPortfolio.
-<em>Visible as portfolio structure.</em>
+The KPI Tree relates operational and technical metrics to the business outcomes that matter to leadership.
+<em>Visible as causal business context.</em>
 </div>
 
 <div class="artifact-card">

@@ -24,6 +24,14 @@ The deck follows `doc/09_identity/guidelines/swimlane-visual-grammar.md`.
 Swimlanes are not decorative. They are the preferred visual language for showing
 where responsibility sits and how evidence moves.
 
+## Legibility Checks
+
+- Keep every label fully inside its box, token, or decision gate.
+- Leave enough space between connected elements for a clearly visible arrow
+  shaft, not only an arrowhead.
+- Review diagrams at the rendered slide size. Source-level spacing can disappear
+  when Reveal.js scales an SVG into the deck.
+
 ## Required Diagram Set
 
 - Organizational reality drift map

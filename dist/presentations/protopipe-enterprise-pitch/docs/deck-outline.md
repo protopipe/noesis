@@ -25,7 +25,7 @@ narrative.
 | Slides | Narrative Job |
 |---|---|
 | 09-11 | Move from problems to desired outcomes and normative mechanics. |
-| 12 | Show the gapless organizational learning process across roles. |
+| 12 | Show the gapless organizational learning process across roles, including analysis of experiment metrics and external influences. |
 | 13 | Introduce the visible artifacts handed from purpose through development. |
 
 ## Act 3: Enforcing Tools
