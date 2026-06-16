@@ -11,9 +11,9 @@
 <div class="bpm-lane">Default communication</div>
 <div class="bpm-steps">
 <div class="bpm-step">What we build</div>
-<div class="bpm-arrow">-></div>
+<div class="bpm-arrow">→</div>
 <div class="bpm-step">How it works</div>
-<div class="bpm-arrow">-></div>
+<div class="bpm-arrow">→</div>
 <div class="bpm-step weak">Why it matters</div>
 </div>
 </div>
@@ -22,9 +22,9 @@
 <div class="bpm-lane">Golden Circle communication</div>
 <div class="bpm-steps">
 <div class="bpm-step primary">Why it matters</div>
-<div class="bpm-arrow">-></div>
+<div class="bpm-arrow">→</div>
 <div class="bpm-step">How we make it true</div>
-<div class="bpm-arrow">-></div>
+<div class="bpm-arrow">→</div>
 <div class="bpm-step">What we build</div>
 </div>
 </div>
@@ -172,13 +172,13 @@ decision premises. Good ideas fail when they cannot connect across those codes.
 <div class="habermas-slide">
 <div class="meeting-loop">
 <div class="loop-step">More meetings</div>
-<div class="loop-arrow">-></div>
+<div class="loop-arrow">→</div>
 <div class="loop-step">More slides</div>
-<div class="loop-arrow">-></div>
+<div class="loop-arrow">→</div>
 <div class="loop-step">More opinions</div>
-<div class="loop-arrow">-></div>
+<div class="loop-arrow">→</div>
 <div class="loop-step critical">Power word</div>
-<div class="loop-arrow">-></div>
+<div class="loop-arrow">→</div>
 <div class="loop-step low-reward">Low-risk,<br>low-reward decision</div>
 </div>
 
@@ -264,9 +264,9 @@ turns into documentation instead of decision capability.
 <div class="responsibility-lane-label">Team responsibility</div>
 <div class="responsibility-flow">
 <div class="responsibility-token">Own outcome</div>
-<div class="responsibility-arrow">-></div>
+<div class="responsibility-arrow">→</div>
 <div class="responsibility-token">Find constraint</div>
-<div class="responsibility-arrow">-></div>
+<div class="responsibility-arrow">→</div>
 <div class="responsibility-token blocked">Cannot change it</div>
 </div>
 </div>

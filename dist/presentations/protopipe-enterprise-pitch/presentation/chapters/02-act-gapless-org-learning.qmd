@@ -42,13 +42,13 @@ Architecture localizes change, risk, and understanding as the organization grows
 
 <div class="mechanic-chain">
 <div class="mechanic-step">Problem</div>
-<div class="mechanic-arrow">-></div>
+<div class="mechanic-arrow">→</div>
 <div class="mechanic-step">Desired Outcome</div>
-<div class="mechanic-arrow">-></div>
+<div class="mechanic-arrow">→</div>
 <div class="mechanic-step learning">Mechanic</div>
-<div class="mechanic-arrow">-></div>
+<div class="mechanic-arrow">→</div>
 <div class="mechanic-step">Contextual Decision</div>
-<div class="mechanic-arrow">-></div>
+<div class="mechanic-arrow">→</div>
 <div class="mechanic-step">Realization</div>
 </div>
 
