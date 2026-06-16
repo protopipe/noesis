@@ -47,7 +47,97 @@
 
 ---
 
-## 31. Synesis: Deliberation with Memory
+## 31. Google Analytics for Physical Retail
+
+<p class="slide-kicker">Instrument the physical store like an online product: connect experiments to observed customer behavior and business outcomes.</p>
+
+<div class="extension-badge">Optional Retail Analytics Add-on · Potential Partner</div>
+
+<div class="external-signals">
+<div class="external-provider">
+<span>Store reality provider</span>
+<strong>Crosscan</strong>
+<p>Potential ecosystem partner for measuring visitor frequency, passers-by, dwell time, movement patterns, and demographic signals.</p>
+<a href="https://crosscan.com/">crosscan.com</a>
+</div>
+
+<div class="external-arrow">→</div>
+
+<div class="external-contract">
+<span>Experiment context</span>
+<strong>Store · time · intervention · comparison group</strong>
+<div>
+<i>Footfall + conversion</i>
+<i>Dwell time + movement</i>
+<i>POS + staffing data</i>
+<i>Weather + location context</i>
+</div>
+</div>
+
+<div class="external-arrow">→</div>
+
+<div class="external-destination">
+<span>Protopipe decision model</span>
+<strong>Reality Signal Matrix + KPI Tree</strong>
+<p>Store behavior fills the internal quadrants. Weather and location context explain external influence without being mistaken for experiment impact.</p>
+</div>
+</div>
+
+<div class="extension-boundary">
+<b>Experiment:</b> Change a store surface, process, campaign, or staffing model.
+<b>Decision:</b> Compare attributed behavior and business impact before scaling.
+</div>
+
+<p class="source-note">Potential partner capability reference: <a href="https://crosscan.com/">Crosscan retail analytics</a>.</p>
+
+---
+
+## 32. Industry 5.0: Strategy Reaches the Shopfloor
+
+<p class="slide-kicker">Digitization makes industrial work observable. Protopipe turns that operational reality into strategic learning.</p>
+
+<div class="extension-badge">Optional Industrial Operations Add-on · Potential Partner</div>
+
+<div class="external-signals">
+<div class="external-provider">
+<span>Shopfloor execution provider</span>
+<strong>ekko</strong>
+<p>Potential ecosystem partner for paperless picking, eKanban, locationing, digital labeling, and configurable industrial workflows.</p>
+<a href="https://www.ekko.io/en">ekko.io</a>
+</div>
+
+<div class="external-arrow">→</div>
+
+<div class="external-contract">
+<span>Operational evidence</span>
+<strong>Order · step · material · location · outcome</strong>
+<div>
+<i>Digital instructions</i>
+<i>Verified process events</i>
+<i>Errors + cycle times</i>
+<i>REST · webhooks · MQTT</i>
+</div>
+</div>
+
+<div class="external-arrow">→</div>
+
+<div class="external-destination">
+<span>Augmented strategy</span>
+<strong>Hypothesis + KPI Tree + Cockpit</strong>
+<p>Protopipe relates deterministic process evidence to quality, throughput, resilience, worker experience, and strategic outcomes.</p>
+</div>
+</div>
+
+<div class="extension-boundary">
+<b>ekko:</b> Make production, warehouse, and logistics processes digital, traceable, and testable.
+<b>Protopipe:</b> Decide which operational change creates strategic value and whether the evidence supports scaling it.
+</div>
+
+<p class="source-note">Capability references: <a href="https://www.ekko.io/en">ekko shopfloor digitization</a> and <a href="https://research-and-innovation.ec.europa.eu/research-area/industrial-research-and-innovation/industry-50_en">European Commission Industry 5.0</a>.</p>
+
+---
+
+## 33. Synesis: Deliberation with Memory
 
 <p class="slide-kicker">An optional deliberation platform can make perspectives, arguments, evidence, and unresolved conflict part of the decision record.</p>
 

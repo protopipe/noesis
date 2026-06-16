@@ -56,13 +56,15 @@ narrative.
 | Slides | Narrative Job |
 |---|---|
 | 30 | Position external metric providers such as Sellytics as optional sources of attributable market evidence. |
-| 31 | Introduce Synesis as an optional deliberation and decision-memory add-on. |
+| 31 | Instrument physical retail through a provider such as Crosscan and distinguish store behavior from external context such as weather. |
+| 32 | Connect paperless, observable industrial execution through a provider such as ekko to strategic hypotheses, KPIs, and learning. |
+| 33 | Introduce Synesis as an optional deliberation and decision-memory add-on. |
 
 ## Act 5: Vision
 
 | Slides | Narrative Job |
 |---|---|
-| 32 | Close with shared organizational reality, short feedback loops, and canonical learning. |
+| 34 | Close with shared organizational reality, short feedback loops, and canonical learning. |
 
 Architecture, observability, runtime contracts, and implementation mechanics
 move into a dedicated architectural whitepaper rather than the introductory
