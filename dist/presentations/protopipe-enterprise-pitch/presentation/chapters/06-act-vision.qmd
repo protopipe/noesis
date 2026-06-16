@@ -2,7 +2,7 @@
 
 ---
 
-## 32. Shared Reality. Faster Learning.
+## 34. Shared Reality. Faster Learning.
 
 <p class="slide-kicker">Protopipe turns transformation from a program of promises into an observable sequence of decisions.</p>
 
