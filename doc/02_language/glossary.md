@@ -1205,3 +1205,64 @@ constraints protecting lower-level invariants.
 If a constraint is incompatible,
 the element must be substituted
 instead of modified implicitly.
+
+---
+
+## Transformation Pressure Point
+
+A Transformation Pressure Point is an observable organizational pain
+that can justify a Protopipe entry.
+
+Transformation Pressure Points are not solution areas.
+They are entry points where leadership pain,
+team reality,
+and measurable evidence can meet.
+
+The canonical Transformation Pressure Points are:
+- Speed
+- Product
+- Architecture
+- Cost
+- AI
+- Organization
+
+---
+
+## Operational Entry Model
+
+The Operational Entry Model describes how Protopipe enters an organization
+through useful delivery work
+and expands only after observable effect has been demonstrated.
+
+The canonical sequence is:
+
+```
+Deliver
+-> Earn Trust
+-> Surface Friction
+-> Demonstrate Effect
+-> Expand Mandate
+```
+
+---
+
+## Trust Before Transformation
+
+Trust Before Transformation means that Protopipe earns legitimacy
+through observable usefulness
+before asking an organization to accept structural change.
+
+Transformation is not the starting claim.
+It is a possible consequence of demonstrated effect.
+
+---
+
+## Effect Before Method
+
+Effect Before Method means that an observed effect
+must precede method adoption.
+
+Protopipe may use its own concepts internally,
+but an organization should first see what changes
+before it is asked to adopt the language or method
+that produced the change.

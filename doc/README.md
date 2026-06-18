@@ -226,6 +226,15 @@ Used for understanding, not for derivation or constraint.
 
 ---
 
+### 12_consulting
+Canonical consulting concepts for how Protopipe enters organizations,
+earns trust, and expands through evidence.
+
+Consulting concepts describe entry logic and engagement behavior.
+They are not mechanics, sales scripts, implementation plans, or decisions.
+
+---
+
 ## AI context usage
 
 Noesis is designed to be consumed by humans **and machines**.
