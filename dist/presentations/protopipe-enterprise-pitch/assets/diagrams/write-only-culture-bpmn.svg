@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1320 150" role="img" aria-label="Write-only culture BPMN process with separate Leadership and Employee processes">
+  <defs>
+    <marker id="write-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#b9c3bf"/>
+    </marker>
+    <marker id="write-message-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#f7436e"/>
+    </marker>
+  </defs>
+
+  <rect x="1" y="1" width="1318" height="148" fill="rgba(255,255,255,0.018)" stroke="rgba(255,255,255,0.18)" stroke-width="1.5"/>
+  <rect x="1" y="1" width="178" height="74" fill="rgba(255,255,255,0.07)"/>
+  <rect x="1" y="75" width="178" height="74" fill="rgba(255,255,255,0.045)"/>
+  <g stroke="rgba(255,255,255,0.13)" stroke-width="1.5">
+    <line x1="1" y1="75" x2="1319" y2="75"/>
+    <line x1="179" y1="1" x2="179" y2="149"/>
+  </g>
+
+  <g font-family="Helvetica Neue, Inter, Arial, sans-serif" fill="#f4fbf8" font-weight="800">
+    <text x="22" y="45" font-size="21">Leadership</text>
+    <text x="22" y="119" font-size="21">Employee</text>
+  </g>
+
+  <circle cx="216" cy="38" r="14" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.7)" stroke-width="3"/>
+  <rect x="252" y="19" width="180" height="38" rx="7" fill="rgba(255,255,255,0.045)" stroke="rgba(255,255,255,0.58)" stroke-width="1.6"/>
+  <rect x="476" y="19" width="170" height="38" rx="7" fill="rgba(255,255,255,0.045)" stroke="rgba(255,255,255,0.58)" stroke-width="1.6"/>
+  <circle cx="698" cy="38" r="14" fill="rgba(247,67,110,0.06)" stroke="#f7436e" stroke-width="3"/>
+  <circle cx="698" cy="38" r="9" fill="none" stroke="#f7436e" stroke-width="1.5"/>
+
+  <circle cx="650" cy="112" r="14" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.7)" stroke-width="3"/>
+  <rect x="700" y="93" width="174" height="38" rx="7" fill="rgba(255,255,255,0.045)" stroke="rgba(255,255,255,0.58)" stroke-width="1.6"/>
+  <circle cx="922" cy="112" r="14" fill="rgba(247,67,110,0.06)" stroke="#f7436e" stroke-width="3"/>
+  <circle cx="922" cy="112" r="9" fill="none" stroke="#f7436e" stroke-width="1.5"/>
+
+  <circle cx="984" cy="112" r="14" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.7)" stroke-width="3"/>
+  <rect x="1034" y="91" width="208" height="42" rx="7" fill="rgba(247,67,110,0.1)" stroke="#f7436e" stroke-width="1.8"/>
+  <circle cx="1302" cy="112" r="14" fill="rgba(247,67,110,0.06)" stroke="#f7436e" stroke-width="3"/>
+  <circle cx="1302" cy="112" r="9" fill="none" stroke="#f7436e" stroke-width="1.5"/>
+
+  <g font-family="Helvetica Neue, Inter, Arial, sans-serif" text-anchor="middle" fill="#f4fbf8" font-size="16" font-weight="760">
+    <text x="342" y="43">Define culture</text>
+    <text x="561" y="43">Present once</text>
+    <text x="787" y="117">Share document</text>
+    <text x="1138" y="108">Work with</text>
+    <text x="1138" y="124" font-size="14">local context</text>
+  </g>
+
+  <g fill="none" stroke="#b9c3bf" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#write-arrow)">
+    <path d="M230 38 H252"/>
+    <path d="M432 38 H476"/>
+    <path d="M646 38 H684"/>
+    <path d="M664 112 H700"/>
+    <path d="M874 112 H908"/>
+    <path d="M998 112 H1034"/>
+    <path d="M1242 112 H1288"/>
+  </g>
+
+  <path d="M561 57 V80 H787 V93" fill="none" stroke="#f7436e" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#write-message-arrow)"/>
+  <text x="674" y="73" font-family="Helvetica Neue, Inter, Arial, sans-serif" text-anchor="middle" fill="#f7436e" font-size="14" font-weight="800">one-way communication</text>
+</svg>

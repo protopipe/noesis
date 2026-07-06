@@ -1,0 +1,197 @@
+# Act 4: Consulting Entry {.section .focus-section}
+
+---
+
+## 26. Ideal Entry
+
+<p class="slide-kicker">Transformation becomes actionable when executive legitimacy meets operational reality.</p>
+
+<div class="entry-mandate">
+<div class="entry-side executive">
+<span>Top-down legitimacy</span>
+<strong>Committed Executive Sponsor</strong>
+<div class="entry-list">
+<i>Names the strategic pain</i>
+<i>Protects the experiment boundary</i>
+<i>Provides access to teams and signals</i>
+<i>Owns the resulting decision</i>
+</div>
+</div>
+
+<div class="entry-bridge">
+<b>Mandate</b>
+<span>One painful question</span>
+<span>One measurable experiment</span>
+<span>One explicit decision</span>
+</div>
+
+<div class="entry-side reality">
+<span>Bottom-up reality</span>
+<strong>Embedded Delivery Context</strong>
+<div class="entry-list">
+<i>Reveals actual dependencies</i>
+<i>Tests assumptions in daily work</i>
+<i>Surfaces cultural friction safely</i>
+<i>Produces observable evidence</i>
+</div>
+</div>
+</div>
+
+<div class="entry-foundation">
+<div>
+<span>Trust foundation</span>
+<strong>OSS + sovereign AI</strong>
+<small>Inspectable, locally operable, and grounded in client-specific context.</small>
+</div>
+<div>
+<span>Operating principle</span>
+<strong>Trust before transformation</strong>
+<small>Effect before method. Observation before judgment. Compatibility before perfection.</small>
+</div>
+</div>
+
+<div class="entry-punchline">
+Top-down legitimacy. Bottom-up reality. Evidence-driven expansion.
+</div>
+
+---
+
+## 27. Transformation Pressure Point
+
+<p class="slide-kicker">Do not sell a transformation framework. Operationalize a strategic pain the organization already feels.</p>
+
+<div class="pressure-grid">
+<div class="pressure-card">
+<span>Speed</span>
+<strong>Time to market keeps growing</strong>
+<p>Dependencies, approvals, and unclear ownership delay valuable change.</p>
+<em>Signal: lead time, deployment frequency, decision latency</em>
+</div>
+<div class="pressure-card">
+<span>Product</span>
+<strong>Output rises while impact stalls</strong>
+<p>Roadmaps advance, but customer behavior and business outcomes do not.</p>
+<em>Signal: adoption, conversion, retention, KPI movement</em>
+</div>
+<div class="pressure-card">
+<span>Architecture</span>
+<strong>The monolith blocks learning</strong>
+<p>Every experiment becomes a migration discussion or a high-risk release.</p>
+<em>Signal: change failure rate, coupling, recovery time</em>
+</div>
+<div class="pressure-card">
+<span>Cost</span>
+<strong>Technology spend loses causality</strong>
+<p>Cloud, platform, and delivery costs grow without a visible strategic effect.</p>
+<em>Signal: cost per outcome, capacity allocation, waste</em>
+</div>
+<div class="pressure-card">
+<span>AI</span>
+<strong>AI adoption fragments context</strong>
+<p>Teams accelerate locally while language, culture, and decisions drift further apart.</p>
+<em>Signal: duplicated work, policy violations, inconsistent decisions</em>
+</div>
+<div class="pressure-card">
+<span>Organization</span>
+<strong>Transformation fatigue sets in</strong>
+<p>New roles and rituals redistribute responsibility without transferring control.</p>
+<em>Signal: escalations, meeting loops, employee sentiment</em>
+</div>
+</div>
+
+<div class="pressure-punchline">
+The entry point is credible when leadership can name the pain, teams recognize it, and reality can answer it.
+</div>
+
+---
+
+## 28. Operational Entry
+
+<p class="slide-kicker">Operational excellence can earn strategic access, but only when observed friction is translated into visible impact.</p>
+
+<div class="operational-entry">
+<div class="operational-step">
+<span>01</span>
+<strong>Deliver</strong>
+<p>Join as an embedded DevOps or cross-functional engineer and solve real delivery problems.</p>
+</div>
+<div class="operational-arrow">→</div>
+<div class="operational-step">
+<span>02</span>
+<strong>Earn trust</strong>
+<p>Become useful to the team before interpreting its organization.</p>
+</div>
+<div class="operational-arrow">→</div>
+<div class="operational-step focus">
+<span>03</span>
+<strong>Surface friction</strong>
+<p>Use concrete situations to expose repeated decisions, hidden assumptions, and missing control.</p>
+</div>
+<div class="operational-arrow">→</div>
+<div class="operational-step learning">
+<span>04</span>
+<strong>Demonstrate effect</strong>
+<p>Compare decision time, iterations, risk clarity, and delivery impact before and after.</p>
+</div>
+<div class="operational-arrow">→</div>
+<div class="operational-step">
+<span>05</span>
+<strong>Expand the mandate</strong>
+<p>Translate repeated patterns into a jointly owned strategic intervention.</p>
+</div>
+</div>
+
+<div class="operational-principles">
+<i>Trust before transformation</i>
+<i>Effect before method</i>
+<i>Observation before judgment</i>
+<i>Temporary side channels must become unnecessary</i>
+</div>
+
+<div class="operational-punchline">
+Observable operational impact earns the right to address structural causes.
+</div>
+
+---
+
+## 29. High-Risk Feature
+
+<p class="slide-kicker">The first engagement is deliberately small, production-relevant, and designed to earn the next decision.</p>
+
+<div class="mandate-frame">
+<div class="mandate-question">
+<span>Decision question</span>
+<strong>Can we improve checkout completion without increasing operational risk?</strong>
+</div>
+
+<div class="mandate-definition">
+<div>
+<span>Hypothesis</span>
+<strong>A clearer payment recovery flow reduces abandonment.</strong>
+</div>
+<div>
+<span>Intervention</span>
+<strong>Replace one legacy surface through Composer.</strong>
+</div>
+<div>
+<span>Evidence</span>
+<strong>Conversion, errors, latency, and user feedback.</strong>
+</div>
+<div>
+<span>Decision rule</span>
+<strong>Scale, revise, stop, or restore the control.</strong>
+</div>
+</div>
+
+<div class="mandate-constraints">
+<i><b>Scope</b>One product surface</i>
+<i><b>Timebox</b>Days to first exposure</i>
+<i><b>Safety</b>Reversible test group</i>
+<i><b>Ownership</b>One executive decision owner</i>
+<i><b>Learning</b>Canonical decision record</i>
+</div>
+</div>
+
+<div class="mandate-punchline">
+The deliverable is not software. It is a decision the organization can defend with evidence.
+</div>

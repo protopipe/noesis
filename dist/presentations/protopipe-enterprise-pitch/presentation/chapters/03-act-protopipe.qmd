@@ -1,0 +1,596 @@
+# Act 3: Enforcing Tools {.section .focus-section}
+
+<p class="section-subtitle">How Protopipe keeps shared artifacts present, executable, and open to validation.</p>
+
+---
+
+## 14. Purpose and Culture at Runtime
+
+<p class="slide-kicker">Purpose only matters when it is present at the moment a decision becomes work.</p>
+
+<div class="culture-runtime">
+<div class="culture-bpmn-block write-only">
+<div class="culture-bpmn-heading">
+<span>Write-only culture</span>
+<strong>Intent is communicated once, then disappears from the work.</strong>
+</div>
+<img src="../assets/diagrams/write-only-culture-bpmn.svg" alt="Write-only culture BPMN process with separate Leadership and Employee processes">
+</div>
+
+<div class="culture-bpmn-block runtime">
+<div class="culture-bpmn-heading">
+<span>Noesis culture runtime</span>
+<strong>Canonical context travels with the decision and learns from its outcome.</strong>
+</div>
+<img src="../assets/diagrams/noesis-culture-runtime-bpmn.svg" alt="Noesis culture runtime BPMN process across Leadership, Noesis, and Employee lanes">
+</div>
+</div>
+
+<div class="references">
+Applied reading: Alwin Mark, <a href="https://onlu.ch/noesis-wie-metaprompts-unternehmenskultur-in-jede-entscheidung-bringen/">Noesis: Wie Metaprompts Unternehmenskultur in jede Entscheidung bringen</a>, ONLU AG.
+</div>
+
+---
+
+## 15. Culture at the Point of Work
+
+<p class="slide-kicker">Noesis turns canonical culture into concrete guidance inside everyday artifacts.</p>
+
+<div class="culture-examples">
+<div class="culture-example">
+<span>Customer communication</span>
+<strong>Does this response express our purpose and shared language?</strong>
+The agent reviews wording, commitments, and claims against canonical culture.
+</div>
+<div class="culture-example">
+<span>Ticket / Definition of Done</span>
+<strong>Is the work measurable, observable, and connected to a hypothesis?</strong>
+The agent proposes missing acceptance criteria, feature scenarios, and learning signals.
+</div>
+</div>
+
+<div class="culture-punchline">
+<span>Remember</span>
+Culture becomes operational when shared intent is present in every decision, review, and learning loop.
+</div>
+
+---
+
+## 16. Noesis: Start Small, Scale the Governance
+
+<p class="slide-kicker">Noesis is a canonical reasoning space, not a platform commitment. Start with files; add automation when coordination demands it.</p>
+
+<div class="noesis-levels">
+<div class="noesis-level minimal">
+<span>Low tech / low commitment</span>
+<strong>Structured Markdown in Git</strong>
+<ul>
+<li>Purpose, language, culture, principles, and constraints as readable files</li>
+<li>Folders, templates, front matter, and links provide structure</li>
+<li>Pull requests make canonical changes explicit and reviewable</li>
+<li>Humans and local AI use the same repository as context</li>
+</ul>
+<div class="noesis-stack">Markdown + Git + search + optional local LLM</div>
+</div>
+
+<div class="noesis-level enterprise">
+<span>Enterprise runtime</span>
+<strong>MCP + Continuous Knowledge Curation</strong>
+<ul>
+<li>MCP exposes approved context to agents and enterprise tools</li>
+<li>Policies control scope, access, provenance, and versioning</li>
+<li><b>AutoAudit</b> detects stale, duplicate, orphaned, or contradictory content</li>
+<li>Curation proposes merges, links, taxonomy changes, and structural cleanup</li>
+</ul>
+<div class="noesis-oss-note">Planned as part of the OSS Protopipe package.</div>
+<div class="noesis-stack">Knowledge graph + MCP + policy + AutoAudit</div>
+</div>
+</div>
+
+<div class="noesis-governance">
+Automation proposes. Accountable humans approve changes to canonical knowledge.
+</div>
+
+---
+
+## 17. Protopipe Cockpit: Strategy Meets Reality
+
+<p class="slide-kicker">The cockpit makes strategy, investment, evidence, and friction visible in one C-level decision surface.</p>
+
+<div class="cockpit-map">
+<div class="cockpit-panel health">
+<span>01 · Overall Health</span>
+<strong>Is the portfolio moving in the intended direction?</strong>
+<div class="cockpit-health-score">
+<b>72</b>
+<div>Momentum <strong>+12%</strong><br>Healthy strategies <strong>4 / 5</strong><br>Capacity <strong>100%</strong></div>
+</div>
+</div>
+
+<div class="cockpit-panel signals">
+<span>02 · Reality Signal Matrix</span>
+<strong>Where does reality support or contradict strategy?</strong>
+<div class="cockpit-quadrants">
+<i>Internal + controllable</i>
+<i>Internal + uncontrollable</i>
+<i>External + controllable</i>
+<i>External + uncontrollable</i>
+</div>
+</div>
+
+<div class="cockpit-panel strategies">
+<span>03 · Strategy Tiles</span>
+<strong>Which strategies require attention, budget, or intervention?</strong>
+<div class="cockpit-strategy-list">
+<i>Enterprise Expansion</i>
+<i>Profitability First</i>
+<i>Market Resilience</i>
+</div>
+</div>
+
+<div class="cockpit-panel detail">
+<span>04 · Strategy Detail</span>
+<strong>What must an executive know before deciding?</strong>
+<div class="cockpit-detail-list">
+<i>Budget and capacity</i>
+<i>Primary friction</i>
+<i>Largest open assumption</i>
+<i>Most critical risk</i>
+</div>
+</div>
+</div>
+
+<div class="cockpit-punchline">
+The cockpit does not report activity. It forces strategy to remain connected to observable reality.
+</div>
+
+---
+
+## 18. Cockpit in Action {data-state="cockpit-demo-slide"}
+
+<p class="slide-kicker">From the operating model to an executable executive decision surface.</p>
+
+<div class="cockpit-demo-frame">
+<iframe
+  src="../assets/mockups/ProtopipeCockpit.html"
+  title="Interactive Protopipe Executive Strategy Cockpit"
+  loading="lazy">
+</iframe>
+</div>
+
+---
+
+## 19. KPI Tree: The Cockpit Backbone
+
+<p class="slide-kicker">The KPI Tree is the working model of CFO and Controlling: it makes the causal path from strategic intent to financial effect explicit.</p>
+
+<div class="kpi-backbone">
+<div class="kpi-tree">
+<div class="kpi-level outcome">
+<span>Strategic outcome</span>
+<strong>Profitable customer growth</strong>
+<small>Owned and funded at portfolio level</small>
+</div>
+<div class="kpi-connector">↓</div>
+<div class="kpi-level-row business">
+<div class="kpi-level">
+<span>Financial KPI</span>
+<strong>Contribution margin</strong>
+<small>CHF impact and opportunity cost</small>
+</div>
+<div class="kpi-level">
+<span>Customer KPI</span>
+<strong>Checkout completion</strong>
+<small>Expected behavioral effect</small>
+</div>
+</div>
+<div class="kpi-connector split">↓</div>
+<div class="kpi-level-row signals">
+<div class="kpi-level">
+<span>Operational driver</span>
+<strong>Payment recovery rate</strong>
+<small>Process performance</small>
+</div>
+<div class="kpi-level">
+<span>Technical signal</span>
+<strong>Provider timeout rate</strong>
+<small>System behavior</small>
+</div>
+<div class="kpi-level experiment">
+<span>Experiment</span>
+<strong>EXP-024 · Recovery flow</strong>
+<small>Attributed intervention</small>
+</div>
+</div>
+</div>
+
+<div class="cfo-model">
+<span>CFO + Controlling</span>
+<strong>Steer through causality, not reporting cycles.</strong>
+<div class="cfo-questions">
+<i>Which strategic bet moves financial reality?</i>
+<i>Where is capital producing learning or impact?</i>
+<i>Which risk is provisionable now?</i>
+<i>What is the opportunity cost of waiting?</i>
+</div>
+<div class="cfo-decision">Fund · constrain · revise · stop</div>
+</div>
+</div>
+
+<div class="kpi-punchline">
+The Cockpit is the decision surface. The KPI Tree is the causal model underneath it.
+</div>
+
+---
+
+## 20. Reality Must Flow Back
+
+<p class="slide-kicker">Protopipe closes the loop by accepting only attributable signals and returning their financial meaning to strategy.</p>
+
+<div class="reality-feedback">
+<div class="feedback-inputs">
+<div class="feedback-source">
+<span>Financial reality</span>
+<strong>Revenue · cost · liquidity · risk</strong>
+</div>
+<div class="feedback-source">
+<span>Product reality</span>
+<strong>Behavior · adoption · conversion</strong>
+</div>
+<div class="feedback-source">
+<span>System reality</span>
+<strong>Reliability · latency · incidents</strong>
+</div>
+</div>
+
+<div class="feedback-arrow">→</div>
+
+<div class="feedback-gate">
+<span>Attribution gate</span>
+<strong>Experiment + process + user context</strong>
+<small>Signals without causal context are invalid.</small>
+</div>
+
+<div class="feedback-arrow">→</div>
+
+<div class="feedback-core">
+<span>Core operating model</span>
+<strong>KPI Tree</strong>
+<small>Connects technical and operational movement to strategic and financial outcomes.</small>
+</div>
+
+<div class="feedback-arrow">→</div>
+
+<div class="feedback-surface">
+<span>Decision surface</span>
+<strong>Protopipe Cockpit</strong>
+<small>CFO, Controlling, and C-level see impact, uncertainty, and opportunity cost.</small>
+</div>
+</div>
+
+<div class="feedback-return">
+<span>Observed effect</span>
+<b>→</b>
+<span>Investment decision</span>
+<b>→</b>
+<span>Strategy update</span>
+<b>→</b>
+<strong>Next hypothesis</strong>
+</div>
+
+<div class="feedback-punchline">
+A strategy without feedback is opinion. Anything that does not connect back through feedback is not Protopipe.
+</div>
+
+---
+
+## 21. ProtoCatalog: One Behavior Model
+
+<p class="slide-kicker">Requirements, specifications, implementation, and tests drift when each role maintains a different model of the product.</p>
+
+<div class="catalog-model">
+<div class="catalog-fragments">
+<div class="catalog-fragment">
+<span>Product</span>
+<strong>Acceptance Criteria</strong>
+<small>What we expect</small>
+</div>
+<div class="catalog-fragment">
+<span>Analysis</span>
+<strong>Specification</strong>
+<small>What we mean</small>
+</div>
+<div class="catalog-fragment">
+<span>Development</span>
+<strong>Implementation</strong>
+<small>What the system does</small>
+</div>
+<div class="catalog-fragment">
+<span>Quality</span>
+<strong>Test Suite</strong>
+<small>What is verified</small>
+</div>
+</div>
+
+<div class="catalog-convergence" aria-hidden="true">→</div>
+
+<div class="catalog-contract">
+<span>ProtoCatalog</span>
+<strong>Feature Files + Scenarios</strong>
+<p>One versioned behavior model, written in domain language and executable through Cucumber.</p>
+<div class="catalog-contract-properties">
+<i>Readable by business</i>
+<i>Executable by development</i>
+<i>Verified by evidence</i>
+<i>Traceable to the experiment</i>
+</div>
+</div>
+</div>
+
+<div class="catalog-punchline">
+BDD is the communication protocol. The catalog is the living product knowledge it creates.
+</div>
+
+<p class="source-note">Based on the Noesis feature model and <em>From spec to BDD</em>, Michael Küsters and Finies Fenske, 2018.</p>
+
+---
+
+## 22. Progress Becomes Observable
+
+<p class="slide-kicker">A feature branch is visible in the catalog while it belongs to an experiment and its strategic hypothesis.</p>
+
+<div class="catalog-trace">
+<div class="catalog-trace-context">
+<div class="catalog-trace-node focus">
+<span>Strategy</span>
+<strong>Increase checkout completion</strong>
+</div>
+<div class="catalog-trace-arrow">→</div>
+<div class="catalog-trace-node">
+<span>Hypothesis</span>
+<strong>Clear payment feedback reduces abandonment</strong>
+</div>
+<div class="catalog-trace-arrow">→</div>
+<div class="catalog-trace-node experiment">
+<span>Experiment</span>
+<strong>EXP-024 · Payment confirmation</strong>
+</div>
+</div>
+
+<div class="catalog-branch">
+<div class="catalog-branch-head">
+<div>
+<span>Feature branch</span>
+<strong>experiment/EXP-024-payment-feedback</strong>
+</div>
+<b>5 / 8 steps green</b>
+</div>
+
+<div class="catalog-feature">
+<div class="catalog-feature-head">
+<span>Feature</span>
+<strong>Customer receives reliable payment confirmation</strong>
+</div>
+<div class="catalog-scenario">
+<span>Scenario · Successful card payment</span>
+<i class="green">Given an active basket</i>
+<i class="green">When payment is accepted</i>
+<i class="green">Then the order is placed</i>
+<i class="green">And confirmation is shown</i>
+</div>
+<div class="catalog-scenario">
+<span>Scenario · Delayed provider response</span>
+<i class="green">Given payment remains pending</i>
+<i class="failed">When the provider times out</i>
+<i class="open">Then retry guidance is shown</i>
+<i class="open">And the event remains observable</i>
+</div>
+</div>
+</div>
+</div>
+
+<div class="catalog-status-legend">
+<i class="green">Green</i>
+<i class="failed">Not successful</i>
+<i class="open">Not implemented</i>
+<strong>A feature is green when all of its steps are verified.</strong>
+</div>
+
+<div class="catalog-progress-shift">
+<div class="estimated">
+<span>Instead of</span>
+<strong>Story Points</strong>
+<small>Estimated effort without verified product behavior</small>
+</div>
+<b>→</b>
+<div class="verified">
+<span>Progress becomes</span>
+<strong>Green Feature Steps</strong>
+<small>Observable behavior implemented and verified on the feature branch</small>
+</div>
+</div>
+
+---
+
+## 23. Composer: Architecture as an Experiment System
+
+<p class="slide-kicker">Composer creates an experimental boundary inside the existing system before a migration program exists.</p>
+
+<div class="composer-flow">
+<div class="composer-stage legacy">
+<span>01 · Install and mark</span>
+<strong>Composer becomes the legacy proxy</strong>
+<div class="composer-marker">
+<code>&lt;!-- protopipe:slot checkout-cta --&gt;</code>
+<code>  &lt;button&gt;Buy now&lt;/button&gt;</code>
+<code>&lt;!-- /protopipe:slot --&gt;</code>
+</div>
+<p>Composer proxies the unchanged monolith response. HTML markers identify the first replaceable surface without a page rewrite.</p>
+<em>Planned bootstrap adapter</em>
+</div>
+
+<div class="composer-arrow">→</div>
+
+<div class="composer-stage experiment">
+<span>02 · Replace with artifacts</span>
+<strong>Route variants, not conditions</strong>
+<div class="composer-variants">
+<i><b>Control</b>Legacy fragment</i>
+<i><b>Variant</b>RFA from feature branch</i>
+</div>
+<p>Composer assigns consenting users and replaces only the expected RFA within the experiment scope.</p>
+<em>Artifact-based experiment</em>
+</div>
+
+<div class="composer-arrow">→</div>
+
+<div class="composer-stage evidence">
+<span>03 · Observe and decide</span>
+<strong>Make impact and safety visible</strong>
+<div class="composer-signals">
+<i>Experiment analytics</i>
+<i>Operational telemetry</i>
+<i>Runtime context</i>
+<i>Deterministic rendering</i>
+</div>
+<p>Business effects and technical reliability remain separate, observable, and attributable to the variant.</p>
+<em>Evidence returns to the experiment</em>
+</div>
+</div>
+
+<div class="composer-zero-one">
+<span>Install Composer as legacy proxy</span>
+<b>→</b>
+<span>Mark one legacy surface</span>
+<b>→</b>
+<span>Deploy one RFA</span>
+<b>→</b>
+<strong>0 → 1 experiment in &lt; 1 week — potentially one day</strong>
+</div>
+
+<p class="source-note">Derived from the Composer BDD feature suite: routing, partial rendering, scoped RFA overrides, assignment, consent, runtime context, analytics separation, and operational telemetry.</p>
+
+---
+
+## 24. Storybook: UX Communication Layer
+
+<p class="slide-kicker">Storybook turns frontend intent into an executable product contract before productive backends or runtime integration exist.</p>
+
+<div class="storybook-system">
+<div class="storybook-inputs">
+<span>Shared inputs</span>
+<div class="storybook-input-grid">
+<i><b>Product</b>Hypothesis and success criteria</i>
+<i><b>UX</b>Interaction and visual language</i>
+<i><b>Frontend</b>Components, actions, and contexts</i>
+<i><b>Backend</b>Capabilities and constraints</i>
+</div>
+</div>
+
+<div class="storybook-core">
+<span>Executable specification</span>
+<strong>Component + Context + Action + Story</strong>
+<div class="storybook-preview">
+<div class="storybook-browser">
+<i></i><i></i><i></i>
+</div>
+<div class="storybook-ui">
+<b>Checkout confirmation</b>
+<small>Context: delayed provider response</small>
+<button type="button">Retry payment</button>
+</div>
+</div>
+<p>Product, design, engineering, QA, and test participants review the same interactive behavior without waiting for a backend.</p>
+</div>
+
+<div class="storybook-gates">
+<span>Validation gates</span>
+<div class="storybook-gate-list">
+<i class="green"><b>Behavior</b>Actions and context transitions execute</i>
+<i class="green"><b>Visual constraints</b>Design invariants survive composition</i>
+<i class="green"><b>Contracts</b>Backend expectations become explicit</i>
+<i class="experiment"><b>Experiments</b>Variants substitute artifacts explicitly</i>
+</div>
+</div>
+</div>
+
+<div class="storybook-publication">
+<div>
+<span>Draft</span>
+<b>→</b>
+<span>Validated in Storybook</span>
+<b>→</b>
+<span>Contract-compatible</span>
+<b>→</b>
+<strong>Publish RFA / IFA to Composer</strong>
+</div>
+<em><b>Future interaction layer</b>WYSIWYG assembly over validated artifacts.</em>
+</div>
+
+<div class="storybook-punchline">
+Storybook is not a visual gallery. It is the quality gate where UI becomes negotiable, executable, and safe to promote.
+</div>
+
+<p class="source-note">Source: Protopipe Storybook arc42 architecture.</p>
+
+---
+
+## 25. How Shared Artifacts Stay Alive
+
+<p class="slide-kicker">The artifact defines shared meaning. The tooling keeps it connected, executable, and open to validation.</p>
+
+<div class="artifact-flow enforcement">
+<div class="artifact-card">
+<span>Purpose</span>
+<strong>Golden Circle</strong>
+The canonical why, how, and what remain available as organizational context.
+<div class="artifact-tool">
+<b>Enforced by</b>
+Noesis
+</div>
+</div>
+
+<div class="artifact-card focus">
+<span>Strategy</span>
+<strong>Strategy Topic + KPI Tree</strong>
+Strategic intent remains connected to financial outcomes, operational drivers, and technical signals.
+<div class="artifact-tool">
+<b>Enforced by</b>
+KPI Tree + Protopipe Cockpit
+</div>
+</div>
+
+<div class="artifact-card experiment">
+<span>Hypothesis -> Experiment</span>
+<strong>Strategy-linked Experiment</strong>
+Every experiment names the hypothesis, expected metric movement, and accountable owner.
+<div class="artifact-tool">
+<b>Enforced by</b>
+ProtoPortfolio
+</div>
+</div>
+
+<div class="artifact-card experiment">
+<span>Experiment -> Development</span>
+<strong>Feature Files + Scenarios</strong>
+Expected behavior becomes an executable contract and progress becomes visible as remaining steps.
+<div class="artifact-tool">
+<b>Enforced by</b>
+ProtoCatalog
+</div>
+</div>
+
+<div class="artifact-card learning">
+<span>Observation -> Learning</span>
+<strong>Evidence + Decision Record</strong>
+Runtime signals validate the expected effect and update canonical organizational knowledge.
+<div class="artifact-tool">
+<b>Enforced by</b>
+Composer
+</div>
+</div>
+</div>
+
+<div class="artifact-punchline learning">
+Shared reality survives daily operations because every artifact has a system that keeps it current and testable.
+</div>

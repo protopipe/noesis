@@ -1,0 +1,174 @@
+# Act 2: Communication Artifacts {.section .learning-section}
+
+<p class="section-subtitle">How shared meaning becomes visible, transferable, and actionable.</p>
+
+---
+
+## 09. From Problems to Desired Outcomes
+
+<p class="slide-kicker">Protopipe does not jump from pain to solution. It defines what must become true.</p>
+
+<div class="outcome-map">
+<div class="outcome-card">
+<span>CEO</span>
+<strong>Simple decisions through evidence</strong>
+Management decisions become simpler because evidence is accessible, reliable, and safe to surface.
+</div>
+
+<div class="outcome-card">
+<span>CFO</span>
+<strong>KPIs built in</strong>
+Impact, constraints, and opportunity cost become visible early enough to steer investment.
+</div>
+
+<div class="outcome-card">
+<span>CPO</span>
+<strong>Hypotheses instead of roadmap defense</strong>
+Product decisions become explicit assumptions with signals and revisit criteria.
+</div>
+
+<div class="outcome-card">
+<span>CTO</span>
+<strong>Scale change, not just throughput</strong>
+Architecture localizes change, risk, and understanding as the organization grows.
+</div>
+</div>
+
+---
+
+## 10. Mechanics Make Outcomes Unavoidable
+
+<p class="slide-kicker">Mechanics are enforced trade-offs. They remove comfortable failure modes.</p>
+
+<div class="mechanic-chain">
+<div class="mechanic-step">Problem</div>
+<div class="mechanic-arrow">→</div>
+<div class="mechanic-step">Desired Outcome</div>
+<div class="mechanic-arrow">→</div>
+<div class="mechanic-step learning">Mechanic</div>
+<div class="mechanic-arrow">→</div>
+<div class="mechanic-step">Contextual Decision</div>
+<div class="mechanic-arrow">→</div>
+<div class="mechanic-step">Realization</div>
+</div>
+
+<div class="mechanic-punchline">
+If a rule can be ignored without consequence, it is not a mechanic.
+</div>
+
+<div class="mechanic-type-grid">
+<div class="mechanic-type-card">
+<span>X over Y</span>
+Use when a mechanic enforces a clear preference
+between two competing approaches.
+
+<i>Y is excluded by default. It needs strong justification to be chosen over X.</i>
+</div>
+
+<div class="mechanic-type-card">
+<span>X by Default, Y by Exception</span>
+Use when a behavior is allowed,
+but only with explicit justification.
+
+<i>Y is allowed, but only for the given exception</i>
+</div>
+
+<div class="mechanic-type-card">
+<span>No X without Y</span>
+Use when a behavior must never occur
+unless a prerequisite is fulfilled.
+
+<i>X is not allowed unless Y is true</i>
+</div>
+</div>
+
+---
+
+## 11. The First Mechanics
+
+<p class="slide-kicker">A shared reality platform starts by making ambiguity structurally expensive.</p>
+
+<div class="mechanic-grid">
+<div class="mechanic-card">
+<strong>No coordination without explicit shared meaning</strong>
+Coordination through meetings alone does not scale. Meaning must be referenceable.
+</div>
+
+<div class="mechanic-card">
+<strong>No release without observable feedback</strong>
+Delivery is not complete until feedback exists before or during release.
+</div>
+
+<div class="mechanic-card">
+<strong>No work evaluation without learning signal</strong>
+Work is evaluated by learning, not by looking right or wrong.
+</div>
+
+<div class="mechanic-card">
+<strong>No experiment without explicit business ownership</strong>
+Experiments need accountable interpretation, not just technical execution.
+</div>
+</div>
+
+---
+
+## 12. Gapless Organizational Learning Process
+
+<p class="slide-kicker">Purpose, strategy, delivery, observation, and learning stay in one measurable loop.</p>
+
+```{=html}
+<div class="enterprise-bpm">
+<img class="enterprise-bpmn-img" src="../assets/diagrams/shared-reality-bpmn.svg" alt="BPMN-style shared reality process across C-Level, Product Ownership, Developers and Analysts, and Learning lanes; analysis combines experiment metrics with external factors such as weather">
+</div>
+```
+
+<div class="shared-reality-punchline">
+Protopipe exists to keep this loop connected, explicit, observable, and revisable.
+</div>
+
+---
+
+## 13. Process Transition Artifacts
+
+<p class="slide-kicker">Every handover becomes visible as a shared artifact that the next lane can understand and act on.</p>
+
+<div class="artifact-flow">
+<div class="artifact-card">
+<span>Purpose</span>
+<strong>Golden Circle</strong>
+Why, how, and what become a stable reference for strategic and product conversations.
+<em>Visible as shared orientation.</em>
+</div>
+
+<div class="artifact-card focus">
+<span>Strategy</span>
+<strong>Strategy Topic + KPI Tree</strong>
+The KPI Tree relates operational and technical metrics to the business outcomes that matter to leadership.
+<em>Visible as causal business context.</em>
+</div>
+
+<div class="artifact-card">
+<span>Hypothesis</span>
+<strong>Strategy-linked Claim</strong>
+A hypothesis belongs to a strategy topic and states what should become measurably true.
+<em>Visible as strategic assumption.</em>
+</div>
+
+<div class="artifact-card experiment">
+<span>Experiment</span>
+<strong>Measured System Change</strong>
+An experiment tries to prove a hypothesis by changing or replacing part of the current system and expecting metric movement.
+<em>Visible as portfolio experiment.</em>
+</div>
+
+<div class="artifact-card">
+<span>Development</span>
+<strong>Feature Files / Scenarios</strong>
+Instead of story points, progress is visible as missing scenario steps on the experiment branch.
+<em>Visible on the experiment.</em>
+</div>
+</div>
+
+<div class="artifact-punchline">
+Artifacts are not write-only documentation. They are the shared objects that carry responsibility across the process.
+</div>

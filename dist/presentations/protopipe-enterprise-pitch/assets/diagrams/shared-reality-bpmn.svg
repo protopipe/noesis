@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1320 430" role="img" aria-label="BPMN-style shared reality process across C-Level, Product Ownership, Developers and Analysts, and Learning lanes">
+  <defs>
+    <marker id="bpmn-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#b9c3bf"/>
+    </marker>
+    <marker id="bpmn-feedback-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#ff3e72"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="1320" height="430" rx="14" fill="rgba(255,255,255,0.025)" stroke="rgba(255,255,255,0.12)" stroke-width="1.5"/>
+  <rect x="0" y="0" width="170" height="98" fill="rgba(255,255,255,0.08)"/>
+  <rect x="0" y="98" width="170" height="98" fill="rgba(255,255,255,0.065)"/>
+  <rect x="0" y="196" width="170" height="98" fill="rgba(255,255,255,0.05)"/>
+  <rect x="0" y="294" width="170" height="136" fill="rgba(246,197,111,0.18)"/>
+  <g stroke="rgba(255,255,255,0.13)" stroke-width="1.5">
+    <line x1="0" y1="98" x2="1320" y2="98"/>
+    <line x1="0" y1="196" x2="1320" y2="196"/>
+    <line x1="0" y1="294" x2="1320" y2="294"/>
+    <line x1="170" y1="0" x2="170" y2="430"/>
+  </g>
+
+  <g font-family="Inter, Arial, sans-serif" font-weight="800" fill="#f4fbf8">
+    <text x="24" y="54" font-size="25">C-Level</text>
+    <text x="24" y="152" font-size="25">Product</text>
+    <text x="24" y="174" font-size="18" fill="#b9c3bf" font-weight="700">Ownership</text>
+    <text x="24" y="240" font-size="25">Developers</text>
+    <text x="24" y="264" font-size="18" fill="#b9c3bf" font-weight="700">&amp; Analysts</text>
+    <text x="24" y="356" font-size="25">Learning</text>
+    <text x="24" y="378" font-size="18" fill="#b9c3bf" font-weight="700">Canonical</text>
+  </g>
+
+  <circle cx="215" cy="49" r="18" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.7)" stroke-width="4"/>
+
+  <g fill="rgba(255,255,255,0.045)" stroke="rgba(255,255,255,0.62)" stroke-width="1.7">
+    <rect x="260" y="24" width="118" height="50" rx="9"/>
+    <rect x="420" y="24" width="118" height="50" rx="9"/>
+    <rect x="580" y="122" width="126" height="50" rx="9"/>
+    <rect x="750" y="122" width="126" height="50" rx="9" fill="rgba(247,67,110,0.1)" stroke="#f7436e"/>
+    <rect x="900" y="220" width="120" height="50" rx="9"/>
+    <rect x="1056" y="216" width="112" height="58" rx="9"/>
+  </g>
+
+  <g font-family="Inter, Arial, sans-serif" text-anchor="middle" fill="#f4fbf8" font-size="19" font-weight="760">
+    <text x="319" y="54">Purpose</text>
+    <text x="479" y="54">Strategy</text>
+    <text x="643" y="152">Hypothesis</text>
+    <text x="813" y="152">Experiment</text>
+    <text x="960" y="250" font-size="17">Development</text>
+    <text x="1112" y="237" font-size="17">Analysis</text>
+    <text x="1112" y="253" font-size="11" fill="#b9c3bf" font-weight="700">metrics + context</text>
+    <text x="1112" y="267" font-size="11" fill="#41d6c3" font-weight="760">e.g. weather</text>
+  </g>
+
+  <polygon points="1220,111 1260,151 1220,191 1180,151" fill="rgba(255,255,255,0.045)" stroke="rgba(255,255,255,0.62)" stroke-width="2"/>
+  <g font-family="Inter, Arial, sans-serif" text-anchor="middle" fill="#f4fbf8" font-weight="800">
+    <text x="1220" y="146" font-size="13">Decision</text>
+    <text x="1220" y="162" font-size="11" fill="#b9c3bf" font-weight="700">gate</text>
+  </g>
+
+  <rect x="270" y="327" width="835" height="62" rx="10" fill="rgba(246,197,111,0.07)" stroke="rgba(246,197,111,0.58)" stroke-width="1.8"/>
+  <g font-family="Inter, Arial, sans-serif" fill="#f4fbf8">
+    <text x="300" y="354" font-size="21" font-weight="830">Canonical Learning Record</text>
+    <text x="300" y="376" font-size="17" font-weight="650" fill="#b9c3bf">claim, metric, evidence, decision rationale, next hypothesis</text>
+  </g>
+
+  <g fill="none" stroke="#b9c3bf" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#bpmn-arrow)">
+    <path d="M 233 49 L 260 49"/>
+    <path d="M 378 49 L 420 49"/>
+    <path d="M 538 49 L 560 49 L 560 147 L 580 147"/>
+    <path d="M 706 147 L 750 147"/>
+    <path d="M 876 147 L 880 147 L 880 245 L 900 245"/>
+    <path d="M 1020 245 L 1056 245"/>
+    <path d="M 1168 245 L 1220 245 L 1220 191"/>
+    <path d="M 1220 191 L 1220 358 L 1105 358"/>
+  </g>
+
+  <g fill="none" stroke="#ff3e72" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="8 7" marker-end="url(#bpmn-feedback-arrow)">
+    <path d="M 1180 151 L 1115 151 L 1115 108 L 643 108 L 643 122"/>
+    <path d="M 1220 111 L 1220 14 L 479 14 L 479 24"/>
+  </g>
+  <g font-family="Inter, Arial, sans-serif" text-anchor="middle" fill="#ff3e72" font-size="16" font-weight="760">
+    <text x="835" y="100">revise hypothesis</text>
+    <text x="795" y="32">reframe strategy</text>
+  </g>
+</svg>

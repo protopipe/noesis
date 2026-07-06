@@ -1,0 +1,13 @@
+flowchart TB
+  Noesis[Noesis<br/>Canonical reasoning space]
+  Portfolio[ProtoPortfolio<br/>Hypotheses, KPI tree, strategy]
+  Composer[Composer<br/>Architecture experiments]
+  Storybook[Storybook<br/>UX communication and prototypes]
+  Memory[Shared organizational memory]
+
+  Noesis <--> Memory
+  Memory <--> Portfolio
+  Portfolio <--> Composer
+  Composer <--> Storybook
+  Storybook <--> Portfolio
+

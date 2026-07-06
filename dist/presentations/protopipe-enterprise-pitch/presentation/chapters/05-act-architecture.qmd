@@ -1,0 +1,43 @@
+# Act 5: Architecture and Observability {.section .learning-section}
+
+---
+
+## 29. Architecture Carries the Experiment
+
+::: {.flow .learning-flow}
+Hypothesis -> Experiment -> Architecture -> Development -> Observation -> Decision -> Learning
+:::
+
+---
+
+## 30. Experiments Beat Large Upfront Decisions
+
+::: {.toc-only}
+Connect risk-first exploration, reversibility, and feedback over opinion.
+:::
+
+---
+
+## 31. Development Becomes Observable
+
+::: {.toc-only}
+Show architecture as dependency management, invariant placement, and blast
+radius reduction, connected to implementation feedback and runtime observation.
+:::
+
+---
+
+## 32. Monitoring Becomes Causal, Not Decorative
+
+::: {.toc-only}
+Tie KPI trees, telemetry, observations, hypotheses, and experiments so metrics
+can explain decisions.
+:::
+
+---
+
+## 33. Decisions Become Traceable
+
+::: {.toc-only}
+Show how evidence, trade-offs, and canonical references survive beyond meetings.
+:::

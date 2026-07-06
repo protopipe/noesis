@@ -1,0 +1,197 @@
+# Ecosystem Extensions {.section .neutral-section}
+
+<p class="section-subtitle">Optional capabilities that expand the evidence and governance around the Protopipe core.</p>
+
+---
+
+## 30. External Reality Signals
+
+<p class="slide-kicker">Optional metric providers can enrich the KPI Tree with market evidence that the organization cannot produce internally.</p>
+
+<div class="extension-badge">Optional SaaS Add-on</div>
+
+<div class="external-signals">
+<div class="external-provider">
+<span>External metric provider</span>
+<strong>Sellytics</strong>
+<p>A potential ecosystem partner for continuously supplied external market and commercial signals.</p>
+<a href="https://sellytics.com/">sellytics.com</a>
+</div>
+
+<div class="external-arrow">→</div>
+
+<div class="external-contract">
+<span>Protopipe signal contract</span>
+<strong>Source · timestamp · confidence · KPI relation</strong>
+<div>
+<i>Normalized</i>
+<i>Traceable</i>
+<i>Comparable</i>
+<i>Challengeable</i>
+</div>
+</div>
+
+<div class="external-arrow">→</div>
+
+<div class="external-destination">
+<span>Core platform</span>
+<strong>Reality Signal Matrix + KPI Tree</strong>
+<p>External evidence can support or contradict a strategy, but it never replaces an accountable decision.</p>
+</div>
+</div>
+
+<div class="extension-boundary">
+<b>Core:</b> Protopipe accepts attributable reality signals.
+<b>Add-on:</b> A provider supplies and maintains external evidence as a service.
+</div>
+
+---
+
+## 31. Google Analytics for Physical Retail
+
+<p class="slide-kicker">Instrument the physical store like an online product: connect experiments to observed customer behavior and business outcomes.</p>
+
+<div class="extension-badge">Optional Retail Analytics Add-on · Potential Partner</div>
+
+<div class="external-signals">
+<div class="external-provider">
+<span>Store reality provider</span>
+<strong>Crosscan</strong>
+<p>Potential ecosystem partner for measuring visitor frequency, passers-by, dwell time, movement patterns, and demographic signals.</p>
+<a href="https://crosscan.com/">crosscan.com</a>
+</div>
+
+<div class="external-arrow">→</div>
+
+<div class="external-contract">
+<span>Experiment context</span>
+<strong>Store · time · intervention · comparison group</strong>
+<div>
+<i>Footfall + conversion</i>
+<i>Dwell time + movement</i>
+<i>POS + staffing data</i>
+<i>Weather + location context</i>
+</div>
+</div>
+
+<div class="external-arrow">→</div>
+
+<div class="external-destination">
+<span>Protopipe decision model</span>
+<strong>Reality Signal Matrix + KPI Tree</strong>
+<p>Store behavior fills the internal quadrants. Weather and location context explain external influence without being mistaken for experiment impact.</p>
+</div>
+</div>
+
+<div class="extension-boundary">
+<b>Experiment:</b> Change a store surface, process, campaign, or staffing model.
+<b>Decision:</b> Compare attributed behavior and business impact before scaling.
+</div>
+
+<p class="source-note">Potential partner capability reference: <a href="https://crosscan.com/">Crosscan retail analytics</a>.</p>
+
+---
+
+## 32. Industry 5.0: Strategy Reaches the Shopfloor
+
+<p class="slide-kicker">Digitization makes industrial work observable. Protopipe turns that operational reality into strategic learning.</p>
+
+<div class="extension-badge">Optional Industrial Operations Add-on · Potential Partner</div>
+
+<div class="external-signals">
+<div class="external-provider">
+<span>Shopfloor execution provider</span>
+<strong>ekko</strong>
+<p>Potential ecosystem partner for paperless picking, eKanban, locationing, digital labeling, and configurable industrial workflows.</p>
+<a href="https://www.ekko.io/en">ekko.io</a>
+</div>
+
+<div class="external-arrow">→</div>
+
+<div class="external-contract">
+<span>Operational evidence</span>
+<strong>Order · step · material · location · outcome</strong>
+<div>
+<i>Digital instructions</i>
+<i>Verified process events</i>
+<i>Errors + cycle times</i>
+<i>REST · webhooks · MQTT</i>
+</div>
+</div>
+
+<div class="external-arrow">→</div>
+
+<div class="external-destination">
+<span>Augmented strategy</span>
+<strong>Hypothesis + KPI Tree + Cockpit</strong>
+<p>Protopipe relates deterministic process evidence to quality, throughput, resilience, worker experience, and strategic outcomes.</p>
+</div>
+</div>
+
+<div class="extension-boundary">
+<b>ekko:</b> Make production, warehouse, and logistics processes digital, traceable, and testable.
+<b>Protopipe:</b> Decide which operational change creates strategic value and whether the evidence supports scaling it.
+</div>
+
+<p class="source-note">Capability references: <a href="https://www.ekko.io/en">ekko shopfloor digitization</a> and <a href="https://research-and-innovation.ec.europa.eu/research-area/industrial-research-and-innovation/industry-50_en">European Commission Industry 5.0</a>.</p>
+
+---
+
+## 33. Synesis: Deliberation with Memory
+
+<p class="slide-kicker">An optional deliberation platform can make perspectives, arguments, evidence, and unresolved conflict part of the decision record.</p>
+
+<div class="extension-badge">Optional Governance Add-on · MVP Concept</div>
+
+<div class="synesis-model">
+<div class="synesis-input">
+<span>Participants enter with context</span>
+<div>
+<i><b>Perspective</b>Which reality do I represent?</i>
+<i><b>Position</b>What do I currently support?</i>
+<i><b>Hypothesis</b>What would change my mind?</i>
+</div>
+</div>
+
+<div class="synesis-arrow">→</div>
+
+<div class="synesis-core">
+<span>Structured deliberation</span>
+<strong>Claims · evidence · alternatives · consent</strong>
+<div class="synesis-ai">
+AI summarizes, clusters arguments, detects repetition, and points new participants to the existing discourse.
+</div>
+</div>
+
+<div class="synesis-arrow">→</div>
+
+<div class="synesis-output">
+<span>Canonical decision memory</span>
+<div>
+<i>Convergence status</i>
+<i>Reasoned vetoes</i>
+<i>Open assumptions</i>
+<i>Decision rationale</i>
+</div>
+</div>
+</div>
+
+<div class="synesis-integration">
+<div>
+<span>Habermas</span>
+<strong>Target model</strong>
+<small>Understanding through reasoned, challengeable argument.</small>
+</div>
+<div>
+<span>Luhmann</span>
+<strong>Threat model</strong>
+<small>Power, system logic, and self-reference remain explicit risks.</small>
+</div>
+<div class="learning">
+<span>Protopipe</span>
+<strong>Decision integration</strong>
+<small>The resulting rationale links to strategy, hypothesis, experiment, and KPI Tree.</small>
+</div>
+</div>
+
+<p class="source-note">Source: <em>Synesis – Diskursplattform für konvergente Entscheidungsfindung</em>, internal MVP canvas.</p>

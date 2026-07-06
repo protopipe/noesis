@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Protopipe Executive Cockpit</title>
+<style>
+:root{
+  --bg:#081a17;
+  --panel:#0d2420;
+  --panel2:#102b27;
+  --line:rgba(247,67,110,.18);
+  --line-soft:rgba(255,255,255,.07);
+  --text:#e9f3f0;
+  --muted:#8fa8a1;
+  --dim:#607770;
+  --red0:#de083d;
+  --red1:#e61b4d;
+  --red2:#ee2f5d;
+  --red3:#f7436e;
+  --ok:#c7efe1;
+  --warn:#f1c98f;
+  --bad:#f092a5;
+  --shadow:0 24px 80px rgba(0,0,0,.38);
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:
+    radial-gradient(circle at 18% 10%, rgba(222,8,61,.16), transparent 28%),
+    radial-gradient(circle at 80% 5%, rgba(247,67,110,.10), transparent 30%),
+    linear-gradient(135deg,#06120f,#081a17 45%,#0b1f1b);
+  color:var(--text);
+  font-family:Inter, "Helvetica Neue", Arial, sans-serif;
+}
+body:before{
+  content:"";
+  position:fixed; inset:0; pointer-events:none;
+  background-image:
+    linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px);
+  background-size:48px 48px;
+  mask-image:linear-gradient(to bottom,rgba(0,0,0,.8),transparent 90%);
+}
+.app{max-width:1440px;margin:0 auto;padding:24px}
+.topbar{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:16px 20px;border:1px solid var(--line-soft);
+  background:rgba(13,36,32,.72);backdrop-filter:blur(16px);
+  border-radius:24px;box-shadow:var(--shadow);position:sticky;top:16px;z-index:10;
+}
+.logo{
+  display:flex;
+  align-items:center;
+  gap:14px;
+}
+
+.logo-img{
+  height:42px;
+  width:auto;
+  display:block;
+
+  filter:
+    drop-shadow(0 0 12px rgba(247,67,110,.25))
+    drop-shadow(0 0 28px rgba(247,67,110,.12));
+}
+
+.brand b{font-size:18px;letter-spacing:.12em;text-transform:uppercase}
+.brand span{display:block;color:var(--muted);font-size:11px;margin-top:3px}
+.controls{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.chip,select{
+  background:rgba(255,255,255,.045);color:var(--text);
+  border:1px solid var(--line-soft);border-radius:999px;
+  padding:10px 13px;font-size:12px;letter-spacing:.04em;
+}
+.chip.active{border-color:rgba(247,67,110,.6);box-shadow:0 0 18px rgba(247,67,110,.16);color:#fff}
+.mode{background:rgba(222,8,61,.16);border-color:rgba(247,67,110,.42)}
+.hero{display:flex;justify-content:space-between;gap:28px;margin:28px 0 18px}
+h1{font-size:38px;line-height:1.05;margin:0;letter-spacing:-.04em}
+h2{font-size:18px;margin:0}
+.lead{max-width:720px;color:var(--muted);line-height:1.55}
+.direction{
+  display:grid;grid-template-columns:1.08fr 1.72fr;gap:16px;margin:18px 0 22px
+}
+.direction-card,.reality-card,.card,.side{
+  border:1px solid var(--line-soft);border-radius:22px;
+  background:linear-gradient(180deg,rgba(16,43,39,.88),rgba(8,26,23,.82));
+  box-shadow:0 16px 50px rgba(0,0,0,.22);
+}
+.direction-card,.reality-card{padding:18px;min-height:210px}
+.section-head{display:flex;align-items:flex-start;justify-content:space-between;gap:14px;margin-bottom:16px}
+.section-head p{margin:4px 0 0;color:var(--muted);font-size:12px;line-height:1.4}
+.pill{
+  display:inline-flex;align-items:center;gap:6px;white-space:nowrap;
+  border:1px solid var(--line-soft);border-radius:999px;
+  padding:7px 10px;background:rgba(255,255,255,.04);
+  font-size:11px;color:var(--muted);
+}
+.overall-layout{display:grid;grid-template-columns:128px 1fr;gap:18px;align-items:start;margin-top:12px}
+.ring{
+  width:128px;height:128px;border-radius:50%;
+  background:conic-gradient(var(--red3) 0 259deg,rgba(255,255,255,.08) 259deg 360deg);
+  display:grid;place-items:center;box-shadow:0 0 42px rgba(247,67,110,.16);position:relative;
+}
+.ring:before{
+  content:"";position:absolute;inset:13px;border-radius:50%;
+  background:linear-gradient(180deg,#102b27,#081a17);border:1px solid var(--line-soft);
+}
+.ring b{position:relative;font-size:30px}
+.ring span{position:relative;font-size:12px;color:var(--muted);display:block}
+.status-list{display:grid;gap:10px}
+.status-row{display:flex;justify-content:space-between;gap:12px;font-size:13px;color:var(--muted)}
+.status-row strong{color:var(--text)}
+.experiment-node{
+  fill:var(--warn);stroke:#102b27;stroke-width:3;cursor:help;
+  transition:r .15s ease,filter .15s ease;
+}
+.experiment-node:hover{r:5px;filter:drop-shadow(0 0 4px rgba(241,201,143,.8))}
+.capacity-summary{
+  grid-column:1 / -1;border:1px solid var(--line-soft);border-radius:15px;
+  padding:11px 12px;background:rgba(255,255,255,.035);
+}
+.capacity-summary-top{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;margin-bottom:8px}
+.capacity-summary-top strong{font-size:18px}
+.capacity-segments{
+  height:8px;display:flex;overflow:hidden;border-radius:999px;background:rgba(255,255,255,.08);
+}
+.capacity-segments i{
+  position:static;height:100%;display:block;border-radius:0;
+  background:linear-gradient(90deg,var(--red0),var(--red3));opacity:var(--o);
+}
+.capacity-note{margin-top:7px;font-size:10px;color:var(--muted)}
+.financial-mini-grid{display:grid;grid-column:1 / -1;gap:7px;margin-top:0}
+.financial-mini{
+  display:grid;grid-template-columns:92px 94px 1fr;gap:10px;align-items:center;
+  border:1px solid var(--line-soft);border-radius:14px;padding:8px 10px;
+  background:rgba(255,255,255,.032);min-height:42px;
+}
+.financial-mini .label{font-size:10px}
+.mini-value{font-size:15px;font-weight:800;white-space:nowrap}
+.mini-delta{
+  font-size:10px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+}
+.mini-spark{width:100%;height:30px;overflow:visible}
+.financial-event{
+  fill:var(--warn);stroke:#102b27;stroke-width:2.5;cursor:help;
+  transition:r .15s ease,filter .15s ease;
+}
+.financial-event:hover{r:5px;filter:drop-shadow(0 0 4px rgba(241,201,143,.8))}
+.reality-signal-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.signal-quadrant{
+  border:1px solid var(--line-soft);border-radius:18px;padding:13px;
+  background:radial-gradient(circle at 100% 0%,rgba(247,67,110,.09),transparent 44%),rgba(255,255,255,.035);
+  min-height:154px;
+}
+.signal-top{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;margin-bottom:10px}
+.signal-title{font-size:12px;font-weight:800;line-height:1.25}
+.signal-confidence{text-align:right}
+.signal-confidence strong{display:block;font-size:23px;line-height:1}
+.signal-confidence span{
+  display:block;font-size:10px;color:var(--muted);margin-top:3px;
+  text-transform:uppercase;letter-spacing:.08em;
+}
+.signal-meta{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:8px 0 10px}
+.signal-metric{border:1px solid var(--line-soft);border-radius:12px;padding:8px;background:rgba(0,0,0,.12)}
+.signal-metric span{display:block;font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}
+.signal-metric strong{display:block;margin-top:4px;font-size:14px}
+.signal-quadrant .bar{height:6px}
+.signal-quadrant .bar i{left:0;right:auto}
+.metric-list{display:grid;gap:6px;margin-top:10px}
+.metric-change{display:grid;grid-template-columns:18px 1fr auto;gap:7px;align-items:center;font-size:11px;color:var(--muted)}
+.metric-change b{color:var(--text);font-weight:700}
+.metric-change em{font-style:normal;color:var(--muted)}
+.metric-arrow{
+  width:18px;height:18px;display:grid;place-items:center;border-radius:50%;
+  background:rgba(255,255,255,.055);color:var(--red3);font-size:12px;
+}
+.label{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.12em}
+.spark{width:100%;height:42px;margin-top:8px}
+.main{display:grid;grid-template-columns:1fr 330px;gap:18px;align-items:start}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.card{
+  padding:18px;cursor:pointer;position:relative;overflow:hidden;
+  transition:.2s transform,.2s border-color,.2s background;
+}
+.card:hover,.card.selected{
+  transform:translateY(-2px);
+  border-color:rgba(247,67,110,.48);
+  background:linear-gradient(180deg,rgba(20,54,48,.96),rgba(8,26,23,.9));
+}
+.card.selected:before{
+  content:"";position:absolute;left:0;top:0;bottom:0;width:3px;
+  background:linear-gradient(var(--red0),var(--red3));
+}
+.card-head{display:flex;justify-content:space-between;gap:12px;margin-bottom:14px}
+.title{font-size:18px;font-weight:800}
+.strategy-link{
+  position:relative;display:inline-flex;align-items:center;gap:5px;
+  color:var(--text);text-decoration:none;transition:color .2s ease;
+}
+.strategy-link:after{
+  content:"";position:absolute;left:0;right:0;bottom:-3px;height:1px;
+  background:var(--red3);transform:scaleX(0);transform-origin:left;
+  transition:transform .2s ease;
+}
+.strategy-link:hover,.strategy-link:focus-visible{color:#fff}
+.strategy-link:hover:after,.strategy-link:focus-visible:after{transform:scaleX(1)}
+.strategy-link .link-icon{font-size:13px;color:var(--muted);transition:color .2s ease,transform .2s ease}
+.strategy-link:hover .link-icon,.strategy-link:focus-visible .link-icon{color:var(--red3);transform:translate(1px,-1px)}
+.meta{font-size:12px;color:var(--muted);margin-top:6px}
+.priority{font-size:11px;padding:7px 10px;border-radius:999px;border:1px solid rgba(247,67,110,.36);height:max-content}
+.levers{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:14px 0}
+.lever{padding:12px;border:1px solid var(--line-soft);border-radius:16px;background:rgba(255,255,255,.035)}
+.lever b{display:block;font-size:20px;margin-top:4px}
+.lever .sub{display:block;font-size:10px;color:var(--muted);margin-top:4px;white-space:nowrap}
+.budget-bar,.capacity-bar{
+  height:5px;background:rgba(255,255,255,.08);border-radius:999px;overflow:hidden;margin-top:8px;
+}
+.budget-bar i,.capacity-bar i{
+  display:block;height:100%;border-radius:999px;background:linear-gradient(90deg,var(--red0),var(--red3));
+}
+.budget-position .minirow strong{color:var(--text)}
+.clusters{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin:14px 0}
+.cluster{border:1px solid var(--line-soft);border-radius:16px;padding:11px;background:rgba(0,0,0,.12)}
+.cluster h4{margin:0 0 5px;font-size:12px}
+.cluster-question{min-height:28px;margin:0 0 8px;color:var(--dim);font-size:9px;line-height:1.35}
+.minirow{display:flex;justify-content:space-between;font-size:11px;color:var(--muted);margin:5px 0}
+.bar{position:relative;height:5px;background:rgba(255,255,255,.08);border-radius:999px;overflow:hidden;margin-top:8px}
+.bar i{position:absolute;top:0;bottom:0;background:linear-gradient(90deg,var(--red0),var(--red3));border-radius:999px}
+.positive .bar i{left:0;right:auto}
+.negative .bar i{left:auto;right:0}
+.negative .bar i{background:linear-gradient(270deg,var(--red0),var(--red3))}
+.bar-label{margin-top:5px;color:var(--dim);font-size:9px;line-height:1.25}
+.risk-status{margin-top:8px;padding-top:7px;border-top:1px solid var(--line-soft);color:var(--warn);font-size:9px;line-height:1.25}
+.momentum{display:block;width:100%;margin-top:12px}
+.momentum .spark{display:block;width:100%;height:58px}
+.mstate{font-size:12px;color:var(--muted)}
+.kpis{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.kpi{font-size:11px;padding:6px 8px;border-radius:999px;background:rgba(255,255,255,.055);color:#bdd2cc}
+.kpi.pos{border:1px solid rgba(199,239,225,.25)}
+.kpi.neg{border:1px solid rgba(240,146,165,.28)}
+.kpi.ext{border:1px solid rgba(241,201,143,.28)}
+.side{padding:18px;position:sticky;top:104px}
+.side h2{margin:0 0 14px;font-size:18px}
+.focusbox{padding:14px;border:1px solid var(--line-soft);border-radius:16px;margin:12px 0;background:rgba(255,255,255,.035)}
+.focusbox b{display:block;font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.1em;margin-bottom:7px}
+.question{font-size:18px;line-height:1.35}
+.strategy-cta{
+  display:flex;align-items:center;justify-content:space-between;
+  margin-top:14px;padding-top:12px;border-top:1px solid var(--line-soft);
+  color:var(--text);font-size:12px;font-weight:800;text-decoration:none;
+  transition:color .2s ease;
+}
+.strategy-cta span{transition:transform .2s ease}
+.strategy-cta:hover,.strategy-cta:focus-visible{color:var(--red3)}
+.strategy-cta:hover span,.strategy-cta:focus-visible span{transform:translateX(3px)}
+.annotations{font-size:10px;fill:var(--muted)}
+@media(max-width:1180px){
+  .direction{grid-template-columns:1fr}
+  .main,.hero{grid-template-columns:1fr;display:block}
+  .side{position:static;margin-top:18px}
+}
+@media(max-width:900px){
+  .grid,.reality-signal-grid{grid-template-columns:1fr}
+  .overall-layout,.financial-mini{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<div class="app">
+  <nav class="topbar">
+    <div class="logo">
+        <img src="https://raw.githubusercontent.com/protopipe/noesis/refs/heads/main/doc/09_identity/assets/logo/out/svg/logo-color-small.svg" alt="Protopipe" class="logo-img" />
+      <div class="mark"></div>
+      <div class="brand"><b>Protopipe</b><span>Executive Strategy Cockpit</span></div>
+    </div>
+    <div class="controls">
+      <button class="chip active range">90d</button>
+      <button class="chip range">180d</button>
+      <button class="chip range">YTD</button>
+      <button class="chip sort active">Budget</button>
+      <button class="chip sort">Capacity</button>
+      <button class="chip sort">Priority</button>
+      <button class="chip sort">Momentum</button>
+      <button class="chip mode">Executive Mode</button>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div>
+      <h1>Executive Strategy Overview</h1>
+      <p class="lead">
+        Strategies as durable management objects: budget, capacity, priority,
+        evidence, friction, risk mitigation, and KPI momentum in a single view.
+      </p>
+    </div>
+  </section>
+
+  <section class="direction">
+    <article class="direction-card">
+      <div class="section-head">
+        <div>
+          <h2>Overall Strategy Health</h2>
+          <p>Aggregated strategy health with compact financial instruments reflecting the company state.</p>
+        </div>
+        <span class="pill">Company Direction</span>
+      </div>
+
+      <div class="overall-layout">
+        <div class="ring"><div><b>72</b><span>Health</span></div></div>
+        <div>
+          <div class="status-list">
+            <div class="status-row"><span>Momentum</span><strong>+12%</strong></div>
+            <div class="status-row"><span>Trend</span><strong>Accelerating</strong></div>
+            <div class="status-row"><span>Healthy Strategies</span><strong>4 / 5</strong></div>
+            <div class="status-row"><span>Critical Strategy</span><strong>1</strong></div>
+          </div>
+        </div>
+
+        <div class="capacity-summary">
+          <div class="capacity-summary-top">
+            <div>
+              <div class="label">Portfolio Capacity</div>
+              <div class="capacity-note">Strategic capacity allocation across all active strategies</div>
+            </div>
+            <strong>100%</strong>
+          </div>
+          <div class="capacity-segments">
+            <i style="width:30%;--o:1"></i>
+            <i style="width:24%;--o:.86"></i>
+            <i style="width:22%;--o:.72"></i>
+            <i style="width:10%;--o:.58"></i>
+            <i style="width:14%;--o:.44"></i>
+          </div>
+          <div class="capacity-note">30% Enterprise · 24% Profitability · 22% AI · 10% Resilience · 14% Ops</div>
+        </div>
+
+        <div class="financial-mini-grid">
+          <div class="financial-mini">
+            <div class="label">Liquidity</div>
+            <div><div class="mini-value">CHF 18.4M</div><div class="mini-delta">Runway 14.2 months</div></div>
+            <svg class="mini-spark" viewBox="0 0 260 30" aria-label="Liquidity trend with experiment markers">
+              <path d="M0 23 L26 21 L52 22 L78 16 L104 17 L130 12 L156 13 L182 8 L208 9 L234 5 L260 6" fill="none" stroke="#f7436e" stroke-width="2"/>
+              <circle class="financial-event" cx="78" cy="16" r="3.5"><title>Partner pilot launched · possible liquidity impact through onboarding spend</title></circle>
+              <circle class="financial-event" cx="182" cy="8" r="3.5"><title>Budget shifted to partner enablement · liquidity remained stable</title></circle>
+            </svg>
+          </div>
+          <div class="financial-mini">
+            <div class="label">Revenue</div>
+            <div><div class="mini-value">CHF 42.7M</div><div class="mini-delta">+8.4% vs. previous period</div></div>
+            <svg class="mini-spark" viewBox="0 0 260 30" aria-label="Revenue trend with experiment markers">
+              <path d="M0 24 L32 23 L64 20 L96 19 L128 15 L160 13 L192 10 L224 8 L260 4" fill="none" stroke="#ee2f5d" stroke-width="2"/>
+              <circle class="financial-event" cx="78" cy="20" r="3.5"><title>Partner pilot launched · revenue acceleration followed</title></circle>
+              <circle class="financial-event" cx="160" cy="13" r="3.5"><title>AI pricing test launched · possible contribution to revenue growth</title></circle>
+              <circle class="financial-event" cx="182" cy="11" r="3.5"><title>Partner enablement budget shift · correlation with continued revenue growth</title></circle>
+            </svg>
+          </div>
+          <div class="financial-mini">
+            <div class="label">Costs</div>
+            <div><div class="mini-value">CHF 31.1M</div><div class="mini-delta">Cloud +12%, People +4%</div></div>
+            <svg class="mini-spark" viewBox="0 0 260 30" aria-label="Cost trend with experiment markers">
+              <path d="M0 9 L30 11 L60 10 L90 14 L120 12 L150 18 L180 20 L210 22 L235 23 L260 24" fill="none" stroke="#e61b4d" stroke-width="2"/>
+              <circle class="financial-event" cx="78" cy="13" r="3.5"><title>Partner pilot launched · onboarding costs began to increase</title></circle>
+              <circle class="financial-event" cx="160" cy="19" r="3.5"><title>AI pricing test expanded · inference and infrastructure costs increased</title></circle>
+              <circle class="financial-event" cx="210" cy="22" r="3.5"><title>Cloud cost spike detected · strong correlation with cost increase</title></circle>
+            </svg>
+          </div>
+          <div class="financial-mini">
+            <div class="label">Provisions</div>
+            <div><div class="mini-value">CHF 3.8M</div><div class="mini-delta">2 open exposure reviews</div></div>
+            <svg class="mini-spark" viewBox="0 0 260 30" aria-label="Provisions trend with experiment markers">
+              <path d="M0 8 L32 9 L64 11 L96 14 L128 13 L160 18 L192 21 L224 20 L260 19" fill="none" stroke="#de083d" stroke-width="2"/>
+              <circle class="financial-event" cx="96" cy="14" r="3.5"><title>Regulatory review started · additional exposure assessed</title></circle>
+              <circle class="financial-event" cx="192" cy="21" r="3.5"><title>AI compliance scope expanded · provisions increased</title></circle>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="reality-card">
+      <div class="section-head">
+        <div>
+          <h2>Reality Signal Matrix</h2>
+          <p>Quadrants show decision confidence, overall trends, and the four strongest relevant signal changes in the selected period.</p>
+        </div>
+        <span class="pill">Impact × Delta</span>
+      </div>
+
+      <div class="reality-signal-grid">
+        <div class="signal-quadrant">
+          <div class="signal-top"><div class="signal-title">Internal + Controllable</div><div class="signal-confidence"><strong>92%</strong><span>Confidence</span></div></div>
+          <div class="signal-meta"><div class="signal-metric"><span>Overall Trend</span><strong>+8%</strong></div><div class="signal-metric"><span>Signals</span><strong>128</strong></div></div>
+          <div class="bar"><i style="width:92%"></i></div>
+          <div class="metric-list">
+            <div class="metric-change"><span class="metric-arrow">↑</span><b>Margin</b><em>+6.2%</em></div>
+            <div class="metric-change"><span class="metric-arrow">↑</span><b>Deployment Frequency</b><em>+11%</em></div>
+            <div class="metric-change"><span class="metric-arrow">↓</span><b>Defect Rate</b><em>-4.8%</em></div>
+            <div class="metric-change"><span class="metric-arrow">↑</span><b>Capacity Utilization</b><em>+3.1%</em></div>
+          </div>
+        </div>
+        <div class="signal-quadrant">
+          <div class="signal-top"><div class="signal-title">Internal + Uncontrollable</div><div class="signal-confidence"><strong>63%</strong><span>Confidence</span></div></div>
+          <div class="signal-meta"><div class="signal-metric"><span>Overall Trend</span><strong>-3%</strong></div><div class="signal-metric"><span>Signals</span><strong>74</strong></div></div>
+          <div class="bar"><i style="width:63%"></i></div>
+          <div class="metric-list">
+            <div class="metric-change"><span class="metric-arrow">↓</span><b>Knowledge Distribution</b><em>-9.4%</em></div>
+            <div class="metric-change"><span class="metric-arrow">↑</span><b>Architecture Coupling</b><em>+7.2%</em></div>
+            <div class="metric-change"><span class="metric-arrow">↓</span><b>Team Stability</b><em>-5.5%</em></div>
+            <div class="metric-change"><span class="metric-arrow">↑</span><b>Critical Expert Load</b><em>+6.8%</em></div>
+          </div>
+        </div>
+        <div class="signal-quadrant">
+          <div class="signal-top"><div class="signal-title">External + Controllable</div><div class="signal-confidence"><strong>48%</strong><span>Confidence</span></div></div>
+          <div class="signal-meta"><div class="signal-metric"><span>Overall Trend</span><strong>+12%</strong></div><div class="signal-metric"><span>Signals</span><strong>51</strong></div></div>
+          <div class="bar"><i style="width:48%"></i></div>
+          <div class="metric-list">
+            <div class="metric-change"><span class="metric-arrow">↑</span><b>Partner Pipeline</b><em>+18%</em></div>
+            <div class="metric-change"><span class="metric-arrow">↑</span><b>Brand Reach</b><em>+14%</em></div>
+            <div class="metric-change"><span class="metric-arrow">↑</span><b>Sales Opportunities</b><em>+9.6%</em></div>
+            <div class="metric-change"><span class="metric-arrow">↓</span><b>Acquisition Cost</b><em>-3.9%</em></div>
+          </div>
+        </div>
+        <div class="signal-quadrant">
+          <div class="signal-top"><div class="signal-title">External + Uncontrollable</div><div class="signal-confidence"><strong>29%</strong><span>Confidence</span></div></div>
+          <div class="signal-meta"><div class="signal-metric"><span>Overall Trend</span><strong>-18%</strong></div><div class="signal-metric"><span>Signals</span><strong>26</strong></div></div>
+          <div class="bar"><i style="width:29%"></i></div>
+          <div class="metric-list">
+            <div class="metric-change"><span class="metric-arrow">↑</span><b>Cloud Costs</b><em>+7.1%</em></div>
+            <div class="metric-change"><span class="metric-arrow">↑</span><b>Interest Rates</b><em>+4.0%</em></div>
+            <div class="metric-change"><span class="metric-arrow">↓</span><b>Market Demand</b><em>-6.3%</em></div>
+            <div class="metric-change"><span class="metric-arrow">↑</span><b>Regulatory Exposure</b><em>+5.7%</em></div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <main class="main">
+    <section class="grid" id="strategyGrid"></section>
+
+    <aside class="side">
+      <h2 id="detailTitle">Enterprise Expansion</h2>
+      <div class="focusbox budget-position">
+        <b>Budget Position</b>
+        <div class="minirow"><span>Allocated</span><strong id="budgetAllocated">CHF 5.2M</strong></div>
+        <div class="minirow"><span>Spent</span><strong id="budgetSpent">CHF 3.4M</strong></div>
+        <div class="minirow"><span>Remaining</span><strong id="budgetRemaining">CHF 1.8M</strong></div>
+        <div class="budget-bar"><i id="budgetDetailBar" style="width:65%"></i></div>
+      </div>
+      <div class="focusbox"><b>Primary Friction</b><span id="friction">The sales cycle exceeds the target range by 21 days.</span></div>
+      <div class="focusbox"><b>Largest Open Assumption</b><span id="assumption">The partner network can scale without proportional increases in onboarding costs.</span></div>
+      <div class="focusbox"><b>Most Critical Risk</b><span id="risk">Aggressive response from an established competitor in the enterprise segment.</span></div>
+      <div class="focusbox">
+        <b>Next Executive Review Question</b>
+        <div class="question" id="question">Should budget be shifted from growth marketing to partner enablement?</div>
+        <a class="strategy-cta" id="strategyCta" href="strategy-detail.html?strategy=enterprise-expansion">
+          Open Full Strategy <span aria-hidden="true">→</span>
+        </a>
+      </div>
+    </aside>
+  </main>
+</div>
+
+<script>
+const strategies=[
+{n:"Enterprise Expansion",p:"Critical",t:"Q2–Q4 2026",o:"CEO / CPO",b:"CHF 5.2M",spent:"CHF 3.4M",left:"CHF 1.8M",burn:65,c:"30%",cap:30,m:"positive",w:78,k:["ARR","Churn","Sales Cycle","Conversion"],f:"The sales cycle exceeds the target range by 21 days.",a:"The partner network can scale without proportional increases in onboarding costs.",r:"Aggressive response from an established competitor.",q:"Should budget be shifted from growth marketing to partner enablement?"},
+{n:"Profitability First",p:"High",t:"Q3 2026–Q1 2027",o:"CFO",b:"CHF 3.7M",spent:"CHF 2.9M",left:"CHF 0.8M",burn:78,c:"24%",cap:24,m:"neutral",w:61,k:["Margin","Liquidity","Cloud Costs"],f:"Cloud costs are rising faster than margin improvements.",a:"Customers will accept reduced packaging without a churn spike.",r:"Underinvestment reduces future growth options.",q:"Which cost reduction lowers risk without undermining strategic optionality?"},
+{n:"AI-First Productization",p:"Critical",t:"Q2–Q4 2026",o:"CTO / CPO",b:"CHF 4.4M",spent:"CHF 2.1M",left:"CHF 2.3M",burn:48,c:"22%",cap:22,m:"positive",w:72,k:["Conversion","ARR","Cloud Costs"],f:"Inference costs create margin uncertainty.",a:"AI capabilities deliver decision quality customers are willing to pay for.",r:"Regulatory requirements increase audit effort.",q:"Which AI capabilities remain core product features, and which become infrastructure?"},
+{n:"Market Resilience",p:"Medium",t:"Q3 2026",o:"CEO / CFO",b:"CHF 2.1M",spent:"CHF 0.6M",left:"CHF 1.5M",burn:29,c:"10%",cap:10,m:"neutral",w:55,k:["Liquidity","Churn","ARR"],f:"External demand indicators diverge across regions.",a:"Existing customers stabilize revenue under market pressure.",r:"Changes in interest rates or regulation reduce willingness to invest.",q:"Which external signals must be confirmed before the next budget shift?"},
+{n:"Operational Excellence",p:"High",t:"Q2–Q3 2026",o:"COO / CTO",b:"CHF 2.8M",spent:"CHF 2.4M",left:"CHF 0.4M",burn:86,c:"14%",cap:14,m:"negative",w:48,k:["Margin","Cloud Costs","Sales Cycle"],f:"Automation is reducing effort more slowly than expected.",a:"Process standardization reduces friction without sacrificing autonomy.",r:"Excessive centralization creates coordination costs.",q:"Which operational friction is a management problem rather than a process problem?"}
+];
+
+function spark(i){
+ const charts=[
+  {path:"M4 49 C62 47 98 43 144 45 S226 31 278 29 S378 18 516 8",events:[{x:144,y:45,label:"Partner pilot",tx:108,ty:34},{x:378,y:18,label:"Budget shift",tx:340,ty:10}]},
+  {path:"M4 30 C70 29 108 25 158 31 S250 26 312 28 S414 21 516 23",events:[{x:88,y:27,label:"Cost review",tx:52,ty:16}]},
+  {path:"M4 50 C60 45 112 39 172 37 S270 28 332 21 S424 14 516 7",events:[{x:172,y:37,label:"AI pilot",tx:142,ty:26},{x:424,y:14,label:"Pricing test",tx:385,ty:8}]},
+  {path:"M4 31 C66 25 118 34 174 29 S270 26 330 32 S426 26 516 30",events:[{x:286,y:28,label:"Market signal",tx:244,ty:17}]},
+  {path:"M4 12 C66 15 118 20 174 27 S276 34 342 40 S438 47 516 51",events:[{x:112,y:20,label:"Cloud spike",tx:72,ty:10},{x:342,y:40,label:"Ops change",tx:306,ty:30}]}
+ ];
+ const chart=charts[i];
+ const events=chart.events.map(event=>`
+   <circle class="experiment-node" cx="${event.x}" cy="${event.y}" r="4"/>
+   <text x="${event.tx}" y="${event.ty}" class="annotations">${event.label}</text>`).join("");
+ return `<svg class="spark" viewBox="0 0 520 58" aria-label="Strategy momentum with experiment markers">
+   <line x1="4" y1="54" x2="516" y2="54" stroke="rgba(255,255,255,.06)"/>
+   <path d="${chart.path}" fill="none" stroke="#f7436e" stroke-width="2.5"/>
+   ${events}
+ </svg>`;
+}
+function strategyUrl(s){
+ return `strategy-detail.html?strategy=${encodeURIComponent(s.n.toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,""))}`;
+}
+function card(s,i){
+ return `<article class="card ${i===0?'selected':''}" data-i="${i}">
+  <div class="card-head"><div><div class="title"><a class="strategy-link" href="${strategyUrl(s)}" aria-label="Open ${s.n} strategy">${s.n}<span class="link-icon" aria-hidden="true">↗</span></a></div><div class="meta">${s.t} · Owner ${s.o}</div></div><div class="priority">${s.p}</div></div>
+  <div class="levers">
+    <div class="lever"><span class="label">Budget</span><b>${s.b}</b><span class="sub">${s.left} remaining · ${s.burn}% burn rate</span><div class="budget-bar"><i style="width:${s.burn}%"></i></div></div>
+    <div class="lever"><span class="label">Capacity</span><b>${s.c}</b><span class="sub">Portfolio allocation</span><div class="capacity-bar"><i style="width:${s.cap}%"></i></div></div>
+    <div class="lever"><span class="label">Priority</span><b>${s.p}</b><span class="sub">Executive rank</span></div>
+  </div>
+  <div class="clusters">
+    <div class="cluster negative"><h4>Negative Flows</h4><p class="cluster-question">What is currently slowing the strategy down?</p><div class="minirow"><span>understood</span><b>3</b></div><div class="minirow"><span>diagnoses</span><b>2</b></div><div class="minirow"><span>countermeasures</span><b>2</b></div><div class="bar"><i style="width:${Math.max(35,s.w-12)}%"></i></div><div class="bar-label">Friction control level</div></div>
+    <div class="cluster positive"><h4>Positive Drivers</h4><p class="cluster-question">Why should the strategy work?</p><div class="minirow"><span>confirmed</span><b>4</b></div><div class="minirow"><span>open</span><b>2</b></div><div class="minirow"><span>disproved</span><b>1</b></div><div class="bar"><i style="width:${s.w}%"></i></div><div class="bar-label">Assumption evidence level</div></div>
+    <div class="cluster risks"><h4>Risks</h4><p class="cluster-question">What could threaten the strategy in the future?</p><div class="minirow"><span>mitigated</span><b>2</b></div><div class="minirow"><span>in mitigation</span><b>3</b></div><div class="minirow"><span>unmitigated</span><b>1</b></div><div class="minirow"><span>Review</span><b>Jul 18</b></div><div class="risk-status">Expected effect: exposure decreases</div></div>
+  </div>
+  <div class="momentum"><div><div class="label">Momentum · 90d</div><div class="mstate">${s.m} · KPI Matching</div>${spark(i)}</div></div>
+  <div class="kpis">${s.k.map((k,j)=>`<span class="kpi ${j===0?'pos':j===1?'neg':'ext'}">${k}</span>`).join("")}</div>
+ </article>`;
+}
+const grid=document.getElementById("strategyGrid");
+grid.innerHTML=strategies.map(card).join("");
+function select(i){
+ const s=strategies[i];
+ document.querySelectorAll(".card").forEach(c=>c.classList.remove("selected"));
+ document.querySelector(`.card[data-i="${i}"]`).classList.add("selected");
+ detailTitle.textContent=s.n;
+ budgetAllocated.textContent=s.b;
+ budgetSpent.textContent=s.spent;
+ budgetRemaining.textContent=s.left;
+ budgetDetailBar.style.width=s.burn+"%";
+ strategyCta.href=strategyUrl(s);
+ friction.textContent=s.f; assumption.textContent=s.a; risk.textContent=s.r; question.textContent=s.q;
+}
+grid.addEventListener("click",e=>{const c=e.target.closest(".card"); if(c)select(c.dataset.i)});
+document.querySelectorAll(".chip").forEach(b=>b.onclick=()=>{[...b.parentNode.children].filter(x=>x.className.includes(b.classList[1])).forEach(x=>x.classList.remove("active"));b.classList.add("active")});
+</script>
+</body>
+</html>

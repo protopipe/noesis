@@ -1,0 +1,51 @@
+project:
+  type: website
+  output-dir: _site
+  pre-render:
+    - scripts/sync-mockups.sh
+  render:
+    - presentation/index.qmd
+
+website:
+  title: "Protopipe"
+  site-url: "https://example.com/protopipe"
+  repo-url: "https://github.com/protopipe/noesis"
+  repo-actions: [source, issue]
+
+format:
+  revealjs:
+    theme:
+      - default
+      - theme/protopipe.scss
+    slide-number: c/t
+    chalkboard: false
+    controls: true
+    controls-layout: edges
+    controls-tutorial: false
+    hash: true
+    history: true
+    progress: true
+    overview: true
+    center: false
+    transition: fade
+    background-transition: fade
+    width: 1600
+    height: 900
+    margin: 0.06
+    min-scale: 0.2
+    max-scale: 2.0
+    navigation-mode: linear
+    incremental: false
+    code-copy: true
+    code-overflow: wrap
+    footer: "Protopipe | Augmented Product Development Platform"
+    title-slide-attributes:
+      data-background-color: "#081a17"
+      data-state: "title-slide"
+
+execute:
+  freeze: auto
+
+resources:
+  - assets/
+  - diagrams/generated/

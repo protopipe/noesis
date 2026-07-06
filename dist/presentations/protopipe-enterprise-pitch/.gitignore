@@ -1,0 +1,7 @@
+/.quarto/
+/_site/
+/.jupyter_cache/
+/assets/mockups/ProtopipeCockpit.html
+
+
+**/*.quarto_ipynb

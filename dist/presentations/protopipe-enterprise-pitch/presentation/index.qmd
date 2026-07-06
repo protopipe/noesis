@@ -1,0 +1,24 @@
+---
+title: 'Protopipe'
+subtitle: "Augmented Product Development Platform"
+author: "Alwin Mark"
+date: last-modified
+format:
+  revealjs:
+    title-slide-attributes:
+      data-background-image: "../assets/images/hero-placeholder.svg"
+      data-background-size: cover
+      data-background-position: center
+---
+
+{{< include chapters/01-act-problem.qmd >}}
+
+{{< include chapters/02-act-gapless-org-learning.qmd >}}
+
+{{< include chapters/03-act-protopipe.qmd >}}
+
+{{< include chapters/04-act-consulting-entry.qmd >}}
+
+{{< include chapters/05-act-extensions.qmd >}}
+
+{{< include chapters/06-act-vision.qmd >}}

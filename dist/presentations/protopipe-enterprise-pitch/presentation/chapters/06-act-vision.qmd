@@ -1,0 +1,38 @@
+# Act 5: Vision {.section .learning-section}
+
+---
+
+## 34. Shared Reality. Faster Learning.
+
+<p class="slide-kicker">Protopipe turns transformation from a program of promises into an observable sequence of decisions.</p>
+
+<div class="vision-close">
+<div class="vision-pillar">
+<span>Shared language</span>
+<strong>Everyone reasons about the same organizational reality.</strong>
+<p>Purpose, strategy, hypotheses, features, architecture, and evidence remain connected.</p>
+</div>
+<div class="vision-pillar focus">
+<span>Short feedback loops</span>
+<strong>High-risk assumptions become bounded experiments.</strong>
+<p>Teams change small surfaces, observe real effects, and preserve reversibility.</p>
+</div>
+<div class="vision-pillar learning">
+<span>Canonical learning</span>
+<strong>Every decision improves the next decision.</strong>
+<p>Evidence, trade-offs, and responsibility survive beyond meetings and individual memory.</p>
+</div>
+</div>
+
+<div class="vision-loop">
+<span>Purpose</span><b>→</b>
+<span>Strategy</span><b>→</b>
+<span>Experiment</span><b>→</b>
+<span>Development</span><b>→</b>
+<span>Observation</span><b>→</b>
+<strong>Learning</strong>
+</div>
+
+<div class="vision-statement">
+Better decisions. Faster. With less waste and more responsibility.
+</div>
