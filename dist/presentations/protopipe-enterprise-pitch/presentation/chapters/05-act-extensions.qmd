@@ -4,30 +4,30 @@
 
 ---
 
-## 30. External Reality Signals
+## 30. Direct External Signal Feed
 
-<p class="slide-kicker">Optional metric providers can enrich the KPI Tree with market evidence that the organization cannot produce internally.</p>
+<p class="slide-kicker">A single trusted provider can enrich Protopipe with external evidence through a direct, bounded integration.</p>
 
-<div class="extension-badge">Optional SaaS Add-on</div>
+<div class="extension-badge">Optional SaaS Add-on · Direct Provider Integration</div>
 
 <div class="external-signals">
 <div class="external-provider">
-<span>External metric provider</span>
+<span>Curated provider</span>
 <strong>Sellytics</strong>
-<p>A potential ecosystem partner for continuously supplied external market and commercial signals.</p>
+<p>A potential ecosystem partner for continuously supplied commercial signals such as marketplace prices, rankings, ratings, and reviews.</p>
 <a href="https://sellytics.com/">sellytics.com</a>
 </div>
 
 <div class="external-arrow">→</div>
 
 <div class="external-contract">
-<span>Protopipe signal contract</span>
+<span>Integration contract</span>
 <strong>Source · timestamp · confidence · KPI relation</strong>
 <div>
+<i>Provider-specific</i>
+<i>API-backed</i>
 <i>Normalized</i>
 <i>Traceable</i>
-<i>Comparable</i>
-<i>Challengeable</i>
 </div>
 </div>
 
@@ -36,18 +36,62 @@
 <div class="external-destination">
 <span>Core platform</span>
 <strong>Reality Signal Matrix + KPI Tree</strong>
-<p>External evidence can support or contradict a strategy, but it never replaces an accountable decision.</p>
+<p>Protopipe treats the feed as attributable evidence for hypotheses, KPIs, experiments, and decisions.</p>
 </div>
 </div>
 
 <div class="extension-boundary">
-<b>Core:</b> Protopipe accepts attributable reality signals.
-<b>Add-on:</b> A provider supplies and maintains external evidence as a service.
+<b>Direct feed:</b> One provider supplies a known class of external signals through an integration contract.
+<b>Protopipe:</b> Preserves source, timestamp, confidence, and KPI relation.
 </div>
 
 ---
 
-## 31. Google Analytics for Physical Retail
+## 31. External Data Marketplace Vision
+
+<p class="slide-kicker">External evidence is costly to collect and hard to verify. A marketplace can make that work attributable, priced, comparable, and challengeable.</p>
+
+<div class="extension-badge">Derived from Noesis · Optional Ecosystem Layer</div>
+
+<div class="external-signals">
+<div class="external-provider">
+<span>Provider ecosystem</span>
+<strong>Sellytics + specialized providers</strong>
+<p>Multiple providers publish costly external evidence under comparable topic contracts.</p>
+</div>
+
+<div class="external-arrow">→</div>
+
+<div class="external-contract">
+<span>Independent market layer</span>
+<strong>Topic contract · provenance · access · reputation</strong>
+<div>
+<i>Pricing + licensing</i>
+<i>Schema-bound topics</i>
+<i>Signed commitments</i>
+<i>Topic-level reputation</i>
+</div>
+</div>
+
+<div class="external-arrow">→</div>
+
+<div class="external-destination">
+<span>Protopipe subscription</span>
+<strong>External Evidence Context</strong>
+<p>Protopipe consumes marketplace evidence with provenance, confidence, correction status, and dispute history.</p>
+</div>
+</div>
+
+<div class="extension-boundary">
+<b>Marketplace:</b> Operate provider identity, payment, access, commitments, reputation, corrections, and disputes.
+<b>Protopipe:</b> Stays out of marketplace operation and uses the evidence context for strategic learning.
+</div>
+
+<p class="source-note">Derived from Noesis: <em>External Evidence Is Costly and Hard to Verify</em>, <em>No External Signal without Provenance</em>, and <em>External Evidence Context</em>. Publication reference: <a href="../../../../publications/external-data-marketplace-whitepaper.md">External Data Marketplace Whitepaper</a>.</p>
+
+---
+
+## 32. Google Analytics for Physical Retail
 
 <p class="slide-kicker">Instrument the physical store like an online product: connect experiments to observed customer behavior and business outcomes.</p>
 
@@ -92,7 +136,7 @@
 
 ---
 
-## 32. Industry 5.0: Strategy Reaches the Shopfloor
+## 33. Industry 5.0: Strategy Reaches the Shopfloor
 
 <p class="slide-kicker">Digitization makes industrial work observable. Protopipe turns that operational reality into strategic learning.</p>
 
@@ -137,7 +181,7 @@
 
 ---
 
-## 33. Synesis: Deliberation with Memory
+## 34. Synesis: Deliberation with Memory
 
 <p class="slide-kicker">An optional deliberation platform can make perspectives, arguments, evidence, and unresolved conflict part of the decision record.</p>
 
